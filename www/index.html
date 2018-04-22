@@ -31,9 +31,10 @@
 	<link href="css/animate.css" rel="stylesheet">
 	
 	<!-- Magnific Popup core CSS file -->
-	<link rel="stylesheet" href="css/magnific-popup.css"> 
 	
-	<script src="js/modernizr-2.8.3.min.js"></script>  <!-- Modernizr /-->
+	<script src="js/modernizr-2.8.3.min.js"></script> <!-- Modernizr /-->
+	
+
 	
 	<!--[if IE 9]>
 		<script src="js/PIE_IE9.js"></script>
@@ -49,6 +50,11 @@
 	<!-- CSS para sobreposição - vai ser usado principalmente para a cor de elementos gerados via js  -->
 
 	<style type="text/css">
+
+		body{
+
+			background-color: #f8f8f8;
+		}
 		.owl-theme .owl-controls .owl-page span {
 		    background: #FFF !important;
 		}
@@ -69,7 +75,7 @@
 
 		.intro-header{
 			background: url(img/fundo.jpg) no-repeat #3b3a35;
-			background-size: 100% auto;
+			background-size: 110% auto;
 			padding-top: 30px;
 
 		}
@@ -89,11 +95,22 @@
 		.pageView{
 
 			display: none;
+  			width:100%;
+  			/*height:110%;*/
 
 		}
+		/*.pagePage{
+
+			display: none;
+  			width:100%;
+  			height:150%;
+
+
+		}*/
 		.pageView div.text-center.wrap_title {
 			padding-right: 0;
 			padding-left: 0;
+			
 		}
 
 
@@ -107,7 +124,7 @@
 			margin:0;
   			padding:0;
   			width:100%;
-  			height:100%;
+  			height:110%;
 		}
 		
 		.linkVersiculoModal{
@@ -124,6 +141,8 @@
 		.pageView > .container .row + ul{
 			margin-top: 30px;
 		}
+		
+
 
 		div.scrollmenu {
 			position: fixed;
@@ -159,9 +178,6 @@
 		    font-size: 1.5em;
 		    margin-left:50px;
 		}
-
-
-
 
 	</style>
 
@@ -199,7 +215,6 @@
 						<li class="menuItem"><a onclick="pageChange('#PaginaDica')">Dicas</a></li>
 						<li class="menuItem"><a onclick="pageChange('#PaginaConvite')">Convite</a></li>
 						<!-- <li class="menuItem"><a onclick="pageChange('#PaginaContato')">Contato</a></li> -->
-
 					</ul>
 				</div>		   
 			</div>
@@ -280,14 +295,13 @@
 				</div>
 			</div>	
 			<div class="text-center">	
-				<p id="escola" class="lead"></p>
-				<p id="user" class="lead"></p>
-				<p id="endereco" class="lead"></p>
+				<p id="escola"></p>
+				<p id="user"></p>
+				<p id="endereco"></p>
 				<button type="button" class="btn btn-primary" onclick = "logout()"><i class="fa fa-power-off"></i> Sair </button>
 			</div>
 		</div>		
 	</div>	
-		
 	<!-- PaginaPerfil -->
 
 
@@ -353,17 +367,16 @@
 
 	</div>
 
-    <!-- Abordagem -->
+	<!-- Abordagem -->
 	<div id="PaginaAbordagem" class="pageView content-section-a">
 		<div class="container">
 			<div class="row">			
 				<div class="col-md-6 col-md-offset-3 text-center wrap_title">
-					<h3>Abordagem <i class="glyphicon glyphicon-bullhorn"></i></h3>
+					<h3>Abordagem</h3>
 				</div>
 				<p class="lead col-xs-12" style="margin-top:0">Saiba como "chegar na pessoa".</p>			 
 		  	</div>
 
-		  	<div class="text-center">
 		  	<ul>
 			  	<li>Seja engraçado, alegre, as pessoas preferem passar tempo com pessoas felizes, crie amizade e 
 					demonstre o caráter de Cristo com as suas atitudes assim as pessoas ao seu redor irão querer saber o
@@ -376,9 +389,11 @@
 			  	<li>Utilize o meio artístico, através de banners, flash mobs e etc;</li>
 			  	<li>O melhor jeito de atrair uma vida não é falando mas sim mostrando Jesus através da sua vida;</li>
 			</ul>
-		   </div>		  	
+			<div class="section-heading">
+			</div>		  	
 		</div>
 	</div>
+
 
     <!-- Dinâmicas -->
 	<div id="PaginaDinamica" class="pageView content-section-a">
@@ -610,22 +625,8 @@
 			</ul>
 			<p><b>Missão:</b> Ser um movimento criativo, alcançando jovens e adolescentes, levando o amor de Cristo para as escolas, cursinhos e faculdades, tornando realidade o sonho ZION.</p>
 			<p><b>Visão:</b> Alcançar a todos demonstrando o amor  e a simplicidade de Cristo</p>	
-
 		</div>		
 	</div>
-
-	<!--<hr />
-	
-
-
-	<hr />
-	<hr />
-	<hr />
-	<hr />
-	<hr />
-	<hr />
-	<hr />-->
-	
 
 	<!-- Modal Perguntas -->
 	<div class="modal fade" id="ModalPergunta" tabindex="-1" role="dialog" aria-labelledby="ModalPerguntaLabel">
@@ -648,18 +649,6 @@
 	    </div>
 	  </div>
 	</div>
-
-	<!--<hr />
-	<hr />
-	<hr />
-	<hr />
-	 
-
-	<hr />
-	<hr />
-	<hr />
-	<hr />
-	<hr />-->
 
      <footer>
 
