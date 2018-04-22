@@ -113,7 +113,68 @@ Porém, se Ele ressuscitou nada mais importa. Ele está vivo agora mesmo e volta
 Não cremos que há outro caminho para irmos até Deus, senão Jesus “Eu sou o Caminho”, e que em nós mesmos não temos  como nos salvarmos. Cremos sim que é através da obediência e morte de Jesus que temos a vida eterna.</p>\
 <p>A vida eterna por meio da obediência de Cristo, e a ressurreição de Jesus fazem do Cristianismo totalmente diferente de qualquer religião.</p>",
 /*3*/
-"",
+"<p> Deus não é culpado pelo pecado, suas consequências e maldições. Ele pode e deseja intervir. Porém, o que move a intervenção divina é o clamor acompanhado de sincero arrependimento. Foi assim em toda intervenção divina na Bíblia, e assim é nos nossos dias pois Deus não muda (<u class='versiculo-0'>Ml 3:6</u>).</p>\
+<p>Todas às vezes que Deus interveio na história, foi em resposta ao clamor do seu povo que veio acompanhado de arrependimento de pecados. Deus interveio para libertar o povo do Egito em resposta do seu clamor (<u class='versiculo-1'>Ex 3:9</u>,<u class='versiculo-2'>Ex 6:5</u>) e inúmeras vezes no livro de Juízes. </p>\
+<p>Não estou afirmando com isso que não houve clamor por parte dos judeus durante o Holocausto. Porém, quero chamar a atenção para a maldição descrita em Deuteronômio 28, caso os judeus decidissem seguir seus próprios caminhos ao invés dos mandamentos de Deus. É um texto extenso, porém, muito usado hoje por rabinos para explicar oque foi o Holocausto pois, segundo eles, esse texto da Torá descreve em detalhes oque aconteceu neste período. É como se tivesse acontecido no Holocausto exatamente oque está descrito nesse texto.</p>\
+<p><u class='versiculo-3'>Dt 28:15-68</u></p>\
+<p>Será, porém, que, se não deres ouvidos à voz do Senhor teu Deus, para não cuidares em cumprir todos os seus mandamentos e os seus estatutos, que hoje te ordeno, então virão sobre ti todas estas maldições, e te alcançarão:</p>\
+<p>Maldito serás tu na cidade, e maldito serás no campo.</p>\
+<p>Maldito o teu cesto e a tua amassadeira.</p>\
+<p>Maldito o fruto do teu ventre, e o fruto da tua terra, e as crias das tuas vacas, e das tuas ovelhas.</p>\
+<p>Maldito serás ao entrares, e maldito serás ao saíres.</p>\
+<p>O Senhor mandará sobre ti a maldição; a confusão e a derrota em tudo em que puseres a mão para fazer; até que sejas destruído, e até que repentinamente pereças, por causa da maldade das tuas obras, pelas quais me deixaste.</p>\
+<p>O Senhor fará pegar em ti a pestilência, até que te consuma da terra a que passas a possuir.</p>\
+<p>O Senhor te ferirá com a tísica e com a febre, e com a inflamação, e com o calor ardente, e com a secura, e com crestamento e com ferrugem; e te perseguirão até que pereças.</p>\
+<p>E os teus céus, que estão sobre a cabeça, serão de bronze; e a terra que está debaixo de ti, será de ferro.</p>\
+<p>O Senhor dará por chuva sobre a tua terra, pó e poeira; dos céus descerá sobre ti, até que pereças.</p>\
+<p>O Senhor te fará cair diante dos teus inimigos; por um caminho sairás contra eles, e por sete caminhos fugirás de diante deles, e serás espalhado por todos os reinos da terra.</p>\
+</p>E o teu cadáver servirá de comida a todas as aves dos céus, e aos animais da terra; e ninguém os espantará.</p>\
+<p>O Senhor te ferirá com as úlceras do Egito, com tumores, e com sarna, e com coceira, de que não possas curar-te;</p>\
+<p>O Senhor te ferirá com loucura, e com cegueira, e com pasmo de coração;</p>\
+<p>E apalparás ao meio-dia, como o cego apalpa na escuridão, e não prosperarás nos teus caminhos; porém somente serás oprimido e roubado todos os dias, e não haverá quem te salve.</p>\
+<p>Desposar-te-ás com uma mulher, porém outro homem dormirá com ela; edificarás uma casa, porém não morarás nela; plantarás uma vinha, porém não aproveitarás o seu fruto.</p>\
+<p>O teu boi será morto aos teus olhos, porém dele não comerás; o teu jumento será roubado diante de ti, e não voltará a ti; as tuas ovelhas serão dadas aos teus inimigos, e não haverá quem te salve.</p>\
+<p>Teus filhos e tuas filhas serão dados a outro povo, os teus olhos o verão, e por eles desfalecerão todo o dia; porém não haverá poder na tua mão.</p>\
+<p>O fruto da tua terra e todo o teu trabalho, comerá um povo que nunca conheceste; e tu serás oprimido e quebrantado todos os dias.</p>\
+<p>E enlouquecerás com o que vires com os teus olhos.</p>\
+<p>O Senhor te ferirá com úlceras malignas nos joelhos e nas pernas, de que não possas sarar, desde a planta do teu pé até ao alto da cabeça.</p>\
+<p>O Senhor te levará a ti e a teu rei, que tiveres posto sobre ti, a uma nação que não conheceste, nem tu nem teus pais; e ali servirás a outros deuses, ao pau e à pedra.</p>\
+<p>E serás por pasmo, por ditado, e por fábula, entre todos os povos a que o Senhor te levará.</p>\
+<p>Lançarás muita semente ao campo; porém colherás pouco, porque o gafanhoto a consumirá.</p>\
+<p>Plantarás vinhas, e cultivarás; porém não beberás vinho, nem colherás as uvas; porque o bicho as colherá.</p>\
+<p>Em todos os termos terás oliveiras; porém não te ungirás com azeite; porque a azeitona cairá da tua oliveira.</p>\
+<p>Filhos e filhas gerarás; porém não serão para ti; porque irão em cativeiro.</p>\
+<p>Todo o teu arvoredo e o fruto da tua terra consumirá a lagarta.</p>\
+<p>O estrangeiro, que está no meio de ti, se elevará muito sobre ti, e tu mais baixo descerás;</p>\
+<p>Ele te emprestará a ti, porém tu não emprestarás a ele; ele será por cabeça, e tu serás por cauda.</p>\
+<p>E todas estas maldições virão sobre ti, e te perseguirão, e te alcançarão, até que sejas destruído; porquanto não ouviste à voz do Senhor teu Deus, para guardares os seus mandamentos, e os seus estatutos, que te tem ordenado;</p>\
+<p>E serão entre ti por sinal e por maravilha, como também entre a tua descendência para sempre.</p>\
+<p>Porquanto não serviste ao Senhor teu Deus com alegria e bondade de coração, pela abundância de tudo.</p>\
+<p>Assim servirás aos teus inimigos, que o Senhor enviará contra ti, com fome e com sede, e com nudez, e com falta de tudo; e sobre o teu pescoço porá um jugo de ferro, até que te tenha destruído.</p>\
+<p>O Senhor levantará contra ti uma nação de longe, da extremidade da terra, que voa como a águia (perceba que um dos emblemas do nazismo é a águia), nação cuja língua não entenderás;</p>\
+<p>Nação feroz de rosto, que não respeitará o rosto do velho, nem se apiedará do moço;</p>\
+<p>E comerá o fruto dos teus animais, e o fruto da tua terra, até que sejas destruído; e não te deixará grão, mosto, nem azeite, nem crias das tuas vacas, nem das tuas ovelhas, até que te haja consumido;</p>\
+<p>E sitiar-te-á em todas as tuas portas, até que venham a cair os teus altos e fortes muros, em que confiavas em toda a tua terra; e te sitiará em todas as tuas portas, em toda a tua terra que te tem dado o Senhor teu Deus.</p>\
+<p>E comerás o fruto do teu ventre, a carne de teus filhos e de tuas filhas, que te der o Senhor teu Deus, no cerco e no aperto com que os teus inimigos te apertarão.</p>\
+<p>Quanto ao homem mais mimoso e delicado no meio de ti, o seu olho será maligno para com o seu irmão, e para com a mulher do seu regaço, e para com os demais de seus filhos que ainda lhe ficarem;</p>\
+<p>De sorte que não dará a nenhum deles da carne de seus filhos, que ele comer; porquanto nada lhe ficou de resto no cerco e no aperto, com que o teu inimigo te apertará em todas as tuas portas.</p>\
+<p>E quanto à mulher mais mimosa e delicada no meio de ti, que de mimo e delicadeza nunca tentou pôr a planta de seu pé sobre a terra, será maligno o seu olho contra o homem de seu regaço, e contra seu filho, e contra sua filha;</p>\
+<p>E isto por causa de suas páreas, que saírem dentre os seus pés, e para com os seus filhos que tiver, porque os comerá às escondidas pela falta de tudo, no cerco e no aperto, com que o teu inimigo te apertará nas tuas portas.</p>\
+<p>Se não tiveres cuidado de guardar todas as palavras desta lei, que estão escritas neste livro, para temeres este nome glorioso e temível, o SENHOR TEU DEUS,\
+Então o Senhor fará espantosas as tuas pragas, e as pragas de tua descendência, grandes e permanentes pragas, e enfermidades malignas e duradouras;</p>\
+<p>E fará tornar sobre ti todos os males do Egito, de que tu tiveste temor, e se apegarão a ti.</p>\
+<p>Também o Senhor fará vir sobre ti toda a enfermidade e toda a praga, que não está escrita no livro desta lei, até que sejas destruído.</p>\
+<p>E ficareis poucos em número, em lugar de haverem sido como as estrelas dos céus em multidão; porquanto não destes ouvidos à voz do Senhor teu Deus.</p>\
+<p>E será que, assim como o Senhor se deleitava em vós, em fazer-vos bem e multiplicar-vos, assim o Senhor se deleitará em destruir-vos e consumir-vos; e desarraigados sereis da terra a qual passais a possuir.</p>\
+<p>E o Senhor vos espalhará entre todos os povos, desde uma extremidade da terra até à outra; e ali servireis a outros deuses que não conheceste, nem tu nem teus pais; ao pau e à pedra.</p>\
+<p>E nem ainda entre estas nações descansarás, nem a planta de teu pé terá repouso; porquanto o Senhor ali te dará coração agitado, e desfalecimento de olhos, e desmaio da alma.</p>\
+<p>E a tua vida, como em suspenso, estará diante de ti; e estremecerás de noite e de dia, e não crerás na tua própria vida.</p>\
+<p>Pela manhã dirás: Ah! quem me dera ver a noite! E à tarde dirás: ah! quem me dera ver a manhã! pelo pasmo de teu coração, que sentirás, e pelo que verás com os teus olhos.</p>\
+<p>E o Senhor te fará voltar ao Egito em navios, pelo caminho de que te tenho dito; nunca jamais o verás; e ali sereis vendidos como escravos e escravas aos vossos inimigos; mas não haverá quem vos compre.”</p>\
+<p>Essa maldição foi preparada para o povo de Deus, pouco antes de chegar a terra prometida, para tomar posse dela. Não foi uma maldição lançada para qualquer nação: foi para o povo de Deus. </p>\
+<p>Para os judeus que temem a Deus e seguem a Torá, eles afirmam que o Holocausto foi o cumprimento dessa maldição descrita em Deuteronômio: consequência da apostasia e do abandono à Lei do Senhor. Para nós, parece que Deus não interveio, mas acredite: o juízo é a última arma de Deus. </p>\
+<p><b>Conclusão</b></p>\
+<p>As consequências do pecado e as maldições descritas na Palavra em resposta à desobediência do homem permanecem valendo nos nossos dias. Porém,  Ezequiel 18:32 afirma “Não tenho nenhum prazer na morte de quem quer que seja, afirma Yahweh, o SENHOR Deus. Convertei-vos, pois, e vivei!”. O juízo é a última arma de Deus.</p>",
 /*4*/
 "<p>Jesus sabia que Judas iria roubar (<u class='versiculo-0'>Jo 12:6</u>) mas ainda assim o constituiu tesoureiro (Jo 13:29). Pois se não o constituísse, talvez Judas nunca iria revelar o coração.</p>\
 <p>Quando Deus percebeu no anjo o desejo de ser Deus, oque Deus fez? Potencializou isso. Colocou ele em uma posição elevada, como querubim ungido (<u class='versiculo-1'>Ez 28:14</u>) para ele pensar que tinha uma chance. Deus assim fez para que as intenções do coração fossem reveladas. Depois de o constituir, “elevou-se o teu coração por causa da tua formosura, corrompeste a tua sabedoria por causa do teu resplendor” (<u class='versiculo-2'>Ez 28:17</u>)</p>\
@@ -154,7 +215,10 @@ Por fim, ambos se rebelaram.</p>",
 <p>Israel esperava um Messias que os libertasse do domínio dos romanos e que trouxesse paz; que acabasse com as guerras e unificasse as nações num relacionamento fraterno. Mas quando Jesus veio, declarou: “não penseis que vim trazer paz a Terra pois vim trazer espada” (<u class='versiculo-1'> Mt 10:34</u>). A espada é símbolo de separação, uma separação inevitável que haveria entre aqueles que cressem no Senhor e aqueles que não cressem. </p>\
 <p>Neste capítulo temos as instruções de Jesus aos seus discípulos acerca do trabalho que eles haveriam de fazer: evangelizar o mundo. Jesus diz “onde” ir, “com quem” falar e “oque” falar. </p>\
 <p>Também os ensina acerca das possíveis reações que haveriam de receber. Por isso, diz sobre os inimigos do cristão serem os da sua própria casa pois esta é uma das reações quanto à conversão daquele que ouviu o evangelho e creu.</p>\
-<p>Jesus também pede uma dedicação e uma fidelidade sem qualificações, incondicional. O amor à Ele e ao Reino maior do que qualquer outro relacionamento ou qualquer outra afeição humana. Jesus não está ensinando a não amá-los, mas que meu amor à Ele deve ser maior que tudo.</p>"
+<p>Jesus também pede uma dedicação e uma fidelidade sem qualificações, incondicional. O amor à Ele e ao Reino maior do que qualquer outro relacionamento ou qualquer outra afeição humana. Jesus não está ensinando a não amá-los, mas que meu amor à Ele deve ser maior que tudo.</p>",
+"<p>Por princípio só Deus dá a vida e, por princípio, só Deus pode tira-la.</p>\
+<p>Devemos entender os papéis. Deus não permite que julguemos uns aos outros (<u class='versiculo-0'> Mt 7:1</u>), no entanto, nos ensina a constituir juízes para julgarem (<u class='versiculo-1'>Ex 18:21-22</u>, <u class='versiculo-2'>1 Cr 17:10</u>,<u class='versiculo-3'>1 Sm 8:1</u>) e autoridades para executarem as penas (<u class='versiculo-4'>Rm 13:4</u>). Deus diz “não assassinarás” (<u class='versiculo-5'>Ex 20:13</u>) mas também disse para os israelitas assassinarem o filho que amaldiçoa seus pais (<u class='versiculo-6'>Lv 20:9</u>).</p>\
+<p>Ele não desobedeceu aquilo que Ele mesmo ordenou, mas executou a sentença, por ser Justo Juiz (<u class='versiculo-7'> Sl 7:11</u>) e “Na sua mão está a vida de todo ser vivente, e o espírito de todo o gênero humano.” (<u class='versiculo-8'>Jó 12:10</u>). Ele é o único que pode tirar a vida e julgar a todos pois foi Ele quem deu a vida e criou à todos.</p>"
 ];
 
 
@@ -183,10 +247,13 @@ function selecionaPergunta(id){
 		while (bodyModal.toLowerCase().indexOf("<u class='versiculo-" + i + "'>") >= 0){
 
 			caminho = bodyModal.substring(bodyModal.indexOf("<u class='versiculo-" + i + "'>"), bodyModal.indexOf("</u>"));
+			alert(caminho);
 			caminho = caminho.replace("<u class='versiculo-" + i + "'>", "");
 
 			livro = caminho.substring(0, caminho.lastIndexOf(" ")).trim();
+			alert(livro);
 			capitulo = caminho.substring(caminho.lastIndexOf(" ") +1, caminho.indexOf(":"));
+			alert(capitulo);
 			versiculo = caminho.substring(caminho.indexOf(":") + 1, caminho.length);
 			alert(livro);
 
