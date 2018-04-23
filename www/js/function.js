@@ -61,6 +61,10 @@ function pageChange(idNewPage){
 
 		carregaPerfil();
 
+	}else if(idNewPage == "#PaginaPergunta"){
+		listaPerguntas();
+	}else if(idNewPage == "#PaginaDinamica"){
+		listaDinamicas();
 	}
 
 	$(" " + idNewPage).show();//mostra a página selecionada no menu
@@ -233,8 +237,90 @@ var arrayConteudoPalavra = [
 "Libere perdão sobre a vida das outras pessoas, o que te faz pensar que só ela errou? Você nunca fez nada de errado?"
 ];
 
+var arrayTituloDinamicas = [
+"Juntos somos mais fortes",
+"Sal da terra",
+"Tiro pela culatra",
+"Quem vai pro céu?",
+"O Verbo",
+"Imagem e semelhança de Deus",
+"Rótulos",
+"Sonhos",
+];
 
-
+var arrayConteudoDinamicas = [
+/*1*/
+"<p>O objetivo é que todos entendam a força de quando estamos unidos em uma só unidade.</p>\
+<p><b>Material</b>: Papel Sulfite, bolinha de brincar.</p>\
+<p><b>Texto-base</b>: <a target='_blank' class='linkVersiculoModal' alt='Veja o versículo online' href='https://www.bibliaonline.com.br/acf/rm/15/5,6'>Romanos 15:5-6</a> e <a target='_blank' class='linkVersiculoModal' alt='Veja o versículo online' href='https://www.bibliaonline.com.br/acf/1co/12/12,13'>1 Coríntios 12:12-13</a></p>\
+<p><b>Desenvolvimento</b>: Faça uma roda, pegue o papel e peça para que uma pessoa rasgue. Isso é muito fácil, todos vão conseguir rasgar o papel. Então pegue a bola e revista ela com o papel sulfite. Coloque todos vários papéis em torno da bola.</p>\
+<p><b>Conclusão</b>: A bola Representa o Espírito Santo, os papéis nos representa. Quando estamos juntos e ligados em cristo, não há obstáculos que possam nos parar, somos mais fortes, mas quando ficamos sozinhos sem cristo e sem nossos irmãos de nada adianta, facilmente somos abatidos e derrotados pelo inimigo.</p>",
+/*2*/
+"<p>O objetivo é levar à reflexão sobre o nosso papel como sal da Terra.</p>\
+<p><b>Material</b>: Pipoca</p>\
+<p><b>Texto base</b>: <a target='_blank' alt='Veja o versículo online' href='https://www.bibliaonline.com.br/acf/mt/5/13' class='linkVersiculoModal'>Mateus 5:13</a></p>\
+<p><b>Desenvolvimento</b>: Assim que iniciar o momento da palavra, distribua para cada participante a pipoca em um copo descartável. (A pipoca deve estar completamente sem sal).\
+Não diga que é o quebra-gelo de início, deixe que comam a pipoca, enquanto isso continue normalmente a célula até que alguém perceba e diga que a pipoca está sem sal.\
+Para estimular eles a dizerem isso pergunte se a pipoca está gostosa, etc. Pois alguns percebendo isso podem ficar com vergonha de dizer.</p>\
+<p><b>Conclusão</b>: Quando alguém disser ou pedir sal você já aborda dizendo sobre a importância de sermos sal da terra.</p>",
+/*3*/
+"<p>O objetivo é todos reflitam sobre a forma que amamos o próximo.</p>\
+<p><b>Texto-base</b>: <a target='_blank' alt='Veja o versículo online' href='https://www.bibliaonline.com.br/acf/mt/23/39' class='linkVersiculoModal'>Mateus 22:39</a></p>\
+<p><b>Material</b>: Papel e caneta;</p>\
+<p><b>Desenvolvimento</b>: Distribua papel e caneta para todos os participantes;</p>\
+<ul>\
+<li>Peça para que eles escrevam um comando para quem estiver à sua direita executar. Muitos vão escolher micos, e aí que o tiro sai pela culatra;</li>\
+	<li>Quando todos terminarem, peça para que o primeiro leia o comando e revele que cada um terá que fazer o que escreveu.</li>\
+</ul>\
+<p><b>Conclusão</b>: Não queremos constranger a ninguém, lógico, explique de forma muito amorosa a moral da dinâmica.</p>",
+"<p><b>Objetivo</b>: Reflexão e descontração.</b></p>\
+<p><b>Textos-base</b>:  <a target='_blank' alt='Veja o versículo online' href='https://www.bibliaonline.com.br/acf/jo/14/6' class='linkVersiculoModal'> João 14:6</a>.</p>\
+<p><b>Desenvolvimento</b>: Comece explicando que o grupo vai fazer uma viagem para entrar no céu, para isso elas devem escolher somente um coisa para levar. Pode  ser objetos, pessoas ou animais, qualquer coisa, mas somente uma.</p>\
+<ul>\
+<li>Após escolher o que irá levar, o aplicador da dinâmica deve dizer se ela vai ou não para o céu. Aqui está o segredo: para ir para o céu o participante deve escolher algo que comece com a primeira letra do seu nome.</li>\
+<li>Faça várias rodadas até que as pessoas descubram o segredo.</li>\
+</ul>\
+<p><b>Conclusão</b>: Muitos têm buscado uma forma de entrar e/ou ir para o céu, sendo boazinhas, fazendo obras sociais, obedecendo aos 10 mandamentos, mas esquecem que o único, real e verdadeiro caminho é Jesus.</p>",
+"<p>O objetivo é refletirmos sobre como nós não conseguimos viver sem o Verbo.</p>\
+<p><b>Texto base</b>: <a target='_blank' alt='Veja o versículo online' href='https://www.bibliaonline.com.br/acf/jo/1/1' class='linkVersiculoModal'> João 1:1</a></p>\
+<p><b>Desenvolvimento</b>: Peça para cada pessoa dizer o seu nome, o que mais gosta de fazer, uma pergunta para pessoa ao lado. Ela pode falar qualquer coisa, mas sem usar verbos.</p>\
+<p><b>Conclusão</b>: Nossa vida seria muito difícil se não tivéssemos o verbo para nos expressar, porque o verbo é que dá sentido à nossa comunicação. Sem o verbo, tudo que dissermos fica sem sentido e confuso.</p>\
+<p>Jesus é o verbo vivo de Deus. Sem Ele a nossa vida é vazia e sem sentido.</p>",
+"<p><b>Texto base</b>: <a target='_blank' alt='Veja o versículo online' href='https://www.bibliaonline.com.br/acf/mt/3/16' class='linkVersiculoModal'>Mateus 3:16</a> e <a target='_blank' alt='Veja o versículo online' href='https://www.bibliaonline.com.br/acf/rm/8/16' class='linkVersiculoModal'>Romanos 8:16</a></p>\
+<p><b>Material</b>: uma caixa com espelho dentro.</p>\
+<p><b>Desenvolvimento</b>: Pegue uma caixa de sapato e coloque um espelho dentro dele, sem que os participantes percebam.</p>\
+<ul>\
+<li>Peça que cada um se levante, vá até a caixa e diga o que está vendo, o que consegue visualizar ao olhar para si mesmo. É um momento muito propício para que cada um abra o coração. É a oportunidade de se falar sobre identidade. Quem é você?</li>\
+</ul>\
+<p><b>Conclusão</b>: Falar sobre quem nós somos: filhos de Deus.</p>",
+"<p>O objetivo é levar à reflexão sobre como rotulamos as pessoas.</p>\
+<p><b>Material</b>: Post-it e caneta.</p>\
+<p><b>Texto-base</b>: <a target='_blank' alt='Veja o versículo online' href='https://www.bibliaonline.com.br/acf/je/29/11' class='linkVersiculoModal'> Jeremias 29:11 </a> e <a target='_blank' alt='Veja o versículo online' href='https://www.bibliaonline.com.br/acf/jo/15/12' class='linkVersiculoModal'> João 15:12</a></p>\
+<p><b>Desenvolvimento</b>: Cole post- it na testa de cada participante, com títulos como:</p>\
+<ul>\
+<li>1.Sou carente - Me elogie toda hora.</li>\
+<li>2.Sou mentirosa - Não acredite em mim.</li>\
+<li>3.Sou perigosa - Tenha medo.</li>\
+<li>3.Sou inteligente - Me pergunte o por que de tudo.</li>\
+<li>4.Sou surda - Fale gritando.</li>\
+<li>5.Sou chata - Me ignore.</li>\
+</ul>\
+<p>Peça para que eles tratem uns aos outros de acordo com o que está escrito na testa de cada um, mas lembrando, sem falar o que está escrito.</p>\
+<p><b>Conclusão</b>: Pergunte se eles conseguiram descobrir quem eram, e fale sobre como rotulamos as pessoas, e que elas se sentem da mesma maneira que nós nos sentimos.</p>\
+<p>Compartilhem ocasiões em que alguém foi rotulado.</p>",
+"<p>O objetivo é refletir sobre como os planos de Deus são maiores que os nossos.</p>\
+<p><b>Material</b>: papel e caneta.</p>\
+<p><b>Texto-base</b>:<a target='_blank' alt='Veja o versículo online' href='https://www.bibliaonline.com.br/acf/je/29/11' class='linkVersiculoModal'> Jeremias 29:11 </a>, <a target='_blank' alt='Veja o versículo online' href=' https://www.bibliaonline.com.br/acf/ef/3/20' class='linkVersiculoModal'> Efésio 3:20 </a>e<a target='_blank' alt='Veja o versículo online' href=' https://www.bibliaonline.com.br/acf/pr/16/3' class='linkVersiculoModal'> Provérbios 16:3</a></p>\
+<p><b>Desenvolvimento</b>: dê um papel e uma caneta para todos os participantes da célula. Peça a eles para pensar e escrever o sonho deles, o que eles mais desejam alcançar. Quais alvos desejam atingir, peça que escreva. Você pode dizer que ninguém vai ler o que está no papel para a pessoa ficar mais a vontade. E vai ministrando em cima disso para ajudá-los a escrever. Marque um tempo para eles escreverem. Enquanto isso posicione um cesto de lixo, ou pode ser qualquer cesto qualquer.</p>\
+<ul>\
+<li>terminar o tempo, ou quando todos já terminaram. Lembre-se de dar uma palavra incentivando a correr atras do sonhos, coisa do tipo: 'E lembre que o inimigo pode armar muitas armadilhas para vocês caírem e desistir dos teus sonhos, mas você pode vencer se ouvir a voz de Deus.'</li>\
+<li>Nesse momento você pode dizer assim: 'Era isso que eu queria trazer para vocês hoje, pode amassar e rasgar o papel se quiser e jogar aqui nesse cesto de lixo.' E passa com o cesto de lixo para certificar que todos joguem fora. Caso alguém não queira tente insistir de alguma forma.</li>\
+<li>Então você finaliza perguntando o que fizeram. Por que jogaram seus sonhos no lixo?</li>\
+</ul>\
+<p><b>Conclusão</b>: Então, você pode mostrar que é isso que o inimigo quer que você faça. Ele diz isso o tempo todo, através da midia, através dos desejos deste mundo. Se dermos atenção 'às vozes do inimigo' estaremos jogando nosso sonho no lixo.</p>\
+<p>Pode acrescentar que muitas pessoas não acredita que você pode alcançar o seu sonho. Dizem ser besteira. Dizem que você não nasceu com dom para tal coisa. Estão querendo que você jogue seu sonho no lixo, as vezes as pessoas fazem isso achando estar protegendo a pessoa.</p>\
+<p>Não Joguem o seu sonho no Lixo. Deus diz que você é vitorioso.</p>"
+];
 
 function selecionaPergunta(id){
 
@@ -247,15 +333,12 @@ function selecionaPergunta(id){
 		while (bodyModal.toLowerCase().indexOf("<u class='versiculo-" + i + "'>") >= 0){
 
 			caminho = bodyModal.substring(bodyModal.indexOf("<u class='versiculo-" + i + "'>"), bodyModal.indexOf("</u>"));
-			alert(caminho);
 			caminho = caminho.replace("<u class='versiculo-" + i + "'>", "");
 
 			livro = caminho.substring(0, caminho.lastIndexOf(" ")).trim();
-			alert(livro);
 			capitulo = caminho.substring(caminho.lastIndexOf(" ") +1, caminho.indexOf(":"));
-			alert(capitulo);
 			versiculo = caminho.substring(caminho.indexOf(":") + 1, caminho.length);
-			alert(livro);
+			
 
 			//alert("livro - " + livro + "\n\rcap - " + capitulo + "\n\rversiculo - " + versiculo + "\n\rcaminho = " + caminho);
 			
@@ -284,33 +367,46 @@ function selecionaPergunta(id){
 	abreModal("ModalPergunta");
 }
 
+function selecionaDinamica(id){
+
+	$("#ModalPerguntaResposta").html(arrayConteudoDinamicas[id]);
+	$("#ModalPerguntaTitulo").text(arrayTituloDinamicas[id]);
+	abreModal("ModalPergunta");
+}
+function selecionaPalavra(id){
+
+	$("#ModalPerguntaResposta").html(arrayConteudoPalavra[id]);
+	$("#ModalPerguntaTitulo").text(arrayTituloPalavra[id]);
+	abreModal("ModalPergunta");
+}
 
 
-function listar(arrayTitulo, idTxtBusca) {
+
+function listar(arrayTitulo, idPage) {
+
 	finalResult = "";
-	if ($("#" + idTxtBusca.replace("#", "")).val().length > 0) {		
-		aux = arrayTitulo;
-		
-		var search_term = $("#" + idTxtBusca.replace("#", "")).val();
-		var search = search_term.toUpperCase();
-		var arrayResult = jQuery.grep(aux, function(value) {
-			return value.toUpperCase().indexOf(search) >= 0;			
-		});
+	if(idPage =="perguntas"){
 
-		result = "";
-		for (var i = 0; i < arrayResult.length; i++) {
-			result += "<li class='list-group-item' style='list-style-type: circle;' onclick='selecionaPergunta(" + i + ")'>" + arrayResult[i] + "</li>"
-		}
-
-		var regEx = new RegExp(search_term, "ig");
-		//var replaceMask = "<label style='background: yellow; margin: 0;' class='lead2'>" + search_term + "</label>";
-		finalResult = result.replace(regEx, search_term);
-
-	}else{	
 		for (var i = 0; i < arrayTitulo.length; i++) {
 			finalResult += "<li class='list-group-item' style='list-style-type: circle;' onclick='selecionaPergunta(" + i + ")'>" + arrayTitulo[i] + "</li>"
 		}
+
+	}else if(idPage =="palavras"){
+
+		for (var i = 0; i < arrayTitulo.length; i++) {
+			finalResult += "<li class='list-group-item' style='list-style-type: circle;' onclick='selecionaPalavras(" + i + ")'>" + arrayTitulo[i] + "</li>"
+		}
+
+	}else if(idPage =="dinamicas"){
+
+		for (var i = 0; i < arrayTitulo.length; i++) {
+			finalResult += "<li class='list-group-item' style='list-style-type: circle;' onclick='selecionaDinamica(" + i + ")'>" + arrayTitulo[i] + "</li>"
+		}
+
 	}
+
+	
+	
 	if (finalResult.trim() != "")
 		return finalResult;
 	else
@@ -319,12 +415,16 @@ function listar(arrayTitulo, idTxtBusca) {
 
 function listaPerguntas(){
 	$("ul.listaPerguntas").html("");
-	$("ul.listaPerguntas").append(listar(arrayTituloPergunta, "txtBuscaPerguntas"));
+	$("ul.listaPerguntas").append(listar(arrayTituloPergunta, "perguntas"));
 }
 
 function listaPalavras (){
 	$("ul.listaPalavras").html("");
-	$("ul.listaPalavras").append(listar(arrayTituloPalavra, "txtBuscaPalavras"));
+	$("ul.listaPalavras").append(listar(arrayTituloPalavra, "palavras"));
+}
+function listaDinamicas (){
+	$("ul.listaDinamicas").html("");
+	$("ul.listaDinamicas").append(listar(arrayTituloDinamicas, "dinamicas"));
 }
 
 $("#txtBuscaPerguntas").on("keyup", function(){	

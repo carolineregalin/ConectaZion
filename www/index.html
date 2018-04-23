@@ -95,18 +95,8 @@
 		.pageView{
 
 			display: none;
-  			width:100%;
-  			/*height:110%;*/
 
 		}
-		/*.pagePage{
-
-			display: none;
-  			width:100%;
-  			height:150%;
-
-
-		}*/
 		.pageView div.text-center.wrap_title {
 			padding-right: 0;
 			padding-left: 0;
@@ -124,7 +114,7 @@
 			margin:0;
   			padding:0;
   			width:100%;
-  			height:110%;
+  			height:120%;
 		}
 		
 		.linkVersiculoModal{
@@ -250,17 +240,17 @@
 		</div>
 		<div class="col-xs-12 text-center abcen wow fadeIn">
 			<div class="button_down "> 
-				<a class="imgcircle wow bounceInUp" data-wow-duration="1.5s"  href="#PaginaLouvor"> <img class="img_scroll" src="img/icon/circle.png" alt=""> </a>
+				<a class="imgcircle wow bounceInUp" data-wow-duration="1.5s"  href="#PaginaLouvor"><img class="img_scroll" src="img/icon/circle.png" alt=""></a>
 			</div>
 		</div>
     </div>
     <!-- PaginaInicial -->
 
-    <!-- PaginaInicial -->
+    <!-- PaginaNotificacao -->
     <div id="PaginaNotificacao">
 		
     </div>
-    <!-- PaginaInicial -->
+    <!-- PaginaNotificacao -->
 
 
     <!-- PaginaLogin -->
@@ -271,7 +261,7 @@
 		
 		<form id="FormLogin">
 			<div class="form-group">
-				<input type="text" class="form-control" name="usuario" id="usuario" placeholder="Login"  required>	
+				<input type="text" class="form-control" name="usuario" id="usuario" placeholder="Login"  required>
 			</div>		
 			<div class="form-group">			
 				<input type="password" class="form-control" id="senha" name="senha" placeholder="Senha" required>		
@@ -284,7 +274,7 @@
 		</div>
 	</div>	
 		
-	<!-- PaginaLogin  wow pull-right -->
+	<!-- PaginaLogin -->
 
 	 <!-- PaginaPerfil -->
 	<div id="PaginaPerfil" class="pageView content-section-a">
@@ -298,7 +288,7 @@
 				<p id="escola"></p>
 				<p id="user"></p>
 				<p id="endereco"></p>
-				<button type="button" class="btn btn-primary" onclick = "logout()"><i class="fa fa-power-off"></i> Sair </button>
+				<button type="button" class="btn btn-primary" onclick = "logout()"><i class="fa fa-power-off"></i>Sair</button>
 			</div>
 		</div>		
 	</div>	
@@ -356,17 +346,15 @@
 		</div>
 		<p class="lead col-xs-12" style="margin-top:0"></p>
 		<div class="row">
-			<div class="col-xs-12 wow fadeInLeftBig" data-animation-delay="200">   
-				<div class="text-right">
-					<input id="txtBuscaPalavras" type="text" placeholder="Buscar...">
-				</div>                    
-				<ul class="descp lead2 list-group listaPalavras ulListaTitulos"></ul>
+			<div class="col-xs-12 wow fadeInLeftBig" data-animation-delay="200">                     
+				<ul class="descp lead2 list-group listaDinamicas ulListaTitulos"></ul>
 
 			</div>
 		</div>
 
 	</div>
 
+	<!-- Abordagem -->
 	<!-- Abordagem -->
 	<div id="PaginaAbordagem" class="pageView content-section-a">
 		<div class="container">
@@ -388,9 +376,7 @@
 			  	<li>Crie um movimento Ex: Abraço grátis, Dia de ouvir o próximo, Dia do servo;</li>
 			  	<li>Utilize o meio artístico, através de banners, flash mobs e etc;</li>
 			  	<li>O melhor jeito de atrair uma vida não é falando mas sim mostrando Jesus através da sua vida;</li>
-			</ul>
-			<div class="section-heading">
-			</div>		  	
+			</ul>		  	
 		</div>
 	</div>
 
@@ -398,25 +384,22 @@
     <!-- Dinâmicas -->
 	<div id="PaginaDinamica" class="pageView content-section-a">
 
-        <div class="container">
-             <div class="row">
+		<div class="container">
+             <div class="row">			 
+				<div class="col-xs-12 pull-right wow fadeInRightBig">
 
-				 <div class="col-xs-12 text-center wrap_title">
-					<h3>Dinâmicas <i class="fa fa-users"></i></h3>
-				</div>
-				<p class="lead col-xs-12" style="margin-top:0">As vezes é necessário explicar as coisas de forma mais descontraia e objetiva.</p>
-				
-				<div class="col-sm-6 pull-right wow fadeInRightBig">
-                    <img class="img-responsive " src="img/doge.png" alt="">
-                </div>			 
-                <div class="col-sm-6 wow fadeInLeftBig"  data-animation-delay="200">   
-                    					
-					<ul class="descp lead2" style="list-style-type: none;">
-						<li><i class="glyphicon glyphicon-signal"></i> Reliable and Secure Platform</li>
-						<li><i class="glyphicon glyphicon-refresh"></i> Everything is perfectly orgainized for future</li>
-						<li><i class="glyphicon glyphicon-headphones"></i> Attach large file easily</li>
+					<div class="col-xs-12 text-center wrap_title">
+						<h3>Dinâmicas <i class="fa fa-users"></i></h3>
+					</div> 
+                </div>
+			 
+                <div class="col-xs-12 wow fadeInLeftBig" data-animation-delay="200">
+					<ul class="descp lead2 list-group listaDinamicas ulListaTitulos">
 					</ul>
-				</div>           
+				</div>
+
+				<div id="divRecebeHTMLPergunta">
+				</div>
             </div>
         </div>
     </div>
@@ -434,9 +417,6 @@
                 </div>
 			 
                 <div class="col-xs-12 wow fadeInLeftBig" data-animation-delay="200">
-                	<div class="text-right">
-                		<input id="txtBuscaPerguntas" type="text" placeholder="Buscar...">
-                	</div>
 					<ul class="descp lead2 list-group listaPerguntas ulListaTitulos">
 					<!-- 	<li class="list-group-item" onclick="selecionaPergunta(0)">Se tudo necessita de um criador, então quem ou o que criou Deus?</li>
 						<li class="list-group-item">Se Deus é tão bom, pq demorou 6 dias pra fazer tudo?</li>						
@@ -472,6 +452,7 @@
 				</ul>		
 			</div>		
 	</div>
+	<!--Dica-->
 
 
 	<!-- Contact -->
