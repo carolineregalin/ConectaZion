@@ -65,6 +65,9 @@ function pageChange(idNewPage){
 		listaPerguntas();
 	}else if(idNewPage == "#PaginaDinamica"){
 		listaDinamicas();
+	}else if(idNewPage == "#PaginaPalavra"){
+		listaPalavras();
+
 	}
 
 	$(" " + idNewPage).show();//mostra a página selecionada no menu
@@ -227,15 +230,96 @@ Por fim, ambos se rebelaram.</p>",
 
 
 var arrayTituloPalavra = [
-"Quem é Jesus?",
-"Perdão",
-"oi"
+"Keep Calm (matenha a calma), nós temos a liga da Justiça e os Vingadores.",
+"Up Grade",
+"Conecta uma família para se pertencer",
+"Honrar pai e mãe não é coisa do passado"
 ];
 
 var arrayConteudoPalavra = [
-"Jesus é um cara legal, para muitos, mais chegado que um irmão",
-"Libere perdão sobre a vida das outras pessoas, o que te faz pensar que só ela errou? Você nunca fez nada de errado?"
-];
+"<p>A indústria cinematográfica tem lucrado bilhões de dólares com as franquias da liga da justiça e principalmente os vingadores. É impressionante o apelo que este tipo de filme tem, principalmente entre os jovens e adolescentes. A história é sempre a mesma, só mudam os personagens. Basicamente, o mundo está um caos onde um vilão muito forte está para destruir toda a humanidade. Diante deste caos, algumas pessoas com “superpoderes” se reúnem para lutar juntas contra este vilão e salvar o planeta. O sucesso é tanto destes personagens, que vemos camisas, bonés, festa de aniversário, tudo com a imagem destes personagens, pois afinal de contas, eles são “heróis” e lutam contra o mal. </p>\
+<p>O mundo anseia por super-heróis que salvem o planeta deste caos. Só que eu e você sabemos que não são os personagens da liga da justiça, nem tão pouco os personagens dos vingadores que irão salvar o mundo do caos que estamos enfrentando. Quem pode mudar o rumo deste planeta? Será o Capitão América? Quem sabe o Batman? Pode ser o homem de ferro? Só uma espécie de humanos superdotados de uma força espiritual sobrenatural, pode mudar o rumo deste planeta. Eles se chamam cristãos (pequenos Cristos).</p>\
+<p>Sansão exemplo de “super-herói”</p>\
+<a target='_blank' alt='Veja o versículo online' href=' https://www.bibliaonline.com.br/acf/jz/13/2,5'>(Juízes 13: 2-5; </a>\
+<a target='_blank' alt='Veja o versículo online' href=' https://www.bibliaonline.com.br/acf/jz/14/5,6'>14: 5-6;  </a></a>\
+<a target='_blank' alt='Veja o versículo online' href=' https://www.bibliaonline.com.br/acf/jz/15/14,15'>15: 14-15</a>\
+<p>Certo homem de Zorá, chamado Manoá, do clã da tribo de Dã, tinha mulher estéril.</p>\
+<p>Certo dia o anjo do Senhor apareceu a ela e lhe disse: 'Você é estéril, não tem filhos, mas engravidará e dará à luz um filho.</p>\
+<p>Todavia, tenha cuidado, não beba vinho nem outra bebida fermentada, e não coma nada impuro;e não se passará navalha na cabeça do filho que você vai ter, porque o menino será nazireu, consagrado a Deus desde o nascimento; ele iniciará a libertação de Israel das mãos dos filisteus'.</p> <a target='_blank' alt='Veja o versículo online' href=' https://www.bibliaonline.com.br/acf/jz/13/2,5'>(Juízes 13: 2-5)</a>\
+<p>Sansão foi para Timna com seu pai e sua mãe. Quando se aproximavam das vinhas de Timna, de repente um leão forte veio rugindo na direção dele.</p>\
+<p>O Espírito do Senhor apossou-se de Sansão, e ele, sem nada nas mãos, rasgou o leão como se fosse um cabrito. Mas não contou nem ao pai nem à mãe o que fizera. <a target='_blank' alt='Veja o versículo online' href=' https://www.bibliaonline.com.br/acf/jz/14/5,6'>(Juízes 14:5,6) </a></p>\
+<p>Quando ia chegando a Leí, os filisteus foram ao encontro dele aos gritos. Mas o Espírito do Senhor apossou-se dele. As cordas em seus braços se tornaram como fibra de linho queimada, e os laços caíram das suas mãos.</p>\
+<p>Encontrando a carcaça de um jumento, pegou a queixada e com ela matou mil homens. </a>\
+<a target='_blank' alt='Veja o versículo online' href=' https://www.bibliaonline.com.br/acf/jz/15/14,15'>(Juízes 15:14,15)</a></p>\
+<p>Sansão não perderia em nada para os personagens da Marvel. Ele com uma carcaça de jumento matou mil homens filisteus. A força de Sansão era sobrenatural. Sempre que o Espírito Santo possuía Sansão, ele então fazia coisas dignas do filme dos vingadores.\
+Sansão nasceu com um propósito. Ele foi gerado de maneira sobrenatural. Sua mãe não podia ter filhos <a target='_blank' alt='Veja o versículo online' href=' https://www.bibliaonline.com.br/acf/jz/13/2'>(Juízes 13:2)</a>. Ele fez um voto ao Senhor de que não deveria tomar vinho e nenhuma bebida fermentada, não deveria comer nada impuro e nem cortar o cabelo. Ele seria consagrado ao Senhor (Juízes 13:4-5). Por consequência deste voto, o Senhor iria usá-lo de maneira sobrenatural para livrar o povo de Israel contra os filisteus.</p>\
+<p><b>Todos nós podemos ter “superpoderes”</b></p>\
+<p>Todos aqueles que nasceram de novo, receberam “superpoderes” para vencer o inimigo deste mundo. Mas receberão <b>poder</b> quando o Espírito Santo descer sobre vocês, e serão minhas testemunhas em Jerusalém, em toda a Judéia e Samaria, e até os confins da terra' <a target='_blank' alt='Veja o versículo online' href=' https://www.bibliaonline.com.br/acf/atos/1/8'>(Atos 1:8)</a>. Este “superpoder” se manifesta quando se toma algumas atitudes.\
+Podemos aprender com Sansão sobre estas atitudes.</p>\
+<ul>\
+<li><b>Não tomar nenhuma bebida fermentada (vinho):</b> neste contexto aqui de Sansão, a bebida fermentada tem a ideia de alegria, prazeres deste mundo. Para que se manifeste o superpoder do Espírito Santo é necessário que aqueles que recebem ele, tenham sua fonte de alegria em Jesus. O superpoder do Espírito Santo não se manifesta em quem tem sua fonte de alegria no truco ou no play. Tão pouco irá se manifestar naqueles que sua alegria está nas redes sociais. Tudo isto pode ser feito, mas jamais pode substituir o prazer da presença de Deus.</li>\
+<li><b>Não comer nada impuro:</b> Comida neste contexto está falando de não nos contaminarmos com as impurezas deste mundo. Para que o “superpoder” se manifeste sobre os jovens e adolescentes, é necessário que estes não se contaminem com as imundices deste mundo. O que você tem ouvido? O que você tem visto no celular ou no computador? Que tipo de filme você tem visto? Como é o teu linguajar? Você fala palavrão? Se você age desta maneira, não espere ter “superpoderes”.</li>\
+<li><b>Não cortar o cabelo: </b>Cortar o cabelo, fala de maturidade. Irmãos, deixem de pensar como crianças. Com respeito ao mal, sejam crianças; mas, quanto ao modo de pensar, sejam adultos <a target='_blank' alt='Veja o versículo online' href=' https://www.bibliaonline.com.br/acf/1co/14/20'>(1 Coríntios 14:20)</a>  . A maturidade é uma exigência de Deus para que possamos ser usados por Ele. Maturidade não tem a ver com idade. Pode ter um menino de 15 anos com mais maturidade do que um homem de 30 anos. A maturidade vem com a humildade em reconhecer seus erros e aprender com eles. Infelizmente há muitos jovens e adolescentes imaturos, pois tudo que se falam para eles, a primeira reposta é: “nada a ver”. </li>\
+</ul>\
+<p>O “superpoder” só pode ser ativado de uma forma</p>\
+<p>Existem atitudes que devemos tomar para que estes “superpoderes” se manifestem, mas tudo isso só é ativado pela fé. <b>A fé é um ativador sobrenatural de “superpoderes”</b>. Sem este ativador, jamais vamos experimentar estes “superpoderes”.\
+O que é nascido de Deus vence o mundo; e esta é a vitória que vence o mundo: a nossa fé<a target='_blank' alt='Veja o versículo online' href=' https://www.bibliaonline.com.br/acf/1jo/5/4'> (1 João 5:4)</a>. Tudo que fazemos requer fé, pois nossa luta não é contra Thanos como nos vingadores ou Steppenwolf na liga da justiça. Nossa guerra é espiritual, e para discernir esta guerra, é preciso ter fé. Ora, a fé é a certeza daquilo que esperamos e a prova das coisas que não vemos<a target='_blank' alt='Veja o versículo online' href=' https://www.bibliaonline.com.br/acf/hb/11/1'>(Hebreus 11:1)</a>.  . Por isso, tudo o que fazemos pra Deus precisa vir acompanhado de fé. Sem fé é impossível agradar a Deus <a target='_blank' alt='Veja o versículo online' href=' https://www.bibliaonline.com.br/acf/hb/11/6'>(Hebreus 11:6)</a>.\
+Assim, fixamos os olhos, não naquilo que se vê, mas no que não se vê, pois o que se vê é transitório, mas o que não se vê é eterno <a target='_blank' alt='Veja o versículo online' href='https://www.bibliaonline.com.br/acf/2co/4/18'>(2 Coríntios 4:18)</a>.</p>\
+<p><b>Conclusão:</b></p>\
+<p>Um grupo de pessoas está se formando para salvar o mundo. Não é a liga da Justiça, também não são os vingadores. Este grupo de pessoas se chama igreja. Eles têm poderes sobrenaturais para transformar o mundo. Eu faço parte deste grupo e você já faz? </p>",
+/*2*/
+"<p><a target='_blank' alt='Veja o versículo online' href=' https://www.bibliaonline.com.br/acf/cl/1/9,18'>(Colossenses 1: 9-18)</a></p>\
+<p><i>Por essa razão, desde o dia em que o ouvimos, não deixamos de orar por vocês e de pedir que sejam cheios do pleno conhecimento da vontade de Deus, com toda a sabedoria e entendimento espiritual. E isso para que vocês vivam de maneira digna do Senhor e em tudo possam agradá-lo, frutificando em toda boa obra, crescendo no conhecimento de Deus e sendo fortalecidos com todo o poder, de acordo com a força da sua glória, para que tenham toda a perseverança e paciência com alegria, dando graças ao Pai, que nos tornou dignos de participar da herança dos santos no reino da luz. Pois ele nos resgatou do domínio das trevas e nos transportou para o Reino do seu Filho amado, em quem temos a redenção, a saber, o perdão dos pecados.</i></p>\
+<p><i>Ele é a imagem do Deus invisível, o primogênito de toda a criação, pois nele foram criadas todas as coisas nos céus e na terra, as visíveis e as invisíveis, sejam tronos ou soberanias, poderes ou autoridades; todas as coisas foram criadas por ele e para ele.</i></p>\
+<p><i>Ele é antes de todas as coisas, e nele tudo subsiste. Ele é a cabeça do corpo, que é a igreja; é o princípio e o primogênito dentre os mortos, para que em tudo tenha a supremacia.</i></p>\
+<p>Paulo escreve a carta à igreja em Colosso, com o intuito de que eles não fossem engados pelas filosofias vãs e o relativismo da época. <i>Tenham cuidado para que ninguém os escravize a filosofias vãs e enganosas, que se fundamentam nas tradições humanas e nos princípios elementares deste mundo, e não em Cristo </i><a target='_blank' alt='Veja o versículo online' href=' https://www.bibliaonline.com.br/acf/cl/2/8'><i>(Colossenses 2:8)</i></a>. Embora aquela igreja estivesse sendo fiel a Deus, Paulo tinha esta preocupação. Por isso, eles precisavam crescer no conhecimento de Deus. Eles precisavam de um upgrade.</p>\
+<p>Upgrade significa “atualização” ou “melhoria”, normalmente utilizado para atualizar uma versão antiga para uma mais recente de um determinado produto.</p>\
+<p>Creio que todos nós precisamos de upgrade espiritual e não vejo tempo mais oportuno de upgrade do que no primeiro Conecta do ano.</p>\
+<p><b>Você precisa de upgrade.</b></p>\
+<p>Eu passei minhas férias em Los Angeles, Califórnia e três dias em Las Vegas no \
+estado do Nevada, ambos no EUA. Passei vinte dias em outra nação onde se fala outra língua completamente diferente da minha. Eu só sei falar o básico do básico, ou seja, não falo nada de inglês. Conheci lugares espetaculares, revi outros lugares também lindos, mas não conversei com nenhum americano. Fui duas vezes num culto em inglês e entendi bem pouco o que o pastor falou. Não consegui entender as músicas que eles cantaram, eram lindas, mas eu não sabia o que eles estavam cantando. Minha visita nos EUA ficou totalmente dependente de onde meus sogros nos levavam. Como eu não falo inglês, isso foi o máximo que consegui fazer. </p>\
+<p>Deus falou comigo que existe um mundo espiritual e neste mundo espiritual há uma outra linguagem totalmente diferente da língua deste mundo. E que muitos jovens e adolescentes não falam a linguagem espiritual, e por isso, não conseguem usufruir de tudo o que Deus tem para eles. Assim como eu fiquei dependente dos meus sogros, muitos ficam dependente do pastor, do líder de célula, do irmão, etc. A consequência disto, se dá numa geração que poderia ter muito mais de Deus, mas não tem pois não fala a linguagem de Deus.</p>\
+<p><b>O comodismo impede o upgrade.</b></p>\
+<p>Muitos não querem um upgrade, pois entendem que já está bom como está. Então, entra ano e sai ano e eles continuam com a mesma “versão”. Acham que falando o básico de inglês, eles não passam fome. Muitos falam o básico na linguagem espiritual, eles não passam fome e por isso, entendem que não precisam de um upgrade. Upgrade é para todos e Deus não nos criou para falar o básico, mas para usufruir de tudo o que Ele preparou para nós. Por isso, não tenha medo de fazer um upgrade. Deus é com você.</p>\
+<p><b>Para fazer upgrade é necessário estar ligado e esperar um tempo.</b></p>\
+<p>Sempre que vem aviso no celular ou no computador de upgrade, nós esperamos o máximo, pois ele demora um tempo para ser fazer. Muitos jovens e adolescentes até começaram a fazer o upgrade, mas não tiveram paciência para esperar ficar pronto. Tudo na vida demora um tempo, mas nós queremos que as coisas aconteçam na hora. Assim, como o upgrade no celular ou computador demora um tempo, o upgrade espiritual também tem um tempo; por isso, tenha paciência e não desista. </p>\
+<p>Outra coisa bem interessante sobre o upgrade, é que não dá para fazer upgrade com o aparelho eletrônico desligado. Só dá para fazer o upgrade com o aparelho ligado. Isto também fala no mundo espiritual. Muitos querem fazer upgrade se desligando do serviço na família de Deus. Eles dizem que não estão bem e por isso, precisam dar um tempo para buscar mais de Deus. Nunca vi um jovem e adolescentes que deu um tempo voltar melhor. O upgrade espiritual só dá para fazer quando ligado no corpo de Cristo.</p>\
+<p><b>Existe um upgrade mais específico</b></p>\
+<p>Eu conheci em Los Angeles um programador Sênior da Nestle. Ele é brasileiro, mas já trabalha para Nestle fora do Brasil há 10 anos. Ele começou na Suíça e depois foi para os EUA. Perguntei a ele que curso de inglês ele fez para sair do Brasil. Ele falou que nenhum curso deu a ele o conhecimento de inglês que ele precisava, pois, a linguagem do inglês que ele precisava era muito específica, por isso, ele precisou correr atrás mais do que os outros para poder falar o inglês específico da área dele. Deus falou muito comigo conversando com ele. Tem jovens a adolescentes no Conecta com chamado específicos, e por isso, seu upgrade precisa ser bastante específico. Se Deus colocou no seu coração ser pastor, você precisará de upgrade de pastor, se for de missionário, será um upgrade de missionário e assim por diante. Não será fazendo o mesmo que todos fazem, que você conseguirá o upgrade específico.</p>\
+<p>Todos nós precisamos de upgrade. Decida hoje!</p>",
+/*3*/
+"<p>O verão está chegando e com ele a busca desenfreada de jovens e adolescentes pela busca do corpo perfeito. As academias ficam cheias, os consultórios de estética também pois todos querem ter o corpo turbinado para o verão. Infelizmente, por causa deste desespero pelo corpo “perfeito”, muitos jovens e adolescentes acabam indo para os anabolizantes e outras drogas que prometem resultados rápidos. Somos uma geração que quer resultados rápidos. Queremos emagrecer em uma semana, ficar forte em um mês e todos sabemos que isto é impossível.</p>\
+<p>Muitos “cristãos” agem assim na vida espiritual. Querem ser fortes espiritualmente em trinta dias. Querem solução de todos os seus problemas instantaneamente. E assim como na procura pelo corpo perfeito onde muitos jovens e adolescentes ficam doentes e outras até morreram por uso de drogas, no meio cristãos muitos estão doentes e outros até morreram pois quebram princípios que Deus estabeleceu.</p>\
+<p><b>Só em família você pode crescer</b><a target='_blank' alt='Veja o versículo online' href='https://www.bibliaonline.com.br/acf/hb/10/24,25'><b>(Hebreus 10:24-25)</b></a></p>\
+<p>Somos uma geração órfã de pais vivos. Infelizmente, muitos jovens e adolescentes não tem tido bons exemplos de pais e mães. A sociedade moderna tirou os pais do convívio com os filhos e isto tem gerado consequência horríveis para a sociedade.</p>\
+<p>Quando Deus criou o homem e mulher, Ele estabeleceu a família como base de tudo. Tudo acontece em família. O salmista diz: Pai de órfãos e juiz de viúvas é Deus, no seu lugar santo. Deus faz que o solitário viva em família...<a target='_blank' alt='Veja o versículo online' href='https://www.bibliaonline.com.br/acf/sl/68/5,6'>(Salmos 68:5,6)</a>. Deus é família (Pai, Filho e Espírito Santo). </p>\
+<p>Hebreus diz: <i>E consideramos uns aos outros para nos incentivarmos ao amor e as boas obras. Não deixemos de reunir-nos como igreja, segundo o costume de alguns, mas procuremos encorajar-nos uns aos outros, ainda mais que se aproxima o Dia. </i><a target='_blank' alt='Veja o versículo online' href='https://www.bibliaonline.com.br/acf/hb/10/24,25'>(Hebreus 10:24-25)</a>. Considerar no grego é Katanoeo que significa observar, considerar atenciosamente, fixar os olhos ou a mente em alguém. </p>\
+<p>A igreja é o reduto da família de Deus na terra. E para que esta família cresça em músculo é necessário que ela tenha prazer em estar junto com dois propósitos.</p>\
+<ul>\
+<li><b>Amor</b>: Ainda que eu dê aos pobres tudo o que possuo e entregue o meu corpo para ser queimado, se não tiver amor, nada disso me valerá. Assim permanecem agora estes três: a fé, a esperança e o amor. O maior deles, porém é o amor. <a target='_blank' alt='Veja o versículo online' href='https://www.bibliaonline.com.br/acf/1co/13/3,13'>(1 Coríntios 13: 3,13)</a>. Quantos mais a família investe tempo para estar juntos, mais amor aquela família terá. Assim também funciona no Conecta e nas células. Quantos mais tempo você investir para estar junto com a sua célula, mais cheio do amor você será. Hebreus diz que devemos considerar (observar, fixar os olhos) uns aos outros no amor. Quando olhamos para os nossos irmãos da fé e incentivamos ao amor, isto gera inspiração em outras pessoas e assim como um vírus, o amor começa a inundar o lugar onde vocês estão reunidos.</li>\
+<li><b>Boas obras</b>: Assim também a fé, por si só, se não for acompanhada de obras, está morta. <a target='_blank' alt='Veja o versículo online' href='https://www.bibliaonline.com.br/acf/tg/2/17'>(Tiago 2:17)</a>. Boas obras são consequência de quem ama e não o contrário. Uma célula que não faz boas obras, está fadada a desanimar na fé. Por isso a importância de nos incentivarmos também as boas obras. O que sua célula tem feito pelo próximo?\
+O amor e boas obras são ferramentas de Deus para deixar seus filhos fortes espiritualmente.</li>\
+</ul>\
+<p><b>Cuidado com os desigrejados!</b></p>\
+<p>Infelizmente temos uma geração de jovens que foram machucados com a instituição “igreja” e por isso são totalmente contrários ao ajuntamento. Muitas destas pessoas têm até boa intenção, mas são cristãos fraquinhos e doentes pois não gostam de viver em família. Não existe na bíblia cristão solitário. Se é cristão, então ele vive com sua família da fé. </p>\
+<p><b>Valorize o Conecta e sua célula</b></p>\
+<p><i>Vocês precisam perseverar, de modo que, quando tiverem feito a vontade de Deus, recebam o que Ele prometeu; pois em breve, muito em breve “Aquele que vem virá, e não demorará. Mas o meu justo viverá pela fé. E, se retroceder, não me agradarei dele”. Nós, porém, não somos dos que retrocedem, mas dos que creem e são salvos</i><a target='_blank' alt='Veja o versículo online' href='https://www.bibliaonline.com.br/acf/hb/10/36-39'> (Hebreus 10:36-39).</a></p>\
+<p>Perseverar no grego quer é hupomone quer dizer estabilidade, constância.Infelizmente muitos jovens e adolescentes não perseveram em Deus. Perseverar em Deus é perseverar na família de Deus. Muitos dizem que valorizam a Deus, mas não valorizam a família da fé. Isto é contraditório. Se eu valorizo a Deus, então em vou valorizar o Conecta, vou valorizar a minha célula. E por que valorizo? Valorizo, pois sei que o Conecta e minha célula são o instrumento de Deus para me fazer crescer e me ajudar a perseverar até o fim. </p>\
+<p>Todos que tem perseverado durante este ano, podem dizer que cresceram em todas as áreas de sua vida.</p>\
+<p><b>Uma família para pertencer</b></p>\
+<p>Assim como nenhuma família é perfeita, o Conecta não perfeito não tão pouco sua célula é. E é isto que dá graça na família, pois nas imperfeições nós podemos crescer. Quando todos tem consciência que precisam uns dos outros, aí há um ambiente para praticar o amor e as boas obras.</p>\
+<p>Eu posso falar que o Conecta é apaixonante, maravilhoso, alegre, intenso e outros adjetivos. Eu só posso falar isso, pois o Conecta não é formado por números, mas é formado por gente de carne e osso. E esta gente de carne e osso está incluído eu e você. Nós somos o Conecta. Sabe por que o Conecta é da hora? Porque você jovem e adolescente é da hora. 2017 foi show, mas 2018 será melhor ainda, pois ainda há muitas vagas abertas para fazer parte de nossa família. Continuemos a nos incentivar ao amor e as boas obras.</p>",
+/*4*/
+"<p><i>“Filhos, façam o que seus pais mandarem. É bem por aí mesmo! ‘Honre pai e mãe’ é  o primeiro mandamento que traz uma promessa: ‘para que você possa viver bem e ter vida longa”</i> <a target='_blank' alt='Veja o versículo online' href=' https://www.bibliaonline.com.br/acf/ef/6/1,3'>(Efésios 6:1-3 - A Mensagem)</a>.</p>\
+<p>Os mandamentos de Deus não são sugestões. Ele nos dá ordens claras na Sua palavra para que a gente se dê bem na vida; este é o Seu propósito para nós. Nenhum mandamento tem a intenção de nos oprimir, prejudicar ou privar de algo, pelo contrário, é para o nosso bem sempre.</p>\
+<p>Ele diz que devemos honrar nossos pais, e junto dá uma promessa: “Para que você possa viver bem e ter uma vida longa”. A honra é um princípio, uma lei. Não podemos, jamais, quebrar um princípio e ficar imunes da consequência. Ao mesmo tempo, se o observarmos, vamos colher bons frutos. Deus, como Pai, quer que seus filhos prosperem, por isso nos orienta acerca da honra.  A honra aos pais abre os céus, libera a graça e a prosperidade sobre nós. Então, a desonra faz o efeito contrário. Muitas pessoas, sem se aperceberem da causa, estão vivendo sem a bênção de Deus; suas vidas estão travadas, nada dá certo, tudo o que começam não conseguem terminar… Tem casamentos, por exemplo, muito mal sucedidos, porque não tiveram a bênção e aprovação dos pais!</p>\
+<p>No Velho Testamento a desobediência e a rebeldia de um filho era punida com morte <a target='_blank' alt='Veja o versículo online' href='https://www.bibliaonline.com.br/acf/dt/21/18,21'>(Deuteronômio 21:18-21)</a>. Isso nos mostra a seriedade do pecado da desonra. O apóstolo Paulo menciona vários sinais de que o fim dos tempos estaria próximo, e um deles é a desobediência aos pais: <i>“Saiba disto: nos últimos dias sobrevirão tempos terríveis. Os homens serão egoístas, avarentos, presunçosos, arrogantes, blasfemos, desobedientes aos pais, ingratos, ímpios, sem amor pela família…” </i><a target='_blank' alt='Veja o versículo online' href='https://www.bibliaonline.com.br/acf/2tm/3/1,3'>(2 Timóteo 3:1-3)</a>. Não há dúvida de que a decadência familiar se intensificou em nossos dias por causa da desonra, e isso tem provocado o caos social em todas as esferas!</p>\
+<p>Honrar significa “valorizar”, “considerar”, “admirar”, “destacar”, “respeitar”... Então, vamos relacionar três atitudes que demonstram honra aos pais:</p>\
+<p><b>Obediência</b>. Obedecer é fazer o que os pais mandam! Simples assim! Essa é uma das maiores expressões de honra. Honrar não é dizer “eu te honro”, não é fazer homenagens e surpresas de aniversário, mas é atitude. Vivemos num tempo em que tudo é questionado (opiniões, leis, decretos, normas, regimentos..., até mesmo a própria palavra de Deus!). E isso se tornou normal; como se todos tivessem o direito de saber o porquê das coisas antes de optarem por obedecer ou não. Mas obediência é uma questão de caráter. Quando os pais dão uma ordem, é dever dos filhos obedecer sabendo ou não o porquê. Essa foi a atitude de Jesus para com o Seu Pai: <i>“E, sendo encontrado em forma humana, humilhou-se a si mesmo e foi obediente até a morte, e morte de cruz!”</i> <a target='_blank' alt='Veja o versículo online' href='https://www.bibliaonline.com.br/acf/fp/2/8'>(Filipenses 2:8)</a>. Só tem uma razão para filhos não obedecerem: quando os pais pedem para fazer qualquer coisa que contrarie os princípios da palavra de Deus!</p>\
+<p>Ouvir conselhos. Muitos filhos têm a tendência de achar que sabem mais do que os pais, principalmente quando adquirem uma graduação que seus pais não têm. Pensam que sabem tudo, mas esquecem que a experiência de vida dos pais tem valor infinitamente maior do que qualquer conhecimento acadêmico. Provérbios diz: “O insensato teima em fazer tudo do seu próprio jeito, mas o sábio pede e ouve os conselhos” <a target='_blank' alt='Veja o versículo online' href='https://www.bibliaonline.com.br/acf/pv/12/15'>(Provérbios 12:15 - A Mensagem)</a>. Filhos tomam decisões erradas e sofrem consequências desastrosas quando não dão ouvidos aos conselhos dos pais! É importante que os filhos adquiram autonomia, mas auto-suficiência é reflexo de orgulho e desonra. Palavras como “não enche o saco”, “eu sei o que é melhor pra mim”, “nada a ver” são expressões de desonra e da própria insensatez! </p>\
+<p>Servir. Filhos honram quando servem seus pais. Ajudar nos afazeres da casa não é um castigo, mas uma responsabilidade. Não se envolver e achar que os pais têm a obrigação de servi-los é uma tremenda desonra! Servir é se colocar à disposição, ser proativo e não esperar receber ordens: “O preguiçoso chega ao final da vida com as mãos abanando, mas o que é proativo no tempo certo desfrutará o que alcançou” <a target='_blank' alt='Veja o versículo online' href='https://www.bibliaonline.com.br/acf/pv/12/27'>(Provérbios 12:27)</a>. Muitos casamentos são prejudicados, por exemplo, porque os cônjuges, quando solteiros, receberam tudo de mão beijada, foram servidos o tempo todo, ficaram mimados, e hoje esperam o mesmo um do outro!</p>\
+<p>Servir é também contribuir, dividir as responsabilidades, tanto na organização da casa como também financeira.</p>\
+<p>Enfim, a desonra fecha o céus e impede a ação de Deus em nossas vidas, mas a honra é a chave para desatar o mundo espiritual; é o que aciona os céus a nosso favor. Se semearmos honra, vamos, certamente, colher os efeitos dela. Amém!</p>"];
 
 var arrayTituloDinamicas = [
 "Juntos somos mais fortes",
@@ -245,7 +329,7 @@ var arrayTituloDinamicas = [
 "O Verbo",
 "Imagem e semelhança de Deus",
 "Rótulos",
-"Sonhos",
+"Sonhos"
 ];
 
 var arrayConteudoDinamicas = [
@@ -383,29 +467,30 @@ function selecionaPalavra(id){
 
 
 function listar(arrayTitulo, idPage) {
+	
 
 	finalResult = "";
-	if(idPage =="perguntas"){
+	if(idPage == "perguntas"){
 
 		for (var i = 0; i < arrayTitulo.length; i++) {
 			finalResult += "<li class='list-group-item' style='list-style-type: circle;' onclick='selecionaPergunta(" + i + ")'>" + arrayTitulo[i] + "</li>"
 		}
 
-	}else if(idPage =="palavras"){
+	}else if(idPage == "palavras"){
+		alert(arrayTitulo);
+		alert(idPage);
 
 		for (var i = 0; i < arrayTitulo.length; i++) {
-			finalResult += "<li class='list-group-item' style='list-style-type: circle;' onclick='selecionaPalavras(" + i + ")'>" + arrayTitulo[i] + "</li>"
+			finalResult += "<li class='list-group-item' style='list-style-type: circle;' onclick='selecionaPalavra(" + i + ")'>" + arrayTitulo[i] + "</li>"
 		}
 
-	}else if(idPage =="dinamicas"){
+	}else if(idPage == "dinamicas"){
 
 		for (var i = 0; i < arrayTitulo.length; i++) {
 			finalResult += "<li class='list-group-item' style='list-style-type: circle;' onclick='selecionaDinamica(" + i + ")'>" + arrayTitulo[i] + "</li>"
 		}
 
 	}
-
-	
 	
 	if (finalResult.trim() != "")
 		return finalResult;
@@ -418,11 +503,12 @@ function listaPerguntas(){
 	$("ul.listaPerguntas").append(listar(arrayTituloPergunta, "perguntas"));
 }
 
-function listaPalavras (){
+function listaPalavras(){
 	$("ul.listaPalavras").html("");
+	alert(listar(arrayTituloPalavra, "palavras"));
 	$("ul.listaPalavras").append(listar(arrayTituloPalavra, "palavras"));
 }
-function listaDinamicas (){
+function listaDinamicas(){
 	$("ul.listaDinamicas").html("");
 	$("ul.listaDinamicas").append(listar(arrayTituloDinamicas, "dinamicas"));
 }
