@@ -39,28 +39,12 @@ function abreLogin(){
 	$("#PaginaLogin").show();
 }
 
-/*function logar(){
-	$("#PaginaInicial").hide();
-	$("#HomePage").show();
-	$("#divMenu").css("display", "block");
-	listaPerguntas();
-	listaPalavras();
-}
-
-function abreLogin(){
-	$("#FormLogin, #divTogglePagina").toggle();
-
-	logar(); //retirar esta linha
-}*/
-
 function pageChange(idNewPage){
 
 	$(".pageView").hide();//esconde as páginas
 
 	if(idNewPage == "#PaginaPerfil"){
-
 		carregaPerfil();
-
 	}else if(idNewPage == "#PaginaPergunta"){
 		listaPerguntas();
 	}else if(idNewPage == "#PaginaDinamica"){
@@ -68,13 +52,16 @@ function pageChange(idNewPage){
 	}else if(idNewPage == "#PaginaPalavra"){
 		listaPalavras();
 
+	}else if(idNewPage == "#PaginaLouvor"){
+		listaLouvor();
+
 	}
 
 	$(" " + idNewPage).show();//mostra a página selecionada no menu
 
-	if (!$("#btnMenuMobile").hasClass("collapsed"))
+	/*if (!$("#btnMenuMobile").hasClass("collapsed"))
 		$("#btnMenuMobile").click();//fecha o menu (fechar manualmente irrita)
-		scrollToAnchor(idNewPage);//força a página à subir até o elemento
+		scrollToAnchor(idNewPage);//força a página à subir até o elemento*/
 }
 
 function scrollToAnchor(id) {
@@ -406,9 +393,169 @@ Para estimular eles a dizerem isso pergunte se a pipoca está gostosa, etc. Pois
 <p>Não Joguem o seu sonho no Lixo. Deus diz que você é vitorioso.</p>"
 ];
 
-function selecionaPergunta(id){
+var arrayTituloLouvores = [
+"Santo Espírito",
+"Sal da terra",
+"Tiro pela culatra",
+"Quem vai pro céu?",
+"O Verbo",
+"Imagem e semelhança de Deus",
+"Rótulos",
+"Sonhos"
+];
 
-	//this method returns a boolean value; (But is TO DO)
+var arrayConteudoLouvores = [
+'<b>D9</b>\
+Santo Espírito, és bem-vindo aqui\
+    <b>G5(7M)</b>             <b>Em7</b>\
+Vem inundar, encher esse lugar\
+  <b>D9</b>\
+É o desejo do meu coração\
+       <b>G5(7M)</b>              <b>Em7</b>\
+Sermos inundados por Tua glória, Senhor\
+ <b>D9</b>\
+Santo Espírito, és bem-vindo aqui\
+    <b>G5(7M)</b>             <b>Em7</b>\
+Vem inundar, encher esse lugar\
+  <b>D9</b>\
+É o desejo do meu coração\
+       <b>G5(7M)</b>              <b>Em7</b>\
+Sermos inundados por Tua glória\
+    <b>D9</b>                 <b>G5(7M)</b>\
+Senhor, Tua glória Senhor\
+           <b>D9</b>  <b>G5(7M)</b>\
+Tua glória\
+Primeira Parte:\
+<b>D9</b>\
+   Não há nada igual\
+                <b>G5(7M)</b>\
+Não há nada melhor\
+                              <b>D9</b>\
+A que se compara à esperança viva\
+           <b>G5(7M)</b>\
+Tua presença\
+<b>D9</b>\
+   Eu provei e vi\
+              <b>G5(7M)</b>\
+O mais doce amor\
+Que liberta o meu ser\
+              <b>D9</b>\
+E a vergonha desfaz\
+           <b>G5(7M)</b>\
+Tua presença\
+Refrão:\
+ <b>D9</b>\
+Santo Espírito, és bem-vindo aqui\
+    <b>G5(7M)</b>             <b>Em7</b>\
+Vem inundar, encher esse lugar\
+  <b>D9</b>\
+É o desejo do meu coração\
+       <b>G5(7M)</b>              <b>Em7</b>\
+Sermos inundados por Tua glória\
+ <b>D9</b>\
+Santo Espírito, és bem-vindo aqui\
+    <b>G5(7M)</b>             <b>Em7</b>\
+Vem inundar, encher esse lugar\
+  <b>D9</b>\
+É o desejo do meu coração\
+       <b>G5(7M)</b>              <b>Em7</b>\
+Sermos inundados por Tua glória, Senhor\
+Base solo 2x: <b>D9</b>  <b>G5(7M)</b>  <b>Em7</b>\
+Solo:\
+Parte 01 de 05\
+<span class="tablatura"><span class="cnt">E|<u>----------------------------------------------------</u>|\
+B|<u>---------------</u>9<u>------------------------------------</u>|\
+G|<u>-</u>4/9<u>-</u>9~<u>-</u>9<u>-</u>9h11<u>---</u>11<u>--</u>11<u>-</u>9<u>-</u>9<u>-------------------------</u>|\
+D|<u>----------------------------------------------------</u>|\
+A|<u>----------------------------------------------------</u>|\
+E|<u>----------------------------------------------------</u>|\
+</span></span>\
+Parte 02 de 05\
+<span class="tablatura"><span class="cnt">E|<u>----------------------------------------------------</u>|\
+B|<u>--------</u>9<u>----</u>10<u>-</u>12<u>----------------------------------</u>|\
+G|<u>-</u>9<u>-</u>9h11<u>---</u>11<u>-------</u>9<u>-</u>8<u>------------------------------</u>|\
+D|<u>-----------------------</u>9<u>----------------------------</u>|\
+A|<u>----------------------------------------------------</u>|\
+E|<u>----------------------------------------------------</u>|\
+</span></span>\
+Parte 03 de 05\
+<span class="tablatura"><span class="cnt">E|<u>----------------------------------------------------</u>|\
+B|<u>----------------------------------------------------</u>|\
+G|<u>----------------------------------------------------</u>|\
+D|<u>-</u>9/11<u>-</u>9<u>---------------------------------------------</u>|\
+A|<u>--------</u>9<u>-</u>9h11<u>-</u>11<u>-</u>11~<u>--</u>11h12<u>-</u>11<u>-</u>11<u>------------------</u>|\
+E|<u>----------------------------------------------------</u>|\
+</span></span>\
+Parte 04 de 05\
+<span class="tablatura"><span class="cnt">E|<u>----------------------------------------------------</u>|\
+B|<u>---------------</u>9<u>-------------------</u>9<u>-----</u>12<u>---------</u>|\
+G|<u>-</u>4/9<u>-</u>9<u>-</u>9~<u>-</u>9<u>-</u>11<u>---</u>11<u>--</u>11<u>-</u>9<u>-</u>9<u>-</u>9<u>-</u>9<u>-</u>11<u>----</u>11<u>----</u>9~<u>------</u>|\
+D|<u>----------------------------------------------------</u>|\
+A|<u>----------------------------------------------------</u>|\
+E|<u>----------------------------------------------------</u>|\
+</span></span>\
+Parte 05 de 05\
+<span class="tablatura"><span class="cnt">E|<u>----------------------------------------------------</u>|\
+B|<u>----------------------------------------------------</u>|\
+G|<u>-</u>9/11<u>-</u>9<u>---------------------------------------------</u>|\
+D|<u>--------</u>9<u>-</u>9h11<u>-</u>11~<u>--</u>7<u>-</u>6~<u>-</u>7<u>--</u>7/14<u>-</u>14~<u>----------------</u>|\
+A|<u>----------------------------------------------------</u>|\
+E|<u>----------------------------------------------------</u>|\
+</span></span>\
+Segunda Parte:\
+<b>G5(7M)</b>           <b>D/F#</b>\
+       Vamos provar\
+       <b>Em7</b>          <b>D/F#</b>\
+Quão real é Tua presença\
+<b>G5(7M)</b>           <b>D/F#</b>\
+       Vamos provar \
+        <b>Em7</b>        <b>D/F#</b>\
+A Tua glória e bondade\
+<b>G5(7M)</b>           <b>D/F#</b>\
+       Vamos provar\
+       <b>Em7</b>          <b>D/F#</b>\
+Quão real é Tua presença\
+<b>G5(7M)</b>           <b>D/F#</b>\
+       Vamos provar \
+        <b>Em7</b>        <b>D/F#</b>\
+A Tua glória e bondade\
+<b>G5(7M)</b>           <b>D/F#</b>\
+       Vamos provar\
+       <b>Em7</b>          <b>D/F#</b>\
+Quão real é Tua presença\
+<b>G5(7M)</b>           <b>D/F#</b>\
+       Vamos provar \
+        <b>Em7</b>        <b>D/F#</b>\
+A Tua glória e bondade\
+<b>G5(7M)</b>           <b>D/F#</b>\
+       Vamos provar\
+       <b>Em7</b>         <b>D/F#</b>\
+Quão real é Tua presença\
+<b>G5(7M)</b>           <b>D/F#</b>\
+       Vamos provar \
+        <b>Em7</b>        <b>D/F#</b>     <b>G5(7M)</b>\
+A Tua glória e bondade, Senhor\
+Refrão:\
+ <b>D9</b>\
+Santo Espírito, és bem-vindo aqui\
+    <b>G5(7M)</b>             <b>Em7</b>\
+Vem inundar, encher esse lugar\
+  <b>D9</b>\
+É o desejo do meu coração\
+       <b>G5(7M)</b>              <b>Em7</b>\
+Sermos inundados por Tua glória\
+ <b>D9</b>\
+Santo Espírito, és bem-vindo aqui\
+    <b>G5(7M)</b>             <b>Em7</b>\
+Vem inundar, encher esse lugar\
+  <b>D9</b>\
+É o desejo do meu coração\
+       <b>G5(7M)</b>              <b>Em7</b>'
+
+
+]
+
+function selecionaPergunta(id){
 
 	if (checkConnection()) {
 		bodyModal = arrayRespostaPergunta[id];
@@ -422,10 +569,6 @@ function selecionaPergunta(id){
 			livro = caminho.substring(0, caminho.lastIndexOf(" ")).trim();
 			capitulo = caminho.substring(caminho.lastIndexOf(" ") +1, caminho.indexOf(":"));
 			versiculo = caminho.substring(caminho.indexOf(":") + 1, caminho.length);
-			
-
-			//alert("livro - " + livro + "\n\rcap - " + capitulo + "\n\rversiculo - " + versiculo + "\n\rcaminho = " + caminho);
-			
 			bodyModal = bodyModal.replace("<u class='versiculo-" + i + "'>" + caminho + "</u>", "<a target='_blank' class='linkVersiculoModal' alt='Veja o versículo online' href='https://www.bibliaonline.com.br/acf/" + livro.replace(" ", "") + "/" + capitulo + "/" + versiculo +"'>"+ caminho +"</a>");	
 					
 			if (i > 16) {break;}
@@ -463,35 +606,20 @@ function selecionaPalavra(id){
 	$("#ModalPerguntaTitulo").text(arrayTituloPalavra[id]);
 	abreModal("ModalPergunta");
 }
+function selecionaLouvor(id){
 
-
+	$("#ModalPerguntaResposta").html(arrayConteudoLouvores[id]);
+	$("#ModalPerguntaTitulo").text(arrayTituloLouvores[id]);
+	abreModal("ModalPergunta");
+}
 
 function listar(arrayTitulo, idPage) {
 	
 
 	finalResult = "";
-	if(idPage == "perguntas"){
-
-		for (var i = 0; i < arrayTitulo.length; i++) {
-			finalResult += "<li class='list-group-item' style='list-style-type: circle;' onclick='selecionaPergunta(" + i + ")'>" + arrayTitulo[i] + "</li>"
-		}
-
-	}else if(idPage == "palavras"){
-		alert(arrayTitulo);
-		alert(idPage);
-
-		for (var i = 0; i < arrayTitulo.length; i++) {
-			finalResult += "<li class='list-group-item' style='list-style-type: circle;' onclick='selecionaPalavra(" + i + ")'>" + arrayTitulo[i] + "</li>"
-		}
-
-	}else if(idPage == "dinamicas"){
-
-		for (var i = 0; i < arrayTitulo.length; i++) {
-			finalResult += "<li class='list-group-item' style='list-style-type: circle;' onclick='selecionaDinamica(" + i + ")'>" + arrayTitulo[i] + "</li>"
-		}
-
+	for (var i = 0; i < arrayTitulo.length; i++) {
+			finalResult += "<li class='list-group-item' style='list-style-type: circle;' onclick='"+ idPage +"(" + i + ")'>" + arrayTitulo[i] + "</li>"
 	}
-	
 	if (finalResult.trim() != "")
 		return finalResult;
 	else
@@ -500,17 +628,20 @@ function listar(arrayTitulo, idPage) {
 
 function listaPerguntas(){
 	$("ul.listaPerguntas").html("");
-	$("ul.listaPerguntas").append(listar(arrayTituloPergunta, "perguntas"));
+	$("ul.listaPerguntas").append(listar(arrayTituloPergunta, "selecionaPergunta"));
 }
 
 function listaPalavras(){
 	$("ul.listaPalavras").html("");
-	alert(listar(arrayTituloPalavra, "palavras"));
-	$("ul.listaPalavras").append(listar(arrayTituloPalavra, "palavras"));
+	$("ul.listaPalavras").append(listar(arrayTituloPalavra, "selecionaPalavra"));
 }
 function listaDinamicas(){
 	$("ul.listaDinamicas").html("");
-	$("ul.listaDinamicas").append(listar(arrayTituloDinamicas, "dinamicas"));
+	$("ul.listaDinamicas").append(listar(arrayTituloDinamicas, "selecionaDinamica"));
+}
+function listaLouvor(){
+	$("ul.listaLouvor").html("");
+	$("ul.listaLouvor").append(listar(arrayTituloLouvores, "selecionaLouvor"));
 }
 
 $("#txtBuscaPerguntas").on("keyup", function(){	
@@ -523,14 +654,14 @@ $("#txtBuscaPalavras").on("keyup", function(){
 
 $( "#FormLogin" ).submit(function(e) {
 
-	window.localStorage.setItem('endereco', 'json.dados.endereco');
+	/*window.localStorage.setItem('endereco', 'json.dados.endereco');
 	window.localStorage.setItem('usuario', 'json.dados.usuario');
 	window.localStorage.setItem('senha', 'json.dados.senha');
 	window.localStorage.setItem('idescola', 'json.dados.idescola');
 	window.localStorage.setItem('nome', 'json.dados.nome');
-	logar();
+	logar();*/
 
-	/*if(checkConnection()){
+	if(checkConnection()){
 	   $.ajax({
 	   			async: false,
 	            type: "POST",
@@ -568,18 +699,14 @@ $( "#FormLogin" ).submit(function(e) {
 
 			alert('Conecte-se na internet e tente novamente');
 
-	}*/
+	}
 });
 
 
 function carregaPerfil(){
-
-
 	$("#endereco").html('<i class="glyphicon glyphicon-map-marker"></i>Endereço: ' + window.localStorage.getItem('endereco'));
 	$("#escola").html('<i class="fa fa-building-o"></i> Escola: ' + window.localStorage.getItem('nome'));
-	$("#user").html('<i class="fa fa-user"></i> Usuário: ' + window.localStorage.getItem('usuario'));
-
-   
+	$("#user").html('<i class="fa fa-user"></i> Usuário: ' + window.localStorage.getItem('usuario'));  
 }
 
 //tens que adicionar o plugin no seu projeto

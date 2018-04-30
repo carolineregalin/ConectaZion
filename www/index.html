@@ -322,18 +322,13 @@
 				<h3>Louvor <i class="fa fa-music"></i></h3>
 			</div>
 			<p class="lead col-xs-12" style="margin-top:0">Louvores para colocar na sua célula.</p>
-			<div class="col-xs-12 wow fadeInDown text-center">
-				  	
-			  	<h3>Aceita que dói menos</h3>
-			  	<p class="lead">
-			  		Tendo em vista que o app é offline, as musicas são apenas as letras e não a musica em si
-			  		<br />
-			  		Se tu quer musica pronta, vai pro Youtube ou pro Spotify, só lamento.
-			  	</p>
-			  	<p>
-			  		<a class="btn btn-embossed btn-primary view" role="button">Botão Exemplo</a>
-			  	</p>
-			</div>			
+			<div class="col-xs-12 wow fadeInLeftBig" data-animation-delay="200">
+				<ul class="descp lead2 list-group listaLouvor ulListaTitulos">
+				</ul>
+			</div>
+
+			<div id="divRecebeHTMLouvor">
+			</div>		
 		</div>
 
 	</div>
@@ -419,9 +414,6 @@
 			 
                 <div class="col-xs-12 wow fadeInLeftBig" data-animation-delay="200">
 					<ul class="descp lead2 list-group listaPerguntas ulListaTitulos">
-					<!-- 	<li class="list-group-item" onclick="selecionaPergunta(0)">Se tudo necessita de um criador, então quem ou o que criou Deus?</li>
-						<li class="list-group-item">Se Deus é tão bom, pq demorou 6 dias pra fazer tudo?</li>						
-						<li class="list-group-item">Sou um ateu chato, eu tenho salvação?</li> -->
 					</ul>
 				</div>
 
@@ -501,45 +493,30 @@
 		</div>
 	</div>
 
-	<!-- ****** PRESTA ATENÇÃO ******
-		(NÃO GRITA COMIGO)
-		Apesar de não usarmos, o seguinte bloco HTML é obrigatório na página.
-		Caso ele não esteja aqui, o seguinte erro vai estourar no console e dá pau em tudo!
-
-				Uncaught TypeError: Cannot read property 'offsetHeight' of null
-			    at UIMorphingButton._init (uiMorphingButton_inflow.js:51)
-			    at new UIMorphingButton (uiMorphingButton_inflow.js:38)
-			    at HTMLDocument.<anonymous> (script.js:69)
-			    at c (jquery-1.10.2.js:4)
-			    at Object.fireWith [as resolveWith] (jquery-1.10.2.js:4)
-			    at Function.ready (jquery-1.10.2.js:4)
-			    at HTMLDocument.q (jquery-1.10.2.js:4)
-
-	POR ISSO O HIDDEN -->
-	 	<div class="hidden">
-			<div class="col-md-6 col-md-offset-3 text-center white">
-				<h2>Get Live Updates</h2>
-				<p class="lead" style="margin-top:0">A special thanks to Death.</p>
-			</div>
-			<div class="col-md-6 col-md-offset-3 text-center">
-				<div class="mockup-content">
-					<div class="morph-button wow pulse morph-button-inflow morph-button-inflow-1">
-						<button type="button "><span>Subscribe to our Newsletter</span></button>
-						<div class="morph-content">
-							<div>
-								<div class="content-style-form content-style-form-4 ">
-									<h2 class="morph-clone">Subscribe to our Newsletter</h2>
-									<form>
-										<p><label>Your Email Address</label><input type="text"/></p>
-										<p><button>Subscribe me</button></p>
-									</form>
-								</div>
+ 	<div class="hidden">
+		<div class="col-md-6 col-md-offset-3 text-center white">
+			<h2>Get Live Updates</h2>
+			<p class="lead" style="margin-top:0">A special thanks to Death.</p>
+		</div>
+		<div class="col-md-6 col-md-offset-3 text-center">
+			<div class="mockup-content">
+				<div class="morph-button wow pulse morph-button-inflow morph-button-inflow-1">
+					<button type="button "><span>Subscribe to our Newsletter</span></button>
+					<div class="morph-content">
+						<div>
+							<div class="content-style-form content-style-form-4 ">
+								<h2 class="morph-clone">Subscribe to our Newsletter</h2>
+								<form>
+									<p><label>Your Email Address</label><input type="text"/></p>
+									<p><button>Subscribe me</button></p>
+								</form>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+	</div>
 
 	<!-- Coleção -->
     <!-- Screenshot -->
