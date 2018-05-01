@@ -132,8 +132,6 @@
 			margin-top: 30px;
 		}
 		
-
-
 		div.scrollmenu {
 			position: fixed;
 			left: 0;
@@ -247,8 +245,17 @@
     <!-- PaginaInicial -->
 
     <!-- PaginaNotificacao -->
-    <div id="PaginaNotificacao">
-		
+    <div id="PaginaNotificacao" class="pageView">
+    	<div class="container">
+             <div class="row">			 
+                <div class="col-xs-12 wow fadeInLeftBig" data-animation-delay="200">
+					<ul class="descp lead2 list-group listaNotificacoes">
+					</ul>
+				</div>
+				<div class="col-xs-12 text-center wrap_title">
+				</div>
+            </div>
+        </div>
     </div>
     <!-- PaginaNotificacao -->
 
@@ -379,7 +386,6 @@
 
     <!-- Dinâmicas -->
 	<div id="PaginaDinamica" class="pageView content-section-a">
-
 		<div class="container">
              <div class="row">			 
 				<div class="col-xs-12 pull-right wow fadeInRightBig">
@@ -401,30 +407,21 @@
     </div>
 
 	<div id="PaginaPergunta" class="pageView content-section-a">
-
         <div class="container">
              <div class="row">			 
 				<div class="col-xs-12 pull-right wow fadeInRightBig">
-
 					<div class="col-xs-12 text-center wrap_title">
 						<h3>Perguntas <i class="fa fa-book"></i></h3>
 					</div>    
 					<p class="lead" style="margin-top:0">Você não quer ser pego de surpresa, quer? Prepare-se com essas perguntas e respostas, utilize base bíblica para responder questionamentos.</p>
                 </div>
-			 
                 <div class="col-xs-12 wow fadeInLeftBig" data-animation-delay="200">
 					<ul class="descp lead2 list-group listaPerguntas ulListaTitulos">
 					</ul>
 				</div>
-
-				<div id="divRecebeHTMLPergunta">
-
-				</div>
             </div>
         </div>
     </div>
-
-
 
 	<!-- Dicas -->
 	<div id="PaginaDica" class="pageView content-section-a">
@@ -616,7 +613,7 @@
       	<div class="scrollmenu text-center">
 
 	        <a onclick="pageChange('#PaginaSobre')"><img src="img/logo_branco.png" alt="Conecta Zion" /></a>
-	      	<a onclick="pageChange('#PaginaNotificacao')"><i class="fa fa-bell iconefooter"></i></a>
+	      	<a onclick="pageChange('#PaginaNotificacao')"><i class="fa fa-bell iconefooter"></i><div class="label label-danger" id="count_notification"></div></a>
 	      	<a onclick="pageChange('#PaginaPerfil')"><i class="fa fa-user iconefooter"></i></a>
 
      	</div>

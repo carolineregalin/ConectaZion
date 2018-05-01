@@ -3,14 +3,47 @@ $(document).ready(function(){
     if (window.localStorage.getItem('usuario') !== null | window.localStorage.getItem('senha') != null){
 
     	logar();
+    	if(checkConnection())
+    		getNotification();
 
    }else{
     	
     	logout();
    }
-   //alert(navigator.connection.type);
 	
 });
+
+function getNotification(){
+
+	if(checkConnection()){
+
+		$.ajax({
+			async: true,
+	        type: "POST",
+	        url: "https://localhost/notificacao.php/", 
+	        data: {
+	            id_usuario: window.localStorage.getItem('idescola')
+	         },
+        dataType: "json", 
+        success: function (json) {
+
+        	if(json.result){
+        		$("#count_notification").html(json.dados.length);
+        		localStorage.setItem("notification", JSON.stringify(json.dados));
+        	}else{
+        	   $("#count_notification").html("");	
+        	}
+
+        },error: function(e,xhr,t){
+        	
+        	alert(json.msg);
+
+        }
+    	});
+
+	}
+	
+}
 
 function logout(){
 
@@ -51,10 +84,10 @@ function pageChange(idNewPage){
 		listaDinamicas();
 	}else if(idNewPage == "#PaginaPalavra"){
 		listaPalavras();
-
 	}else if(idNewPage == "#PaginaLouvor"){
 		listaLouvor();
-
+	}else if(idNewPage =="#PaginaNotificacao"){
+		listarNotificacao();
 	}
 
 	$(" " + idNewPage).show();//mostra a página selecionada no menu
@@ -654,13 +687,6 @@ $("#txtBuscaPalavras").on("keyup", function(){
 
 $( "#FormLogin" ).submit(function(e) {
 
-	/*window.localStorage.setItem('endereco', 'json.dados.endereco');
-	window.localStorage.setItem('usuario', 'json.dados.usuario');
-	window.localStorage.setItem('senha', 'json.dados.senha');
-	window.localStorage.setItem('idescola', 'json.dados.idescola');
-	window.localStorage.setItem('nome', 'json.dados.nome');
-	logar();*/
-
 	if(checkConnection()){
 	   $.ajax({
 	   			async: false,
@@ -679,7 +705,7 @@ $( "#FormLogin" ).submit(function(e) {
 						window.localStorage.setItem('endereco', json.dados.endereco);
 						window.localStorage.setItem('usuario', json.dados.usuario);
 						window.localStorage.setItem('senha', json.dados.senha);
-						window.localStorage.setItem('idescola', json.dados.idescola);
+						window.localStorage.setItem('idescola', json.dados.idEscola);
 						window.localStorage.setItem('nome', json.dados.nome);
 	                    logar();
 
@@ -720,6 +746,24 @@ function carregaPerfil(){
 function checkConnection(){
 
     return navigator.connection.type != "none";
+}
+
+function listarNotificacao(){
+
+	$("ul.listaNotificacoes").html("");
+	
+	getNotification();
+
+	var arrayNotificacoes = JSON.parse(localStorage.getItem("notification"));
+
+	if(arrayNotificacoes.length>0){
+		for(var i=0;i<arrayNotificacoes.length;i++){
+			$("ul.listaNotificacoes").append('<li class="list-group-item text-center"><h4>'+arrayNotificacoes[i].titulo+'<i class="fa fa-close"></i></h4>'+arrayNotificacoes[i].conteudo + '<p><small>' + arrayNotificacoes[i].data_created +'</small></p></li>');
+		}	
+	}else{
+
+		$("ul.listaNotificacoes").append('<li class="list-group-item text-center">Nenhuma notificação</li>');
+	}
 }
 
 
