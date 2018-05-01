@@ -32,6 +32,7 @@ function getNotification(){
         		localStorage.setItem("notification", JSON.stringify(json.dados));
         	}else{
         	   $("#count_notification").html("");	
+        	   localStorage.removeItem("notification");
         	}
 
         },error: function(e,xhr,t){
@@ -687,7 +688,14 @@ $("#txtBuscaPalavras").on("keyup", function(){
 
 $( "#FormLogin" ).submit(function(e) {
 
-	if(checkConnection()){
+	window.localStorage.setItem('endereco', 'json.dados.endereco');
+	window.localStorage.setItem('usuario', 'json.dados.usuario');
+	window.localStorage.setItem('senha', 'json.dados.senha');
+	window.localStorage.setItem('idescola', 1);
+	window.localStorage.setItem('nome', 'json.dados.nome');
+    logar();
+
+	/*if(checkConnection()){
 	   $.ajax({
 	   			async: false,
 	            type: "POST",
@@ -725,7 +733,7 @@ $( "#FormLogin" ).submit(function(e) {
 
 			alert('Conecte-se na internet e tente novamente');
 
-	}
+	}*/
 });
 
 
@@ -756,14 +764,51 @@ function listarNotificacao(){
 
 	var arrayNotificacoes = JSON.parse(localStorage.getItem("notification"));
 
-	if(arrayNotificacoes.length>0){
+	alert(arrayNotificacoes);
+
+	if((arrayNotificacoes!=null)){
 		for(var i=0;i<arrayNotificacoes.length;i++){
-			$("ul.listaNotificacoes").append('<li class="list-group-item text-center"><h4>'+arrayNotificacoes[i].titulo+'<i class="fa fa-close"></i></h4>'+arrayNotificacoes[i].conteudo + '<p><small>' + arrayNotificacoes[i].data_created +'</small></p></li>');
+			$("ul.listaNotificacoes").append('<li class="list-group-item text-center"><h4>'+arrayNotificacoes[i].titulo+'  <i class="fa fa-times-circle-o" onclick="visualizarNotificacao('+arrayNotificacoes[i].id_notificacao+')" id="' + arrayNotificacoes[i].id_notificacao +'"></i></h4>'+arrayNotificacoes[i].conteudo + '<p><small>' + arrayNotificacoes[i].data_created +'</small></p></li>');
 		}	
 	}else{
 
 		$("ul.listaNotificacoes").append('<li class="list-group-item text-center">Nenhuma notificação</li>');
 	}
+}
+
+function visualizarNotificacao(id_notificacao){
+
+	if(checkConnection){
+
+		$.ajax({
+	   			async: true,
+	            type: "POST",
+	            url: "https://localhost/visualizar.php/", 
+	            data: {
+	                id_notificacao: id_notificacao,
+	                id_usuario: window.localStorage.getItem('idescola')
+	            },
+	            dataType: "json", 
+	            success: function (json) {
+
+	                alert(json.dados.message);
+	                listarNotificacao();
+	            
+
+	            },error: function(e,xhr,t){
+	            	
+	            	alert(json.msg);
+    
+	            }
+	        });
+
+
+	}else{
+
+		alert("Conecte-se a internet e tente novamente");
+	}
+
+	alert(id_notificacao);
 }
 
 
