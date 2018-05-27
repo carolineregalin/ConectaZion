@@ -20,7 +20,7 @@ function getNotification(){
 		$.ajax({
 			async: true,
 	        type: "POST",
-	        url: "https://localhost/notificacao.php/", 
+	        url: "http:127.0.0.1/notificacao.php/", 
 	        data: {
 	            id_usuario: window.localStorage.getItem('idescola')
 	         },
@@ -36,13 +36,15 @@ function getNotification(){
         	}
 
         },error: function(e,xhr,t){
-        	
-        	alert(json.msg);
-
         }
     	});
 
+	}else{
+
+		alert("Conect-se a internet e tente novamente");
 	}
+
+	scrollToAnchor('#PaginaNotificacao');
 	
 }
 
@@ -439,152 +441,172 @@ var arrayTituloLouvores = [
 ];
 
 var arrayConteudoLouvores = [
-'<b>D9</b>\
-Santo Espírito, és bem-vindo aqui\
-    <b>G5(7M)</b>             <b>Em7</b>\
-Vem inundar, encher esse lugar\
-  <b>D9</b>\
-É o desejo do meu coração\
-       <b>G5(7M)</b>              <b>Em7</b>\
-Sermos inundados por Tua glória, Senhor\
- <b>D9</b>\
-Santo Espírito, és bem-vindo aqui\
-    <b>G5(7M)</b>             <b>Em7</b>\
-Vem inundar, encher esse lugar\
-  <b>D9</b>\
-É o desejo do meu coração\
-       <b>G5(7M)</b>              <b>Em7</b>\
-Sermos inundados por Tua glória\
-    <b>D9</b>                 <b>G5(7M)</b>\
-Senhor, Tua glória Senhor\
-           <b>D9</b>  <b>G5(7M)</b>\
-Tua glória\
-Primeira Parte:\
-<b>D9</b>\
-   Não há nada igual\
-                <b>G5(7M)</b>\
-Não há nada melhor\
-                              <b>D9</b>\
-A que se compara à esperança viva\
-           <b>G5(7M)</b>\
-Tua presença\
-<b>D9</b>\
-   Eu provei e vi\
-              <b>G5(7M)</b>\
-O mais doce amor\
-Que liberta o meu ser\
-              <b>D9</b>\
-E a vergonha desfaz\
-           <b>G5(7M)</b>\
-Tua presença\
-Refrão:\
- <b>D9</b>\
-Santo Espírito, és bem-vindo aqui\
-    <b>G5(7M)</b>             <b>Em7</b>\
-Vem inundar, encher esse lugar\
-  <b>D9</b>\
-É o desejo do meu coração\
-       <b>G5(7M)</b>              <b>Em7</b>\
-Sermos inundados por Tua glória\
- <b>D9</b>\
-Santo Espírito, és bem-vindo aqui\
-    <b>G5(7M)</b>             <b>Em7</b>\
-Vem inundar, encher esse lugar\
-  <b>D9</b>\
-É o desejo do meu coração\
-       <b>G5(7M)</b>              <b>Em7</b>\
-Sermos inundados por Tua glória, Senhor\
-Base solo 2x: <b>D9</b>  <b>G5(7M)</b>  <b>Em7</b>\
-Solo:\
-Parte 01 de 05\
-<span class="tablatura"><span class="cnt">E|<u>----------------------------------------------------</u>|\
-B|<u>---------------</u>9<u>------------------------------------</u>|\
-G|<u>-</u>4/9<u>-</u>9~<u>-</u>9<u>-</u>9h11<u>---</u>11<u>--</u>11<u>-</u>9<u>-</u>9<u>-------------------------</u>|\
-D|<u>----------------------------------------------------</u>|\
-A|<u>----------------------------------------------------</u>|\
-E|<u>----------------------------------------------------</u>|\
-</span></span>\
-Parte 02 de 05\
-<span class="tablatura"><span class="cnt">E|<u>----------------------------------------------------</u>|\
-B|<u>--------</u>9<u>----</u>10<u>-</u>12<u>----------------------------------</u>|\
-G|<u>-</u>9<u>-</u>9h11<u>---</u>11<u>-------</u>9<u>-</u>8<u>------------------------------</u>|\
-D|<u>-----------------------</u>9<u>----------------------------</u>|\
-A|<u>----------------------------------------------------</u>|\
-E|<u>----------------------------------------------------</u>|\
-</span></span>\
-Parte 03 de 05\
-<span class="tablatura"><span class="cnt">E|<u>----------------------------------------------------</u>|\
-B|<u>----------------------------------------------------</u>|\
-G|<u>----------------------------------------------------</u>|\
-D|<u>-</u>9/11<u>-</u>9<u>---------------------------------------------</u>|\
-A|<u>--------</u>9<u>-</u>9h11<u>-</u>11<u>-</u>11~<u>--</u>11h12<u>-</u>11<u>-</u>11<u>------------------</u>|\
-E|<u>----------------------------------------------------</u>|\
-</span></span>\
-Parte 04 de 05\
-<span class="tablatura"><span class="cnt">E|<u>----------------------------------------------------</u>|\
-B|<u>---------------</u>9<u>-------------------</u>9<u>-----</u>12<u>---------</u>|\
-G|<u>-</u>4/9<u>-</u>9<u>-</u>9~<u>-</u>9<u>-</u>11<u>---</u>11<u>--</u>11<u>-</u>9<u>-</u>9<u>-</u>9<u>-</u>9<u>-</u>11<u>----</u>11<u>----</u>9~<u>------</u>|\
-D|<u>----------------------------------------------------</u>|\
-A|<u>----------------------------------------------------</u>|\
-E|<u>----------------------------------------------------</u>|\
-</span></span>\
-Parte 05 de 05\
-<span class="tablatura"><span class="cnt">E|<u>----------------------------------------------------</u>|\
-B|<u>----------------------------------------------------</u>|\
-G|<u>-</u>9/11<u>-</u>9<u>---------------------------------------------</u>|\
-D|<u>--------</u>9<u>-</u>9h11<u>-</u>11~<u>--</u>7<u>-</u>6~<u>-</u>7<u>--</u>7/14<u>-</u>14~<u>----------------</u>|\
-A|<u>----------------------------------------------------</u>|\
-E|<u>----------------------------------------------------</u>|\
-</span></span>\
-Segunda Parte:\
-<b>G5(7M)</b>           <b>D/F#</b>\
-       Vamos provar\
-       <b>Em7</b>          <b>D/F#</b>\
-Quão real é Tua presença\
-<b>G5(7M)</b>           <b>D/F#</b>\
-       Vamos provar \
-        <b>Em7</b>        <b>D/F#</b>\
-A Tua glória e bondade\
-<b>G5(7M)</b>           <b>D/F#</b>\
-       Vamos provar\
-       <b>Em7</b>          <b>D/F#</b>\
-Quão real é Tua presença\
-<b>G5(7M)</b>           <b>D/F#</b>\
-       Vamos provar \
-        <b>Em7</b>        <b>D/F#</b>\
-A Tua glória e bondade\
-<b>G5(7M)</b>           <b>D/F#</b>\
-       Vamos provar\
-       <b>Em7</b>          <b>D/F#</b>\
-Quão real é Tua presença\
-<b>G5(7M)</b>           <b>D/F#</b>\
-       Vamos provar \
-        <b>Em7</b>        <b>D/F#</b>\
-A Tua glória e bondade\
-<b>G5(7M)</b>           <b>D/F#</b>\
-       Vamos provar\
-       <b>Em7</b>         <b>D/F#</b>\
-Quão real é Tua presença\
-<b>G5(7M)</b>           <b>D/F#</b>\
-       Vamos provar \
-        <b>Em7</b>        <b>D/F#</b>     <b>G5(7M)</b>\
-A Tua glória e bondade, Senhor\
-Refrão:\
- <b>D9</b>\
-Santo Espírito, és bem-vindo aqui\
-    <b>G5(7M)</b>             <b>Em7</b>\
-Vem inundar, encher esse lugar\
-  <b>D9</b>\
-É o desejo do meu coração\
-       <b>G5(7M)</b>              <b>Em7</b>\
-Sermos inundados por Tua glória\
- <b>D9</b>\
-Santo Espírito, és bem-vindo aqui\
-    <b>G5(7M)</b>             <b>Em7</b>\
-Vem inundar, encher esse lugar\
-  <b>D9</b>\
-É o desejo do meu coração\
-       <b>G5(7M)</b>              <b>Em7</b>'
+'<p><span id="cifra_tom">Tom:&nbsp;<a class="js-modal-trigger" title="alterar o tom" href="https://www.cifraclub.com.br/laura-souguellis/santo-espirito/">E</a>&nbsp;(forma dos acordes no tom de D)</span><span id="cifra_afi"></span><span id="cifra_capo">Capotraste na&nbsp;<a class="js-modal-trigger" title="alterar capotraste">2&ordf; casa</a></span></p>
+<pre>Refr&atilde;o:
+ <strong>D9</strong>
+Santo Esp&iacute;rito, &eacute;s bem-vindo aqui
+    <strong>G5(7M)</strong>             <strong class="js-modal-trigger">Em7</strong>
+Vem inundar, encher esse lugar
+  <strong>D9</strong>
+&Eacute; o desejo do meu cora&ccedil;&atilde;o
+       <strong>G5(7M)</strong>              <strong>Em7</strong>
+Sermos inundados por Tua gl&oacute;ria, Senhor
+
+ <strong>D9</strong>
+Santo Esp&iacute;rito, &eacute;s bem-vindo aqui
+    <strong>G5(7M)</strong>             <strong>Em7</strong>
+Vem inundar, encher esse lugar
+  <strong>D9</strong>
+&Eacute; o desejo do meu cora&ccedil;&atilde;o
+       <strong>G5(7M)</strong>              <strong>Em7</strong>
+Sermos inundados por Tua gl&oacute;ria
+    <strong>D9</strong>                 <strong>G5(7M)</strong>
+Senhor, Tua gl&oacute;ria Senhor
+           <strong>D9</strong>  <strong>G5(7M)</strong>
+Tua gl&oacute;ria
+
+Primeira Parte:
+<strong>D9</strong>
+   N&atilde;o h&aacute; nada igual
+                <strong>G5(7M)</strong>
+N&atilde;o h&aacute; nada melhor
+                              <strong>D9</strong>
+A que se compara &agrave; esperan&ccedil;a viva
+           <strong>G5(7M)</strong>
+Tua presen&ccedil;a
+
+<strong>D9</strong>
+   Eu provei e vi
+              <strong>G5(7M)</strong>
+O mais doce amor
+
+Que liberta o meu ser
+              <strong>D9</strong>
+E a vergonha desfaz
+           <strong>G5(7M)</strong>
+Tua presen&ccedil;a
+
+Refr&atilde;o:
+ <strong>D9</strong>
+Santo Esp&iacute;rito, &eacute;s bem-vindo aqui
+    <strong>G5(7M)</strong>             <strong>Em7</strong>
+Vem inundar, encher esse lugar
+  <strong>D9</strong>
+&Eacute; o desejo do meu cora&ccedil;&atilde;o
+       <strong>G5(7M)</strong>              <strong>Em7</strong>
+Sermos inundados por Tua gl&oacute;ria
+
+ <strong>D9</strong>
+Santo Esp&iacute;rito, &eacute;s bem-vindo aqui
+    <strong>G5(7M)</strong>             <strong>Em7</strong>
+Vem inundar, encher esse lugar
+  <strong>D9</strong>
+&Eacute; o desejo do meu cora&ccedil;&atilde;o
+       <strong>G5(7M)</strong>              <strong>Em7</strong>
+Sermos inundados por Tua gl&oacute;ria, Senhor
+
+Base solo 2x: <strong>D9</strong>  <strong>G5(7M)</strong>  <strong>Em7</strong>
+
+Solo:
+
+Parte 01 de 05
+
+<span class="tablatura"><span class="cnt">E|<u>----------------------------------------------------</u>|
+B|<u>---------------</u>9<u>------------------------------------</u>|
+G|<u>-</u>4/9<u>-</u>9~<u>-</u>9<u>-</u>9h11<u>---</u>11<u>--</u>11<u>-</u>9<u>-</u>9<u>-------------------------</u>|
+D|<u>----------------------------------------------------</u>|
+A|<u>----------------------------------------------------</u>|
+E|<u>----------------------------------------------------</u>|
+</span></span>
+Parte 02 de 05
+
+<span class="tablatura"><span class="cnt">E|<u>----------------------------------------------------</u>|
+B|<u>--------</u>9<u>----</u>10<u>-</u>12<u>----------------------------------</u>|
+G|<u>-</u>9<u>-</u>9h11<u>---</u>11<u>-------</u>9<u>-</u>8<u>------------------------------</u>|
+D|<u>-----------------------</u>9<u>----------------------------</u>|
+A|<u>----------------------------------------------------</u>|
+E|<u>----------------------------------------------------</u>|
+</span></span>
+Parte 03 de 05
+
+<span class="tablatura"><span class="cnt">E|<u>----------------------------------------------------</u>|
+B|<u>----------------------------------------------------</u>|
+G|<u>----------------------------------------------------</u>|
+D|<u>-</u>9/11<u>-</u>9<u>---------------------------------------------</u>|
+A|<u>--------</u>9<u>-</u>9h11<u>-</u>11<u>-</u>11~<u>--</u>11h12<u>-</u>11<u>-</u>11<u>------------------</u>|
+E|<u>----------------------------------------------------</u>|
+</span></span>
+Parte 04 de 05
+
+<span class="tablatura"><span class="cnt">E|<u>----------------------------------------------------</u>|
+B|<u>---------------</u>9<u>-------------------</u>9<u>-----</u>12<u>---------</u>|
+G|<u>-</u>4/9<u>-</u>9<u>-</u>9~<u>-</u>9<u>-</u>11<u>---</u>11<u>--</u>11<u>-</u>9<u>-</u>9<u>-</u>9<u>-</u>9<u>-</u>11<u>----</u>11<u>----</u>9~<u>------</u>|
+D|<u>----------------------------------------------------</u>|
+A|<u>----------------------------------------------------</u>|
+E|<u>----------------------------------------------------</u>|
+</span></span>
+Parte 05 de 05
+
+<span class="tablatura"><span class="cnt">E|<u>----------------------------------------------------</u>|
+B|<u>----------------------------------------------------</u>|
+G|<u>-</u>9/11<u>-</u>9<u>---------------------------------------------</u>|
+D|<u>--------</u>9<u>-</u>9h11<u>-</u>11~<u>--</u>7<u>-</u>6~<u>-</u>7<u>--</u>7/14<u>-</u>14~<u>----------------</u>|
+A|<u>----------------------------------------------------</u>|
+E|<u>----------------------------------------------------</u>|
+</span></span>
+Segunda Parte:
+<strong>G5(7M)</strong>           <strong>D/F#</strong>
+       Vamos provar
+       <strong>Em7</strong>          <strong>D/F#</strong>
+Qu&atilde;o real &eacute; Tua presen&ccedil;a
+<strong>G5(7M)</strong>           <strong>D/F#</strong>
+       Vamos provar
+        <strong>Em7</strong>        <strong>D/F#</strong>
+A Tua gl&oacute;ria e bondade
+<strong>G5(7M)</strong>           <strong>D/F#</strong>
+       Vamos provar
+       <strong>Em7</strong>          <strong>D/F#</strong>
+Qu&atilde;o real &eacute; Tua presen&ccedil;a
+<strong>G5(7M)</strong>           <strong>D/F#</strong>
+       Vamos provar
+        <strong>Em7</strong>        <strong>D/F#</strong>
+A Tua gl&oacute;ria e bondade
+
+<strong>G5(7M)</strong>           <strong>D/F#</strong>
+       Vamos provar
+       <strong>Em7</strong>          <strong>D/F#</strong>
+Qu&atilde;o real &eacute; Tua presen&ccedil;a
+<strong>G5(7M)</strong>           <strong>D/F#</strong>
+       Vamos provar
+        <strong>Em7</strong>        <strong>D/F#</strong>
+A Tua gl&oacute;ria e bondade
+<strong>G5(7M)</strong>           <strong>D/F#</strong>
+       Vamos provar
+       <strong>Em7</strong>          <strong>D/F#</strong>
+Qu&atilde;o real &eacute; Tua presen&ccedil;a
+<strong>G5(7M)</strong>           <strong>D/F#</strong>
+       Vamos provar
+        <strong>Em7</strong>        <strong>D/F#</strong>     <strong>G5(7M)</strong>
+A Tua gl&oacute;ria e bondade, Senhor
+
+Refr&atilde;o:
+ <strong>D9</strong>
+Santo Esp&iacute;rito, &eacute;s bem-vindo aqui
+    <strong>G5(7M)</strong>             <strong>Em7</strong>
+Vem inundar, encher esse lugar
+  <strong>D9</strong>
+&Eacute; o desejo do meu cora&ccedil;&atilde;o
+       <strong>G5(7M)</strong>              <strong>Em7</strong>
+Sermos inundados por Tua gl&oacute;ria
+
+ <strong>D9</strong>
+Santo Esp&iacute;rito, &eacute;s bem-vindo aqui
+    <strong>G5(7M)</strong>             <strong>Em7</strong>
+Vem inundar, encher esse lugar
+  <strong>D9</strong>
+&Eacute; o desejo do meu cora&ccedil;&atilde;o
+       <strong>G5(7M)</strong>              <strong>Em7</strong>
+Sermos inundados por Tua gl&oacute;ria, Senhor</pre>'
 
 
 ]
@@ -688,14 +710,14 @@ $("#txtBuscaPalavras").on("keyup", function(){
 
 $( "#FormLogin" ).submit(function(e) {
 
-	window.localStorage.setItem('endereco', 'json.dados.endereco');
+	/*window.localStorage.setItem('endereco', 'json.dados.endereco');
 	window.localStorage.setItem('usuario', 'json.dados.usuario');
 	window.localStorage.setItem('senha', 'json.dados.senha');
 	window.localStorage.setItem('idescola', 1);
 	window.localStorage.setItem('nome', 'json.dados.nome');
-    logar();
+    logar();*/
 
-	/*if(checkConnection()){
+	if(checkConnection()){
 	   $.ajax({
 	   			async: false,
 	            type: "POST",
@@ -718,14 +740,9 @@ $( "#FormLogin" ).submit(function(e) {
 	                    logar();
 
 	                }else{
-
-	                	 alert(json.msg);
 	    
 	                }
 	            },error: function(e,xhr,t){
-	            	
-	            	alert(json.msg);
-	               
     
 	            }
 	        });
@@ -733,11 +750,12 @@ $( "#FormLogin" ).submit(function(e) {
 
 			alert('Conecte-se na internet e tente novamente');
 
-	}*/
+	}
 });
 
 
 function carregaPerfil(){
+	alert(window.localStorage.getItem('idescola'));
 	$("#endereco").html('<i class="glyphicon glyphicon-map-marker"></i>Endereço: ' + window.localStorage.getItem('endereco'));
 	$("#escola").html('<i class="fa fa-building-o"></i> Escola: ' + window.localStorage.getItem('nome'));
 	$("#user").html('<i class="fa fa-user"></i> Usuário: ' + window.localStorage.getItem('usuario'));  
@@ -764,11 +782,9 @@ function listarNotificacao(){
 
 	var arrayNotificacoes = JSON.parse(localStorage.getItem("notification"));
 
-	alert(arrayNotificacoes);
-
 	if((arrayNotificacoes!=null)){
 		for(var i=0;i<arrayNotificacoes.length;i++){
-			$("ul.listaNotificacoes").append('<li class="list-group-item text-center"><h4>'+arrayNotificacoes[i].titulo+'  <i class="fa fa-times-circle-o" onclick="visualizarNotificacao('+arrayNotificacoes[i].id_notificacao+')" id="' + arrayNotificacoes[i].id_notificacao +'"></i></h4>'+arrayNotificacoes[i].conteudo + '<p><small>' + arrayNotificacoes[i].data_created +'</small></p></li>');
+			$("ul.listaNotificacoes").append('<li class="list-group-item text-center"><h4>'+arrayNotificacoes[i].titulo+'  <i class="fa fa-times-circle-o pull-right" onclick="visualizarNotificacao('+arrayNotificacoes[i].id_notificacao+')" id="' + arrayNotificacoes[i].id_notificacao +'"></i></h4>'+arrayNotificacoes[i].conteudo + '<p><small>' + arrayNotificacoes[i].data_created +'</small></p></li>');
 		}	
 	}else{
 
@@ -783,22 +799,16 @@ function visualizarNotificacao(id_notificacao){
 		$.ajax({
 	   			async: true,
 	            type: "POST",
-	            url: "https://localhost/visualizar.php/", 
+	            url: "http://localhost/visualizar.php/", 
 	            data: {
 	                id_notificacao: id_notificacao,
 	                id_usuario: window.localStorage.getItem('idescola')
 	            },
 	            dataType: "json", 
 	            success: function (json) {
-
-	                alert(json.dados.message);
 	                listarNotificacao();
-	            
-
 	            },error: function(e,xhr,t){
 	            	
-	            	alert(json.msg);
-    
 	            }
 	        });
 
@@ -808,7 +818,6 @@ function visualizarNotificacao(id_notificacao){
 		alert("Conecte-se a internet e tente novamente");
 	}
 
-	alert(id_notificacao);
 }
 
 
