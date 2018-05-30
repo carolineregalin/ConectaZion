@@ -440,176 +440,71 @@ var arrayTituloLouvores = [
 "Sonhos"
 ];
 
-var arrayConteudoLouvores = [
-'<p><span id="cifra_tom">Tom:&nbsp;<a class="js-modal-trigger" title="alterar o tom" href="https://www.cifraclub.com.br/laura-souguellis/santo-espirito/">E</a>&nbsp;(forma dos acordes no tom de D)</span><span id="cifra_afi"></span><span id="cifra_capo">Capotraste na&nbsp;<a class="js-modal-trigger" title="alterar capotraste">2&ordf; casa</a></span></p>
-<pre>Refr&atilde;o:
- <strong>D9</strong>
-Santo Esp&iacute;rito, &eacute;s bem-vindo aqui
-    <strong>G5(7M)</strong>             <strong class="js-modal-trigger">Em7</strong>
-Vem inundar, encher esse lugar
-  <strong>D9</strong>
-&Eacute; o desejo do meu cora&ccedil;&atilde;o
-       <strong>G5(7M)</strong>              <strong>Em7</strong>
-Sermos inundados por Tua gl&oacute;ria, Senhor
-
- <strong>D9</strong>
-Santo Esp&iacute;rito, &eacute;s bem-vindo aqui
-    <strong>G5(7M)</strong>             <strong>Em7</strong>
-Vem inundar, encher esse lugar
-  <strong>D9</strong>
-&Eacute; o desejo do meu cora&ccedil;&atilde;o
-       <strong>G5(7M)</strong>              <strong>Em7</strong>
-Sermos inundados por Tua gl&oacute;ria
-    <strong>D9</strong>                 <strong>G5(7M)</strong>
-Senhor, Tua gl&oacute;ria Senhor
-           <strong>D9</strong>  <strong>G5(7M)</strong>
-Tua gl&oacute;ria
-
-Primeira Parte:
-<strong>D9</strong>
-   N&atilde;o h&aacute; nada igual
-                <strong>G5(7M)</strong>
-N&atilde;o h&aacute; nada melhor
-                              <strong>D9</strong>
-A que se compara &agrave; esperan&ccedil;a viva
-           <strong>G5(7M)</strong>
-Tua presen&ccedil;a
-
-<strong>D9</strong>
-   Eu provei e vi
-              <strong>G5(7M)</strong>
-O mais doce amor
-
-Que liberta o meu ser
-              <strong>D9</strong>
-E a vergonha desfaz
-           <strong>G5(7M)</strong>
-Tua presen&ccedil;a
-
-Refr&atilde;o:
- <strong>D9</strong>
-Santo Esp&iacute;rito, &eacute;s bem-vindo aqui
-    <strong>G5(7M)</strong>             <strong>Em7</strong>
-Vem inundar, encher esse lugar
-  <strong>D9</strong>
-&Eacute; o desejo do meu cora&ccedil;&atilde;o
-       <strong>G5(7M)</strong>              <strong>Em7</strong>
-Sermos inundados por Tua gl&oacute;ria
-
- <strong>D9</strong>
-Santo Esp&iacute;rito, &eacute;s bem-vindo aqui
-    <strong>G5(7M)</strong>             <strong>Em7</strong>
-Vem inundar, encher esse lugar
-  <strong>D9</strong>
-&Eacute; o desejo do meu cora&ccedil;&atilde;o
-       <strong>G5(7M)</strong>              <strong>Em7</strong>
-Sermos inundados por Tua gl&oacute;ria, Senhor
-
-Base solo 2x: <strong>D9</strong>  <strong>G5(7M)</strong>  <strong>Em7</strong>
-
-Solo:
-
-Parte 01 de 05
-
-<span class="tablatura"><span class="cnt">E|<u>----------------------------------------------------</u>|
-B|<u>---------------</u>9<u>------------------------------------</u>|
-G|<u>-</u>4/9<u>-</u>9~<u>-</u>9<u>-</u>9h11<u>---</u>11<u>--</u>11<u>-</u>9<u>-</u>9<u>-------------------------</u>|
-D|<u>----------------------------------------------------</u>|
-A|<u>----------------------------------------------------</u>|
-E|<u>----------------------------------------------------</u>|
-</span></span>
-Parte 02 de 05
-
-<span class="tablatura"><span class="cnt">E|<u>----------------------------------------------------</u>|
-B|<u>--------</u>9<u>----</u>10<u>-</u>12<u>----------------------------------</u>|
-G|<u>-</u>9<u>-</u>9h11<u>---</u>11<u>-------</u>9<u>-</u>8<u>------------------------------</u>|
-D|<u>-----------------------</u>9<u>----------------------------</u>|
-A|<u>----------------------------------------------------</u>|
-E|<u>----------------------------------------------------</u>|
-</span></span>
-Parte 03 de 05
-
-<span class="tablatura"><span class="cnt">E|<u>----------------------------------------------------</u>|
-B|<u>----------------------------------------------------</u>|
-G|<u>----------------------------------------------------</u>|
-D|<u>-</u>9/11<u>-</u>9<u>---------------------------------------------</u>|
-A|<u>--------</u>9<u>-</u>9h11<u>-</u>11<u>-</u>11~<u>--</u>11h12<u>-</u>11<u>-</u>11<u>------------------</u>|
-E|<u>----------------------------------------------------</u>|
-</span></span>
-Parte 04 de 05
-
-<span class="tablatura"><span class="cnt">E|<u>----------------------------------------------------</u>|
-B|<u>---------------</u>9<u>-------------------</u>9<u>-----</u>12<u>---------</u>|
-G|<u>-</u>4/9<u>-</u>9<u>-</u>9~<u>-</u>9<u>-</u>11<u>---</u>11<u>--</u>11<u>-</u>9<u>-</u>9<u>-</u>9<u>-</u>9<u>-</u>11<u>----</u>11<u>----</u>9~<u>------</u>|
-D|<u>----------------------------------------------------</u>|
-A|<u>----------------------------------------------------</u>|
-E|<u>----------------------------------------------------</u>|
-</span></span>
-Parte 05 de 05
-
-<span class="tablatura"><span class="cnt">E|<u>----------------------------------------------------</u>|
-B|<u>----------------------------------------------------</u>|
-G|<u>-</u>9/11<u>-</u>9<u>---------------------------------------------</u>|
-D|<u>--------</u>9<u>-</u>9h11<u>-</u>11~<u>--</u>7<u>-</u>6~<u>-</u>7<u>--</u>7/14<u>-</u>14~<u>----------------</u>|
-A|<u>----------------------------------------------------</u>|
-E|<u>----------------------------------------------------</u>|
-</span></span>
-Segunda Parte:
-<strong>G5(7M)</strong>           <strong>D/F#</strong>
-       Vamos provar
-       <strong>Em7</strong>          <strong>D/F#</strong>
-Qu&atilde;o real &eacute; Tua presen&ccedil;a
-<strong>G5(7M)</strong>           <strong>D/F#</strong>
-       Vamos provar
-        <strong>Em7</strong>        <strong>D/F#</strong>
-A Tua gl&oacute;ria e bondade
-<strong>G5(7M)</strong>           <strong>D/F#</strong>
-       Vamos provar
-       <strong>Em7</strong>          <strong>D/F#</strong>
-Qu&atilde;o real &eacute; Tua presen&ccedil;a
-<strong>G5(7M)</strong>           <strong>D/F#</strong>
-       Vamos provar
-        <strong>Em7</strong>        <strong>D/F#</strong>
-A Tua gl&oacute;ria e bondade
-
-<strong>G5(7M)</strong>           <strong>D/F#</strong>
-       Vamos provar
-       <strong>Em7</strong>          <strong>D/F#</strong>
-Qu&atilde;o real &eacute; Tua presen&ccedil;a
-<strong>G5(7M)</strong>           <strong>D/F#</strong>
-       Vamos provar
-        <strong>Em7</strong>        <strong>D/F#</strong>
-A Tua gl&oacute;ria e bondade
-<strong>G5(7M)</strong>           <strong>D/F#</strong>
-       Vamos provar
-       <strong>Em7</strong>          <strong>D/F#</strong>
-Qu&atilde;o real &eacute; Tua presen&ccedil;a
-<strong>G5(7M)</strong>           <strong>D/F#</strong>
-       Vamos provar
-        <strong>Em7</strong>        <strong>D/F#</strong>     <strong>G5(7M)</strong>
-A Tua gl&oacute;ria e bondade, Senhor
-
-Refr&atilde;o:
- <strong>D9</strong>
-Santo Esp&iacute;rito, &eacute;s bem-vindo aqui
-    <strong>G5(7M)</strong>             <strong>Em7</strong>
-Vem inundar, encher esse lugar
-  <strong>D9</strong>
-&Eacute; o desejo do meu cora&ccedil;&atilde;o
-       <strong>G5(7M)</strong>              <strong>Em7</strong>
-Sermos inundados por Tua gl&oacute;ria
-
- <strong>D9</strong>
-Santo Esp&iacute;rito, &eacute;s bem-vindo aqui
-    <strong>G5(7M)</strong>             <strong>Em7</strong>
-Vem inundar, encher esse lugar
-  <strong>D9</strong>
-&Eacute; o desejo do meu cora&ccedil;&atilde;o
-       <strong>G5(7M)</strong>              <strong>Em7</strong>
-Sermos inundados por Tua gl&oacute;ria, Senhor</pre>'
-
-
-]
+var arrayConteudoLouvores = ["Tom: E (forma dos acordes no tom de D)<br>"+
+							"Capotraste na 2ª casa                  <br>"+
+							"Refrão:                                <br>"+
+							" D9                                    <br>"+
+							"Santo Espírito, és bem-vindo aqui      <br>"+
+							"    G5(7M)             Em7             <br>"+
+							"Vem inundar, encher esse lugar         <br>"+
+							"   D9                                  <br>"+
+							"É o desejo do meu coração              <br>"+
+							"       G5(7M)              Em7         <br>"+
+							"Sermos inundados por Tua glória, Senhor <br>"+
+                            "                                        <br>"+
+							" D9                                     <br>"+
+							"Santo Espírito, és bem-vindo aqui       <br>"+
+							"    G5(7M)             Em7               <br>"+
+							"Vem inundar, encher esse lugar           <br>"+
+							"  D9                                     <br>" +
+							"É o desejo do meu coração                <br>"+
+							"       G5(7M)              Em7           <br>"+
+							"Sermos inundados por Tua glória          <br>"+
+							"    D9                 G5(7M)            <br>"+
+							"Senhor, Tua glória Senhor                <br>"+
+							"           D9  G5(7M)                    <br>"+
+							"Tua glória                               <br>"+
+                            "                                         <br>"+
+							"Primeira Parte:                          <br>"+
+							"D9                                       <br>"+
+							"   Não há nada igual                     <br>"+
+							"                G5(7M)                   <br>"+
+							"Não há nada melhor                       <br>"+
+							"                              D9         <br>"+
+							"A que se compara à esperança viva        <br>"+
+							"           G5(7M)                        <br>"+
+							"Tua presença                             <br>"+
+							"									     <br>"+
+							"D9										 <br>"+
+							"   Eu provei e vi                        <br>"+
+							"              G5(7M)                     <br>"+
+							"O mais doce amor                         <br>"+
+                            "                                         <br>"+
+							"Que liberta o meu ser                    <br>"+
+							"              D9                         <br>"+
+							"E a vergonha desfaz                      <br>"+
+							"           G5(7M)                        <br>"+
+							"Tua presença                             <br>"+
+                            "                                         <br>"+
+							"Refrão:                                  <br>"+
+							" D9                                      <br>"+
+							"Santo Espírito, és bem-vindo aqui        <br>"+
+							"    G5(7M)             Em7               <br>"+
+							"Vem inundar, encher esse lugar           <br>"+
+							"  D9                                     <br>"+
+							"É o desejo do meu coração                <br>"+
+							"       G5(7M)              Em7           <br>"+
+							"Sermos inundados por Tua glória          <br>"+
+                            "                                         <br>"+
+							" D9                                      <br>"+
+							"Santo Espírito, és bem-vindo aqui        <br>"+
+							"    G5(7M)             Em7               <br>"+
+							"Vem inundar, encher esse lugar           <br>"+
+							"  D9                                     <br>"+
+							"É o desejo do meu coração                <br>"+
+							"       G5(7M)              Em7           <br>"+
+							"Sermos inundados por Tua glória, Senhor  <br>"+
+							"Base solo 2x: D9  G5(7M)  Em7            "];
 
 function selecionaPergunta(id){
 
@@ -664,9 +559,9 @@ function selecionaPalavra(id){
 }
 function selecionaLouvor(id){
 
-	$("#ModalPerguntaResposta").html(arrayConteudoLouvores[id]);
-	$("#ModalPerguntaTitulo").text(arrayTituloLouvores[id]);
-	abreModal("ModalPergunta");
+	$("#ModalLouvorConteudo").html(arrayConteudoLouvores[id]);
+	$("#ModalLouvorTitulo").text(arrayTituloLouvores[id]);
+	abreModal("ModalLouvor");
 }
 
 function listar(arrayTitulo, idPage) {
