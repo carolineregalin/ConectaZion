@@ -95,9 +95,9 @@ function pageChange(idNewPage){
 
 	$(" " + idNewPage).show();//mostra a página selecionada no menu
 
-	/*if (!$("#btnMenuMobile").hasClass("collapsed"))
+	if (!$("#btnMenuMobile").hasClass("collapsed"))
 		$("#btnMenuMobile").click();//fecha o menu (fechar manualmente irrita)
-		scrollToAnchor(idNewPage);//força a página à subir até o elemento*/
+		scrollToAnchor(idNewPage);//força a página à subir até o elemento
 }
 
 function scrollToAnchor(id) {
@@ -429,82 +429,963 @@ Para estimular eles a dizerem isso pergunte se a pipoca está gostosa, etc. Pois
 <p>Não Joguem o seu sonho no Lixo. Deus diz que você é vitorioso.</p>"
 ];
 
-var arrayTituloLouvores = [
-"Santo Espírito",
-"Sal da terra",
-"Tiro pela culatra",
-"Quem vai pro céu?",
-"O Verbo",
-"Imagem e semelhança de Deus",
-"Rótulos",
-"Sonhos"
-];
+var arrayTituloLouvores = [ "Santo Espírito",
+							"Tu és real",
+							"Quebrantado",
+							"Me leva mais alto",
+							"Galileu",
+							"Vale a pena (Rodrigo Claro)",
+							"Som da liberdade",
+							"Milagres(livres)",
+							"Em Teus braços",
+							"Teu amor não falha",
+							"Viver pra ti",
+							"Ousado amor"];
 
-var arrayConteudoLouvores = ["Tom: E (forma dos acordes no tom de D)<br>"+
-							"Capotraste na 2ª casa                  <br>"+
-							"Refrão:                                <br>"+
-							" D9                                    <br>"+
-							"Santo Espírito, és bem-vindo aqui      <br>"+
-							"    G5(7M)             Em7             <br>"+
-							"Vem inundar, encher esse lugar         <br>"+
-							"   D9                                  <br>"+
-							"É o desejo do meu coração              <br>"+
-							"       G5(7M)              Em7         <br>"+
-							"Sermos inundados por Tua glória, Senhor <br>"+
-                            "                                        <br>"+
-							" D9                                     <br>"+
-							"Santo Espírito, és bem-vindo aqui       <br>"+
-							"    G5(7M)             Em7               <br>"+
-							"Vem inundar, encher esse lugar           <br>"+
-							"  D9                                     <br>" +
-							"É o desejo do meu coração                <br>"+
-							"       G5(7M)              Em7           <br>"+
-							"Sermos inundados por Tua glória          <br>"+
-							"    D9                 G5(7M)            <br>"+
-							"Senhor, Tua glória Senhor                <br>"+
-							"           D9  G5(7M)                    <br>"+
-							"Tua glória                               <br>"+
-                            "                                         <br>"+
-							"Primeira Parte:                          <br>"+
-							"D9                                       <br>"+
-							"   Não há nada igual                     <br>"+
-							"                G5(7M)                   <br>"+
-							"Não há nada melhor                       <br>"+
-							"                              D9         <br>"+
-							"A que se compara à esperança viva        <br>"+
-							"           G5(7M)                        <br>"+
-							"Tua presença                             <br>"+
-							"									     <br>"+
-							"D9										 <br>"+
-							"   Eu provei e vi                        <br>"+
-							"              G5(7M)                     <br>"+
-							"O mais doce amor                         <br>"+
-                            "                                         <br>"+
-							"Que liberta o meu ser                    <br>"+
-							"              D9                         <br>"+
-							"E a vergonha desfaz                      <br>"+
-							"           G5(7M)                        <br>"+
-							"Tua presença                             <br>"+
-                            "                                         <br>"+
-							"Refrão:                                  <br>"+
-							" D9                                      <br>"+
-							"Santo Espírito, és bem-vindo aqui        <br>"+
-							"    G5(7M)             Em7               <br>"+
-							"Vem inundar, encher esse lugar           <br>"+
-							"  D9                                     <br>"+
-							"É o desejo do meu coração                <br>"+
-							"       G5(7M)              Em7           <br>"+
-							"Sermos inundados por Tua glória          <br>"+
-                            "                                         <br>"+
-							" D9                                      <br>"+
-							"Santo Espírito, és bem-vindo aqui        <br>"+
-							"    G5(7M)             Em7               <br>"+
-							"Vem inundar, encher esse lugar           <br>"+
-							"  D9                                     <br>"+
-							"É o desejo do meu coração                <br>"+
-							"       G5(7M)              Em7           <br>"+
-							"Sermos inundados por Tua glória, Senhor  <br>"+
-							"Base solo 2x: D9  G5(7M)  Em7            "];
+var arrayConteudoLouvores = ["<b>Tom: F</b>"+
+							"<b>E</b>                                <b>A9</b><br>"+
+							"  Não há nada igual, não há nada melhor<br>"+
+							"                                 <b>E</b><br>"+
+							"A que se comparar à esperança viva<br>"+
+							"           <b>A9</b><br>"+
+							"Tua presença<br>"+
+							"<br>"+
+							"<b>E</b>                               <b>A9</b><br>"+
+							"  Eu provei e vi, O mais doce amor<br>"+
+							"                                       <b>E</b><br>"+
+							"Que liberta o meu ser e a vergonha desfaz<br>"+
+							"           <b>A9</b><br>"+
+							"Tua presença<br>"+
+							"<br>"+
+							"<b>E</b><br>"+
+							"Santo Espírito, és bem-vindo aqui<br>"+
+							"    <b>A9</b>              <b>F#m</b><br>"+
+							"Vem inundar, encher esse  lugar<br>"+
+							"  <b>E</b><br>"+
+							"É o desejo do meu coração<br>"+
+							"       <b>A9</b>                  <b>F#m</b>       <b>E</b><br>"+
+							"Sermos inundados por tua glória, Senhor<br>"+
+							" <b>A9</b><br>"+
+							"Senhor<br>"+
+							"<b>A9</b>          <b>E/G#</b>          <b>F#m7</b>        <b>E/G#</b><br>"+
+							"  Vamos provar   quão real é tua presença<br>"+
+							"<b>A9</b>          <b>E/G#</b>         <b>F#m7</b>        <b>E/G#</b><br>"+
+							"  Vamos provar   tua glória e bondade<br>"+
+							"<b>A</b>           <b>E/G#</b>          <b>F#m7</b>        <b>E/G#</b><br>"+
+							"  Vamos provar   quão real é tua presença<br>"+
+							"<b>A</b>          <b>E/G#</b>         <b>F#m7</b>        <b>E/G#</b><br>"+
+							"  Vamos provar   tua glória e bondade<br>"+
+							"<b>A9</b>         <b>E/G#</b>         <b>F#m7</b>       <b>E/G#</b><br>"+
+							"  Vamos provar   quão real é tua presença<br>"+
+							"<b>A9</b>         <b>E/G#</b>       <b>F#m7</b>       <b>E/G#</b><br>"+
+							"  Vamos provar   tua glória e bondade<br>"+
+							"<b>A9</b>         <b>E/G#</b>         <b>F#m7</b>       <b>E/G#</b><br>"+
+							"  Vamos provar   quão real é tua presença<br>"+
+							"<b>A9</b>         <b>E/G#</b>         <b>F#m7</b>      <b>E/G#</b><br>"+
+							"  Vamos provar   tua glória e bondade<br>"+
+							"    <b>A9</b><br>"+
+							"Senhor<br>"+
+							"<br>"+
+							" <b>E</b><br>"+
+							"Santo Espírito, és bem-vindo aqui<br>"+
+							"    <b>A9</b>              <b>F#m</b><br>"+
+							"Vem inundar, encher esse  lugar<br>"+
+							"  <b>E</b><br>"+
+							"É o desejo do meu coração<br>"+
+							"       <b>A9</b>                  <b>F#m</b><br>"+
+							"Sermos inundados por tua glória, Senhor<br>"+
+							"<br>"+
+							" <b>E</b><br>"+
+							"Santo Espírito, és bem-vindo aqui          <br>"+
+							"    <b>A9</b>              <b>F#m</b>         <br>"+
+							"Vem inundar, encher esse  lugar              <br>"+
+							"  <b>E</b>                                   <br>"+
+							"É o desejo do meu coração                    <br>"+
+							"       <b>A9</b>                  <b>F#m</b>      <br>"+
+							"Sermos inundados por tua glória, Senhor  <br>"+
+							"<a href='https://www.youtube.com/watch?v=1Xprfo5-6OU'>Youtube</a></br>"+
+							"<a href='https://www.youtube.com/watch?v=1Xprfo5-6OU'>Spotify</a></br>",
+							/*Tu és real*/
+							"<b>Tom: F</b>"+
+							"<b>Bb</b>     <b>C</b>         <b>Dm</b><br>"+
+							"Não consigo entender<br>"+
+							"                  <b>C</b>           <b>Bb</b><br>"+
+							"Seu mistério é grande pra mim<br>"+
+							"       <b>C</b>              <b>Dm</b><br>"+
+							"Mesmo sem te ver Senhor<br>"+
+							"           <b>F</b>        <b>Bb</b><br>"+
+							"Sei que estás aqui<br>"+
+							"             <b>C</b>               <b>Dm</b><br>"+
+							"Mesmo que o mundo diga que não<br>"+
+							"                  <b>FM7</b>            <b>Bb</b><br>"+
+							"Tua verdade transforma quem eu sou<br>"+
+							"          <b>C</b>        <b>Dm</b><br>"+
+							"E me invade, e me mostra a realidade<br>"+
+							"           <b>Gm</b>  <b>Dm</b>  <b>Bb</b>              <b>Gm</b>  <b>Dm</b>  <b>C</b><br>"+
+							"De quem Tu és,              de quem Tu és<br>"+
+							"         <b>Bb</b>                    <b>C</b><br>"+
+							"Tu és real e estás em mim<br>"+
+							"      <b>Am</b>                     <b>Dm</b><br>"+
+							"Tua verdade toma conta do meu ser<br>"+
+							"    <b>Bb</b>                 <b>C</b><br>"+
+							"E o mundo irá ver quem Tu és<br>"+
+							"     <b>Am</b>                      <b>Dm</b><br>"+
+							"Tua glória reina sobre todo o céu<br>"+
+							"<br>"+
+							"         <b>Bb</b>           <b>C</b><br>"+
+							"Tu és real e estás em mim<br>"+
+							"      <b>Am</b>                     <b>Dm</b><br>"+
+							"Tua verdade transforma o meu ser<br>"+
+							"     <b>Bb</b>                    <b>C</b><br>"+
+							"E o mundo irá ver quem Tu és   <br>"+
+							"     <b>Am</b>                        <b>Dm</b><br>"+
+							"Tua glória reina sobre todo o céu               <b>Bb</b> <b>C</b> <b>Dm</b><br>"+
+							"<br>"+
+							" <b>Bb</b>                  <b>C</b><br>"+
+							"A Tua voz o mundo ouvirá<br>"+
+							"     <b>Dm</b>           <b>C/E</b><br>"+
+							"Tu és real Senhor<br>"+
+							"    <b>Bb</b>               <b>C</b><br>"+
+							"Da escuridão o mundo sairá<br>"+
+							"     <b>Dm</b>           <b>C/E</b><br>"+
+							"Tu és real Senhor<br>",
+							/*Quebrantado*/
+							"<b>Tom C</b><br>"+
+							"[Intro]  <b>C</b>  <b>G</b>  <b>Am</b>  <b>F</b><br>"+
+							"<br>"+
+							"               <b>C</b><br>"+
+							"Eu olho para cruz<br>"+
+							"                <b>G</b><br>"+
+							"E para cruz eu vou<br>"+
+							"                      <b>Am</b><br>"+
+							"Do seu sofrer participar<br>"+
+							"                       <b>F</b><br>"+
+							"Da sua obra eu vou cantar<br>"+
+							"<br>"+
+							"          <b>C</b><br>"+
+							"Meu Salvador<br>"+
+							"             <b>G</b><br>"+
+							"Na cruz mostrou<br>"+
+							"           <b>Am</b><br>"+
+							"O amor do pai<br>"+
+							"         <b>F</b><br>"+
+							"o justo Deus<br>"+
+							"<br>"+
+							"<b>C</b><br>"+
+							"   Pela cruz, me chamou<br>"+
+							"<b>Am</b>                         <b>G</b><br>"+
+							"   Gentilmente me atraiu e eu<br>"+
+							"                     <b>F</b><br>"+
+							"Sem palavras me aproximo<br>"+
+							"                      <b>C</b><br>"+
+							"Quebrantado por seu amor<br>"+
+							"<br>"+
+							"( <b>C</b>  <b>Am</b>  <b>G</b>  <b>F</b> )<br>"+
+							"<br>"+
+							"           <b>C</b><br>"+
+							"Imerecida vida<br>"+
+							"            <b>G</b><br>"+
+							"De graça recebi<br>"+
+							"          <b>Am</b><br>"+
+							"Por sua cruz<br>"+
+							"             <b>F</b><br>"+
+							"Da morte me livrou<br>"+
+							"<br>"+
+							"             <b>C</b><br>"+
+							"Trouxe-me a vida<br>"+
+							"                <b>G</b><br>"+
+							"Eu estava condenado<br>"+
+							"                 <b>Am</b><br>"+
+							"Mas agora pela cruz<br>"+
+							"               <b>F</b><br>"+
+							"Eu fui reconciliado<br>"+
+							"<br>"+
+							"<b>C</b><br>"+
+							"   Pela cruz, me chamou<br>"+
+							"<b>Am</b>                         <b>G</b><br>"+
+							"   Gentilmente me atraiu e eu<br>"+
+							"                     <b>F</b><br>"+
+							"Sem palavras me aproximo<br>"+
+							"                      <b>C</b><br>"+
+							"Quebrantado por seu amor<br>"+
+							"<br>"+
+							"<b>Dm</b>                     <b>F</b><br>"+
+							"Impressionante é o seu amor<br>"+
+							" <b>Dm</b>                  <b>F</b><br>"+
+							"Me redimiu e me mostrou<br>"+
+							"            <b>G</b><br>"+
+							"O quanto é fiel<br>"+
+							" <b>C</b><br>"+
+							"<br>"+
+							"Pela cruz, me chamou<br>"+
+							" <b>Am</b>                     <b>G</b><br>"+
+							"Gentilmente me atraiu e eu<br>"+
+							"                     <b>F</b><br>"+
+							"Sem palavras me aproximo<br>"+
+							"                      <b>C</b><br>"+
+							"Quebrantado por seu amor<br>",
+							/*Me leva mais alto*/
+							"Aonde me esconderei do seu amor<br>"+
+							"Por todos os lados eu sempre te vejo, Senhor<br>"+
+							"Mesmo que eu fuja, as suas mãos estão a me buscar<br>"+
+							"Se fecho os olhos ouço tua voz a me chamar<br>"+
+							"<br>"+
+							"Mais perto eu quero estar<br>"+
+							"Mais perto eu quero estar<br>"+
+							"Mais perto eu quero estar<br>"+
+							"Segura em minhas mãos<br>"+
+							"Me leva pra voar, te dou meu coração<br>"+
+							"<br>"+
+							"Me leva mais alto, mais alto eu quero ir<br>"+
+							"Me leva mais alto, teu amor eu quero sentir<br>"+
+							"Me leva mais alto, mais alto eu quero ir<br>"+
+							"Me leva mais alto, teu amor eu quero sentir<br>"+
+							"<br>"+
+							"Hoje me libertei de todas as prisões<br>"+
+							"Sou novo homem, vida nova, novas emoções<br>"+
+							"Por onde for o seu amor eu cantarei<br>"+
+							"Por toda eternidade ao teu lado viverei<br>"+
+							"<br>"+
+							"Mais perto eu quero estar<br>"+
+							"Mais perto eu quero estar<br>"+
+							"Mais perto eu quero estar<br>"+
+							"Segura em minhas mãos<br>"+
+							"Me leva pra voar, te dou meu coração<br>"+
+							"<br>"+
+							"Me leva mais alto, mais alto eu quero ir<br>"+
+							"Me leva mais alto, teu amor eu quero sentir<br>"+
+							"Me leva mais alto, mais alto eu quero ir<br>"+
+							"Me leva mais alto, teu amor eu quero sentir<br>"+
+							"<br>"+
+							"Yeah<br>"+
+							"Yeah, Yeah<br>"+
+							"Me leva mais alto<br>"+
+							"Com as mãos pra cima, vem!<br>"+
+							"Com as mão pra cima, todo mundo vem!<br>"+
+							"<br>"+
+							"Já me cansei de ficar em baixo<br>"+
+							"Agora eu quero subir, eu quero ir mais alto<br>"+
+							"Eu quero ir além da mediocridade<br>"+
+							"E conhecer toda a sua verdade<br>"+
+							"Que me liberta, restaura, transforma<br>"+
+							"E eu sei que pode me dar uma vida nova<br>"+
+							"Não importa quantas vezes eu precisar<br>"+
+							"O seu amor está comigo aonde quer que eu vá<br>"+
+							"<br>"+
+							"Senhor, a cada dia que se passa é um degrau a mais<br>"+
+							"Senhor, somente ao seu lado eu encontro paz<br>"+
+							"<br>"+
+							"Yeah! Yeah!<br>"+
+							"<br>"+
+							"Me leva mais alto, mais alto eu quero ir<br>"+
+							"Me leva mais alto, teu amor eu quero sentir<br>"+
+							"Me leva mais alto, mais alto eu quero ir<br>"+
+							"Me leva mais alto, teu amor eu quero sentir<br>"+
+							"<br>"+
+							"Me leva, Senhor<br>"+
+							"Mais alto, mais alto, mais alto, alto, alto, alto, alto, alto<br>"+
+							"Me leva, Senhor!<br>",
+							/*Galileu*/
+							"<b>Tom: C# (forma dos acordes no tom de C)   </b>                     <br>"+
+							" Capotraste na  <b>1ª casa</b><br>"+
+							"Intro: <b>C</b><br>"+
+							"        <b>Am</b>  <b>F7M</b>  <b>Am</b>  <b>F7M</b><br>"+
+							"[Primeira Parte]<br>"+
+							"<br>"+
+							"<b>C</b><br>"+
+							"  Deixou Sua glória<br>"+
+							"<br>"+
+							"Foi por amor, foi por amor<br>"+
+							"<b>Am</b>          <b>F7M</b>          <b>Am</b><br>"+
+							"    E o seu sangue, derramou<br>"+
+							"             <b>F7M</b><br>"+
+							"Que grande amor<br>"+
+							"<br>"+
+							"[Segunda Parte]<br>"+
+							"<b>Dm7</b>          <b>F7M</b>     <b>C</b><br>"+
+							"    Naquela via dolorosa<br>"+
+							"         <b>G4</b><br>"+
+							"Se entregou<br>"+
+							"<b>Dm7</b>           <b>F7M</b><br>"+
+							"    Eu não mereço<br>"+
+							"          <b>C</b>            <b>G4</b><br>"+
+							"Mas Sua graça me alcançou<br>"+
+							"<br>"+
+							"       <b>Dm7</b>           <b>F7M</b><br>"+
+							"Eu me rendo ao seu amor<br>"+
+							"       <b>C</b>             <b>G4</b><br>"+
+							"Eu me rendo ao seu amor<br>"+
+							"       <b>Dm7</b>           <b>F7M</b><br>"+
+							"Eu me rendo ao seu amor<br>"+
+							"       <b>Am</b><br>"+
+							"Eu me rendo<br>"+
+							"       <b>G4</b><br>"+
+							"Eu me rendo<br>"+
+							"<br>"+
+							"[Pré-refrão]<br>"+
+							"<br>"+
+							" <b>Am</b><br>"+
+							"Deus Emanuel<br>"+
+							"    <b>F7M</b><br>"+
+							"Estrela da Manhã<br>"+
+							" <b>C</b><br>"+
+							"Cordeiro de Deus<br>"+
+							" <b>G4</b><br>"+
+							"Pão da Vida<br>"+
+							"  <b>Am</b><br>"+
+							"Príncipe da Paz<br>"+
+							"    <b>F7M</b><br>"+
+							"O grande El Shaddai<br>"+
+							" <b>C</b><br>"+
+							"Santo de Israel<br>"+
+							" <b>G4</b><br>"+
+							"Luz do Mundo<br>"+
+							"<br>"+
+							"[Refrão]<br>"+
+							"<br>"+
+							" <b>Dm7</b>   <b>F7M</b>    <b>C</b>      <b>G4</b><br>"+
+							"Ga__lileu, Jesus, Jesus<br>"+
+							" <b>Dm7</b>   <b>F7M</b>    <b>C</b>      <b>G4</b><br>"+
+							"Ga__lileu, Jesus, Jesus<br>"+
+							" <b>Dm7</b>   <b>F7M</b>    <b>C</b>      <b>G4</b><br>"+
+							"Ga__lileu, Jesus, Jesus<br>"+
+							" <b>Dm7</b>   <b>F7M</b>    <b>C</b>      <b>G4</b><br>"+
+							"Ga__lileu, Jesus, Jesus<br>"+
+							"<br>"+
+							"       <b>Dm7</b>           <b>F7M</b><br>"+
+							"Eu me rendo ao seu amor<br>"+
+							"       <b>C</b>             <b>G4</b><br>"+
+							"Eu me rendo ao seu amor<br>"+
+							"       <b>Dm7</b>           <b>F7M</b><br>"+
+							"Eu me rendo ao seu amor<br>"+
+							"       <b>Am</b>                 <b>G4</b><br>"+
+							"Eu me rendo, me rendo, me rendo, oh<br>"+
+							"<br>"+
+							"[Pré-refrão]<br>"+
+							"<br>"+
+							" <b>Am</b><br>"+
+							"Deus Emanuel<br>"+
+							"    <b>F7M</b><br>"+
+							"Estrela da Manhã<br>"+
+							" <b>C</b><br>"+
+							"Cordeiro de Deus<br>"+
+							" <b>G4</b><br>"+
+							"Pão da Vida<br>"+
+							"  <b>Am</b><br>"+
+							"Príncipe da Paz<br>"+
+							"    <b>F7M</b><br>"+
+							"O grande El Shaddai<br>"+
+							" <b>C</b><br>"+
+							"Santo de Israel<br>"+
+							" <b>G4</b><br>"+
+							"Luz do Mundo<br>"+
+							"<br>"+
+							"[Refrão]<br>"+
+							"<br>"+
+							" <b>Dm7</b>   <b>F7M</b>    <b>C</b>      <b>G4</b><br>"+
+							"Ga__lileu, Jesus, Jesus<br>"+
+							" <b>Dm7</b>   <b>F7M</b>    <b>C</b>      <b>G4</b><br>"+
+							"Ga__lileu, Jesus, Jesus<br>"+
+							" <b>Dm7</b>   <b>F7M</b>    <b>C</b>      <b>G4</b><br>"+
+							"Ga__lileu, Jesus, Jesus<br>"+
+							" <b>Dm7</b>   <b>F7M</b>    <b>C</b>      <b>G4</b><br>"+
+							"Ga__lileu, Jesus, Jesus<br>"+
+							"<br>"+
+							"[Interlúdio]<br>"+
+							"<br>"+
+							"<b>F7M</b><br>"+
+							"Oh, oh, oh, oh<br>"+
+							"<b>G4</b><br>"+
+							"   Oh, oh, oh, oh<br>"+
+							"<b>Am</b>                <b>C</b><br>"+
+							"    Oh, oh, oh, oh<br>"+
+							"<br>"+
+							"<b>F7M</b><br>"+
+							"Oh, oh, oh, oh<br>"+
+							"<b>G4</b><br>"+
+							"   Oh, oh, oh, oh<br>"+
+							"<b>Am</b>                <b>C</b><br>"+
+							"    Oh, oh, oh, oh<br>"+
+							"<br>"+
+							"[Parte falada]<br>"+
+							"<br>"+
+							"“Tende em vós o mesmo sentimento<br>"+
+							"Que houve também em Cristo Jesus<br>"+
+							"Pois ele subsistindo em forma de Deus<br>"+
+							"Não julgou como usurpação<br>"+
+							"O ser igual a Deus<br>"+
+							"Antes, a sim mesmo esvaziou<br>"+
+							"Assumindo a forma de servo<br>"+
+							"Tornando-se em semelhança de homens<br>"+
+							"E reconhecido em figura humana<br>"+
+							"A si mesmo se humilhou<br>"+
+							"Tornando-se obediente até a morte<br>"+
+							"E morte de cruz<br>"+
+							"Pelo que também Deus<br>"+
+							"O exaltou sobremaneira<br>"+
+							"E lhe deu o nome<br>"+
+							"Que está acima de todo nome<br>"+
+							"Para que ao nome de Jesus<br>"+
+							"Se dobre todo joelho nos Céus<br>"+
+							"Na Terra e debaixo da terra<br>"+
+							"E toda língua confesse: Jesus Cristo<br>"+
+							"Jesus Cristo é o Senhor<br>"+
+							"Para a glória de Deus Pai”<br>"+
+							"<br>"+
+							"( <b>F7M</b>  <b>G4</b>  <b>Am</b>  <b>C</b> ) (2x)<br>"+
+							"<br>"+
+							"<b>F7M</b><br>"+
+							"Oh, oh, oh, oh<br>"+
+							"<b>G4</b><br>"+
+							"   Oh, oh, oh, oh<br>"+
+							"<b>Am</b>                <b>C</b><br>"+
+							"    Oh, oh, oh, oh<br>"+
+							"<br>"+
+							"[Refrão]<br>"+
+							"<br>"+
+							" <b>Dm7</b>   <b>F7M</b>    <b>C</b>      <b>G4</b><br>"+
+							"Ga__lileu, Jesus, Jesus<br>"+
+							" <b>Dm7</b>   <b>F7M</b>    <b>C</b>      <b>G4</b><br>"+
+							"Ga__lileu, Jesus, Jesus<br>"+
+							" <b>Dm7</b>   <b>F7M</b>    <b>C</b>      <b>G4</b><br>"+
+							"Ga__lileu, Jesus, Jesus<br>"+
+							" <b>Dm7</b>   <b>F7M</b>    <b>C</b>      <b>G4</b>  <b>F7M</b><br>"+
+							"Ga__lileu, Jesus, Jesus<br>",
+							/*Vale a Pena Rodrigo Claro*/
+							"<b> Tom: D</b><br>"+
+							"(intro) <b>E</b> <b>A</b> <b>E</b> <b>F#m</b> <b>E/G#</b> <b>A</b> <b>Bm</b><br>"+
+							"<br>"+
+							"<b>D</b>                            <b>A/C#</b><br>"+
+							" enquanto eu viver eu Te amarei<br>"+
+							"                                  <b>E</b><br>"+
+							" enquanto eu respirar eu Te seguirei<br>"+
+							"                                           <b>Bm</b><br>"+
+							" não quero mais viver longe do Teu grande amor<br>"+
+							"<b>D</b>                                  <b>A/C#</b><br>"+
+							" não há outro lugar que eu queira ir<br>"+
+							"                                    <b>E</b><br>"+
+							" não há outra razão que me faça sorrir<br>"+
+							"                <b>Bm</b><br>"+
+							" que a Tua presença<br>"+
+							"<br>"+
+							"   <b>D</b>                 <b>F#m</b>  <b>E/G#</b><br>"+
+							"Jesus meu melhor amigo<br>"+
+							"   <b>A</b>                   <b>E</b><br>"+
+							"Jesus dono da minha vida<br>"+
+							"   <b>Bm</b>                 <b>D</b><br>"+
+							"Jesus enquanto eu viver<br>"+
+							"                <b>E</b><br>"+
+							"Eu quero Te dizer<br>"+
+							"<br>"+
+							"<b>A</b>           <b>E/G#</b>                 <b>Bm</b><br>"+
+							"Vale a pena vale a pena Te seguir...<br>"+
+							"<b>D</b>                 <b>G</b>      <b>D</b><br>"+
+							"Nada pode se comparar a Ti.<br>",
+							/*Na minha liberdade*/
+							"<b>Tom: B</b><br>"+
+							"<br>"+
+							"Intro: <b>E</b> <b>F#</b> <b>G#m</b> (2X)<br>"+
+							"<br>"+
+							"Na minha liberdade!<br>"+
+							"<br>"+
+							"<b>E</b> <b>F#</b> <b>G#m</b><br>"+
+							"Hey chega mais irmão!<br>"+
+							"DJ PV, Ivair, Tevão<br>"+
+							"Seguindo o mestre Jesus<br>"+
+							"Eu creio sempre na palavra dEle, pode crer<br>"+
+							"Tô com Ele e não importa o que acontecer<br>"+
+							"Só Ele me enche de amor e paz<br>"+
+							"Só Ele me satisfaz<br>"+
+							"<br>"+
+							"<br>"+
+							"          <b>E</b>           <b>F#</b>       <b>G#m</b><br>"+
+							"Posso ouvir o som da liberdade vindo sobre nós<br>"+
+							"         <b>E</b>          <b>F#</b>       <b>G#m</b><br>"+
+							"O som da vida do espírito em mim<br>"+
+							"         <b>E</b>            <b>F#</b>          <b>G#m</b><br>"+
+							"Posso ouvir o som de muitas correntes caindo ao chão<br>"+
+							"            <b>E</b>             <b>F#</b>         <b>G#m</b><br>"+
+							"Pois antes morto agora eu vivo só por ti<br>"+
+							"<br>"+
+							"                       <b>E</b>     <b>F#</b>       <b>G#m</b><br>"+
+							"Na minha liberdade eu pulo e danço ao Senhor Deus<br>"+
+							"                       <b>E</b>     <b>F#</b>       <b>G#m</b><br>"+
+							"Na minha liberdade eu pulo e danço ao Senhor Deus<br>"+
+							"<br>"+
+							"    <b>E</b>   <b>F#</b>     <b>G#m</b><br>"+
+							"Ooooo, Ooo, Ooooo, Oo<br>"+
+							"   <b>E</b>   <b>F#</b>     <b>G#m</b><br>"+
+							"Ooooo, Ooo, Ooooo, Oo<br>"+
+							"<br>"+
+							"<b>E</b> <b>F#</b> <b>G#m</b><br>"+
+							"Agora livre sou<br>"+
+							"Cristo me libertou<br>"+
+							"Agora eu posso cantar<br>"+
+							"Aquela dor que eu tinha já passou<br>"+
+							"É uma nova história<br>"+
+							"Ele me deu vitória<br>"+
+							"Eu vou seguindo com fé<br>"+
+							"Eu sei, no fim vamos se ver na Glória<br>"+
+							"<br>"+
+							"<b>E</b>               <b>F#</b><br>"+
+							"Não vou parar (não!)<br>"+
+							"                <b>G#m</b><br>"+
+							"Eu vou gritar (vou!)<br>"+
+							"<br>"+
+							"Até o mundo (yeah, yeah)<br>"+
+							"Me escutar (uoou!)<br>"+
+							"<br>"+
+							"Até o mundo me escutar!<br>",
+							/*Milagres*/
+							"<b> Tom: C</b><br>"+
+							"<br>"+
+							"[Intro] <b>Am7</b>  <b>Em</b>  <b>F</b><br>"+
+							"<br>"+
+							"<b>Am7</b>                  <b>Em</b><br>"+
+							"O Deus que faz o cego ver<br>"+
+							"<b>F</b><br>"+
+							"Está passando por aqui<br>"+
+							"<br>"+
+							"Está passando por aqui<br>"+
+							"<br>"+
+							"<b>Am7</b>                  <b>Em</b><br>"+
+							"O Deus que faz o surdo ouvir<br>"+
+							"<b>F</b><br>"+
+							"Silencia o medo em mim<br>"+
+							"<br>"+
+							"Silencia o medo em mim<br>"+
+							"<br>"+
+							"<b>Am</b><br>"+
+							"Sim creio em Ti<br>"+
+							"<b>F</b><br>"+
+							"Sim creio em Ti<br>"+
+							"<b>C</b>                    <b>G</b><br>"+
+							"Deus do Sobrenatural<br>"+
+							"<br>"+
+							"<b>Am</b><br>"+
+							"Sim creio em Ti<br>"+
+							"<b>F</b><br>"+
+							"Sim creio em Ti<br>"+
+							"<b>C</b>                    <b>G</b><br>"+
+							"Deus do Sobrenatural<br>"+
+							"<br>"+
+							"( <b>Am7</b>  <b>Em</b>  <b>F</b>  <b>G</b> )<br>"+
+							"<br>"+
+							"<b>Am7</b>                <b>Em</b><br>"+
+							"O Deus do impossível vem<br>"+
+							"<b>F</b><br>"+
+							"Transformar meu coração<br>"+
+							"<br>"+
+							"Transformar meu coração<br>"+
+							"<br>"+
+							"<b>Am7</b>                   <b>Em</b><br>"+
+							"O Deus que a morte já venceu<br>"+
+							"<b>F</b><br>"+
+							"Vivo está dentro de mim<br>"+
+							"<br>"+
+							"Vivo está dentro de mim<br>"+
+							"<br>"+
+							"<b>Am</b><br>"+
+							"Sim creio em Ti<br>"+
+							"<b>F</b><br>"+
+							"Sim creio em Ti<br>"+
+							"<b>C</b>                    <b>G</b><br>"+
+							"Deus do Sobrenatural<br>"+
+							"<br>"+
+							"<b>Am</b><br>"+
+							"Sim creio em Ti<br>"+
+							"<b>F</b><br>"+
+							"Sim creio em Ti<br>"+
+							"<b>C</b>                    <b>G</b><br>"+
+							"Deus do Sobrenatural<br>"+
+							"<br>"+
+							"<b>Am</b><br>"+
+							"Sim creio em Ti<br>"+
+							"<b>F</b><br>"+
+							"Sim creio em Ti<br>"+
+							"<b>C</b>                    <b>G</b><br>"+
+							"Deus do Sobrenatural<br>"+
+							"<br>"+
+							"<b>Am</b><br>"+
+							"Sim creio em Ti<br>"+
+							"<b>F</b><br>"+
+							"Sim creio em Ti<br>"+
+							"<b>C</b>                    <b>G</b><br>"+
+							"Deus do Sobrenatural<br>"+
+							"<br>"+
+							"<b>F</b>                    <b>G</b><br>"+
+							"Aquele que era e há de vir<br>"+
+							"<b>C/E</b>               <b>Am</b><br>"+
+							"Em Seu poder vai ressurgir<br>"+
+							"<b>F</b>                              <b>G</b><br>"+
+							"O Deus que os mortos faz viver<br>"+
+							"                   <b>C</b><br>"+
+							"Deus de Milagres<br>"+
+							"<br>"+
+							"Deus de Milagres<br>"+
+							"<br>"+
+							"<b>F</b>                    <b>G</b><br>"+
+							"Aquele que era e há de vir<br>"+
+							"<b>C/E</b>               <b>Am</b><br>"+
+							"Em Seu poder vai ressurgir<br>"+
+							"<b>F</b>                              <b>G</b><br>"+
+							"O Deus que os mortos faz viver<br>"+
+							"                   <b>C</b><br>"+
+							"Deus de Milagres<br>"+
+							"<br>"+
+							"Deus de Milagres<br>"+
+							"<br>"+
+							"<b>Am</b><br>"+
+							"Sim creio em Ti<br>"+
+							"<b>F</b><br>"+
+							"Sim creio em Ti<br>"+
+							"<b>C</b>                    <b>G</b><br>"+
+							"Deus do Sobrenatural<br>"+
+							"<br>"+
+							"<b>Am</b><br>"+
+							"Sim creio em Ti<br>"+
+							"<b>F</b><br>"+
+							"Sim creio em Ti<br>"+
+							"<b>C</b>                    <b>G</b><br>"+
+							"Deus do Sobrenatural<br>",
+							/*Em teus braços*/
+							"<b>Tom: C</b><br>"+
+							"<br>"+
+							"[Intro]<br>"+
+							"<br>"+
+							"Parte 1<br>"+
+							"<br>"+
+							"<b>F7M</b><br>"+
+							"Parte 2<br>"+
+							"<br>"+
+							"<b>F7M</b><br>"+
+							"Parte 3<br>"+
+							"<br>"+
+							"<b>C7M</b><br>"+
+							"<br>"+
+							"Parte 4<br>"+
+							"<br>"+
+							"<b>C7M</b><br>"+
+							"<br>"+
+							"[Primeira Parte]<br>"+
+							"<br>"+
+							"(<b>F7M</b>  <b>C7M</b>)<br>"+
+							"<br>"+
+							"<b>F7M</b><br>"+
+							"    Segura estou nos braços<br>"+
+							"                         <b>C7M</b><br>"+
+							"Daquele que nunca me deixou<br>"+
+							"<b>F7M</b><br>"+
+							"    Seu amor perfeito sempre esteve<br>"+
+							"              <b>C7M</b><br>"+
+							"Repousado em mim<br>"+
+							"<br>"+
+							"Pré-refrão]<br>"+
+							"<br>"+
+							"         <b>G/B</b>  <b>Am</b><br>"+
+							"E se eu pas__sar pelo vale<br>"+
+							"            <b>F7M</b>           <b>G</b><br>"+
+							"Acharei conforto em Teu amor<br>"+
+							"                <b>Em7</b><br>"+
+							"Pois eu sei que és aquele<br>"+
+							"                   <b>F7M</b>    <b>G</b><br>"+
+							"Que me guarda, me guardas<br>"+
+							"<br>"+
+							"[Refrão]<br>"+
+							"<br>"+
+							"               <b>F7M</b><br>"+
+							"Em teus braços é meu descanso<br>"+
+							"               <b>C7M</b><br>"+
+							"Em teus braços é meu descanso<br>"+
+							"               <b>F7M</b><br>"+
+							"Em teus braços é meu descanso<br>"+
+							"               <b>C7M</b><br>"+
+							"Em teus braços é meu descanso<br>"+
+							"<br>"+
+							"[Primeira Parte]<br>"+
+							"<br>"+
+							"<b>F7M</b><br>"+
+							"    Seguro estou nos braços<br>"+
+							"                         <b>C7M</b><br>"+
+							"Daquele que nunca me deixou<br>"+
+							"<b>F7M</b><br>"+
+							"    Seu amor perfeito sempre esteve<br>"+
+							"              <b>C7M</b><br>"+
+							"Repousado em mim<br>"+
+							"<br>"+
+							"Pré-refrão]<br>"+
+							"<br>"+
+							"         <b>G/B</b>  <b>Am</b><br>"+
+							"E se eu pas__sar pelo vale<br>"+
+							"            <b>F7M</b>           <b>G</b><br>"+
+							"Acharei conforto em Teu amor<br>"+
+							"                <b>Em7</b><br>"+
+							"Pois eu sei que és aquele<br>"+
+							"                   <b>F7M</b>    <b>G</b><br>"+
+							"Que me guarda, me guardas<br>"+
+							"<br>"+
+							"[Refrão]<br>"+
+							"<br>"+
+							"               <b>F7M</b><br>"+
+							"Em teus braços é meu descanso<br>"+
+							"               <b>C7M</b><br>"+
+							"Em teus braços é meu descanso<br>"+
+							"               <b>F7M</b><br>"+
+							"Em teus braços é meu descanso<br>"+
+							"               <b>C7M</b><br>"+
+							"Em teus braços é meu descanso<br>"+
+							"<br>"+
+							"               <b>F7M</b><br>"+
+							"Em teus braços é meu descanso<br>"+
+							"               <b>C7M</b><br>"+
+							"Em teus braços é meu descanso<br>"+
+							"               <b>F7M</b><br>"+
+							"Em teus braços é meu descanso<br>"+
+							"               <b>C7M</b><br>"+
+							"Em teus braços é meu descanso<br>"+
+							"<br>"+
+							"[Segunda Parte]<br>"+
+							"<br>"+
+							"<b>F7M</b><br>"+
+							"    Recaio em Tua graça<br>"+
+							"<b>C7M</b><br>"+
+							"    Recaio de novo em Tuas mãos<br>"+
+							"<b>F7M</b><br>"+
+							"    Recaio em Tua graça<br>"+
+							"<b>C7M</b><br>"+
+							"    Recaio de novo em Tuas mãos<br>"+
+							"<br>"+
+							"<b>F7M</b><br>"+
+							"    Recaio em Tua graça<br>"+
+							"<b>C7M</b><br>"+
+							"    Recaio de novo em Tuas mãos<br>"+
+							"<b>F7M</b><br>"+
+							"    Recaio em Tua graça<br>"+
+							"<b>C7M</b><br>"+
+							"    Recaio de novo em Tuas mãos<br>"+
+							"<br>"+
+							"[Pré-refrão]<br>"+
+							"<br>"+
+							"         <b>G/B</b>  <b>Am</b><br>"+
+							"E se eu pas__sar pelo vale<br>"+
+							"            <b>F7M</b>           <b>G</b><br>"+
+							"Acharei conforto em Teu amor<br>"+
+							"                <b>Em7</b><br>"+
+							"Pois eu sei que és aquele<br>"+
+							"                   <b>F7M</b>    <b>G</b><br>"+
+							"Que me guarda, me guardas<br>"+
+							"<br>"+
+							"[Refrão]<br>"+
+							"<br>"+
+							"               <b>F7M</b><br>"+
+							"Em teus braços é meu descanso<br>"+
+							"               <b>C7M</b><br>"+
+							"Em teus braços é meu descanso<br>"+
+							"               <b>F7M</b><br>"+
+							"Em teus braços é meu descanso<br>"+
+							"               <b>C7M</b><br>"+
+							"Em teus braços é meu descanso<br>"+
+							"<br>"+
+							"               <b>F7M</b><br>"+
+							"Em teus braços é meu descanso<br>"+
+							"               <b>C7M</b><br>"+
+							"Em teus braços é meu descanso<br>"+
+							"               <b>F7M</b><br>"+
+							"Em teus braços é meu descanso<br>"+
+							"               <b>C7M</b><br>"+
+							"Em teus braços é meu descanso<br>"+
+							"<br>"+
+							"Final:<br>"+
+							"<br>"+
+							"   <b>F7M</b><br>"+
+							"O Toque mais puro<br>"+
+							"<br>"+
+							"O amor mais seguro do mundo<br>"+
+							"   <b>C7M</b><br>"+
+							"O Toque mais puro<br>"+
+							"<br>"+
+							"O amor mais seguro do mundo<br>"+
+							"<br>"+
+							"É o Teu<br>"+
+							"<br>"+
+							"   <b>F7M</b><br>"+
+							"O Toque mais puro<br>"+
+							"<br>"+
+							"O amor mais seguro do mundo<br>"+
+							"   <b>C7M</b><br>"+
+							"O Toque mais puro<br>"+
+							"<br>"+
+							"O amor mais seguro do mundo<br>"+
+							"              <b>F7M</b><br>"+
+							"É o Teu Jesus<br>",
+							/*Teu amor não falha*/
+							"<b>Tom: Am</b><br>"+
+							"<br>"+
+							"[Intro]  <b>Am7</b>  <b>F9/C</b>  <b>C</b>  <b>G11/B</b> <b>F9/C</b>  <b>C</b>  <b>G11/B</b><br>"+
+							"<br>"+
+							"[Primeira Parte]<br>"+
+							"<br>"+
+							"<b>Am7</b>              <b>F9/C</b><br>"+
+							"    Nada vai me separar<br>"+
+							"<b>C</b>                <b>G11/B</b><br>"+
+							"  Mesmo se eu me abalar<br>"+
+							"<b>Am7</b>               <b>F9/C</b>  <b>C</b>  <b>G</b><br>"+
+							"    Teu amor não falha<br>"+
+							"<br>"+
+							"<b>Am7</b>           <b>F9/C</b><br>"+
+							"    Mesmo sem      merecer<br>"+
+							"<b>C</b>                       <b>G11/B</b><br>"+
+							"  Tua graça se derrama sobre mim<br>"+
+							"<b>Am7</b>               <b>F9/C</b>  <b>C</b>       <b>G</b><br>"+
+							"    Teu amor não falha,   Jesus<br>"+
+							"<br>"+
+							"<br>"+
+							"[Refrão]<br>"+
+							"<br>"+
+							"<b>F9/C</b>          <b>C/G</b><br>"+
+							"     Tu és o mesmo pra sempre<br>"+
+							"<b>G4</b>  <b>Dm7</b>          <b>F9/C</b><br>"+
+							"   Teu amor não muda<br>"+
+							"            <b>C/G</b><br>"+
+							"Se o choro dura uma noite<br>"+
+							"       <b>G4</b>        <b>Dm7</b><br>"+
+							"A alegria vem pela manhã<br>"+
+							"<br>"+
+							"<b>F9/C</b>       <b>C/G</b>          <b>G4</b><br>"+
+							"     Se o mar se enfurecer<br>"+
+							"        <b>Dm7</b><br>"+
+							"Eu não tenho o que temer<br>"+
+							"<b>F9/C</b>            <b>C/G</b>         <b>G4</b><br>"+
+							"     Porque eu sei que me amas<br>"+
+							"              <b>F9/C</b>  <b>Am7</b>  <b>G4</b>  <b>C/E</b><br>"+
+							"Teu amor não falha<br>"+
+							"<br>"+
+							"<br>"+
+							"[Segunda Parte]<br>"+
+							"<br>"+
+							"<b>Am7</b>                          <b>F9/C</b><br>"+
+							"    Se o vento é forte e profundo o mar<br>"+
+							"<b>C</b>                     <b>G11/B</b><br>"+
+							"  Tua presença vem me amparar<br>"+
+							"      <b>Am7</b>          <b>F9/C</b>  <b>C</b>     <b>G</b><br>"+
+							"Pois Teu amor não falha,   não<br>"+
+							"<br>"+
+							"<b>Am7</b>              <b>F9/C</b><br>"+
+							"    Difícil é o caminhar<br>"+
+							"<b>C</b>                           <b>G11/B</b><br>"+
+							"  Nunca pensei que eu fosse alcançar<br>"+
+							"     <b>Am7</b>          <b>F9/C</b><br>"+
+							"Mas teu amor não falha<br>"+
+							"<b>C</b>        <b>G</b><br>"+
+							"  Oh, Jesus<br>"+
+							"<br>"+
+							"<br>"+
+							"[Refrão]<br>"+
+							"<br>"+
+							"<b>F9/C</b>          <b>C/G</b><br>"+
+							"     Tu és o mesmo pra sempre<br>"+
+							"<b>G4</b>  <b>Dm7</b>          <b>F9/C</b><br>"+
+							"   Teu amor não muda<br>"+
+							"            <b>C/G</b><br>"+
+							"Se o choro dura uma noite<br>"+
+							"       <b>G4</b>        <b>Dm7</b><br>"+
+							"A alegria vem pela manhã<br>"+
+							"<br>"+
+							"<b>F9/C</b>       <b>C/G</b>          <b>G4</b><br>"+
+							"     Se o mar se enfurecer<br>"+
+							"        <b>Dm7</b><br>"+
+							"Eu não tenho o que temer<br>"+
+							"<b>F9/C</b>            <b>C/G</b>         <b>G4</b><br>"+
+							"     Porque eu sei que me amas<br>"+
+							"<br>"+
+							"<b>F9/C</b>          <b>C/G</b><br>"+
+							"     Tu és o mesmo pra sempre<br>"+
+							"<b>G4</b>  <b>Dm7</b>          <b>F9/C</b><br>"+
+							"   Teu amor não muda<br>"+
+							"            <b>C/G</b><br>"+
+							"Se o choro dura uma noite<br>"+
+							"       <b>G4</b>        <b>Dm7</b><br>"+
+							"A alegria vem pela manhã<br>"+
+							"<br>"+
+							"<b>F9/C</b>       <b>C/G</b>          <b>G4</b><br>"+
+							"     Se o mar se enfurecer<br>"+
+							"        <b>Dm7</b><br>"+
+							"Eu não tenho o que temer<br>"+
+							"<b>F9/C</b>            <b>C/G</b>         <b>G4</b><br>"+
+							"     Porque eu sei que me amas<br>"+
+							"              <b>F9/C</b><br>"+
+							"Teu amor não falha<br>"+
+							"<b>Am7</b>          <b>G4</b><br>"+
+							"    Não não não não<br>"+
+							"<br>"+
+							"<br>"+
+							"[Terceira Parte]<br>"+
+							"<br>"+
+							"         <b>F9/C</b><br>"+
+							"Tu fazes      que tudo<br>"+
+							"    <b>Am7</b>         <b>G4</b><br>"+
+							"Coopere para o meu bem<br>"+
+							"         <b>F9/C</b><br>"+
+							"Tu fazes      que tudo<br>"+
+							"    <b>Am7</b>         <b>G4</b><br>"+
+							"Coopere para o meu bem<br>",
+							/**/
+							"",
+							/*Ousado amor*/
+							"<b>Tom: G#</b> (forma dos acordes no tom de E)                     <br>"+
+							"Capotraste na <b>4ª casa</b><pre><br>"+
+							"<br>"+
+							"[Intro] <b>Bm</b>  <b>A9</b>  <b>G</b>  <b>D</b><br>"+
+							"<br>"+
+							"<b>Bm</b>            <b>A9</b><br>"+
+							"Antes de eu falar<br>"+
+							"           <b>G</b><br>"+
+							"Tu cantavas sobre mim<br>"+
+							"<b>Bm</b>           <b>A9</b>         <b>G</b><br>"+
+							"Tu tens sido tão, tão bom pra mim<br>"+
+							"<b>Bm</b>              <b>A9</b><br>"+
+							"Antes de eu respirar<br>"+
+							"            <b>G</b><br>"+
+							"Sopraste tua vida em mim<br>"+
+							"<b>Bm</b>           <b>A9</b>          <b>G</b><br>"+
+							"Tu tens sido tão, tão bom pra mim<br>"+
+							"<br>"+
+							"     <b>Bm</b>           <b>A9</b>           <b>G</b>            <b>D</b><br>"+
+							"Oh impressionante, infinito, ousado amor de Deus<br>"+
+							"       <b>Bm</b>            <b>A9</b>            <b>G</b>            <b>D</b><br>"+
+							"Oh, que deixa as noventa e nove só pra me encontrar<br>"+
+							"              <b>Bm</b>             <b>A9</b><br>"+
+							"Não posso comprá-lo e nem merecê-lo<br>"+
+							"       <b>G</b>            <b>D</b><br>"+
+							"Mesmo assim se entregou<br>"+
+							"     <b>Bm</b>           <b>A9</b>           <b>G</b>            <b>D</b><br>"+
+							"Oh impressionante, infinito, ousado amor de Deus<br>"+
+							"<br>"+
+							"<b>Bm</b>         <b>A9</b><br>"+
+							"Inimigo eu fui<br>"+
+							"               <b>G</b><br>"+
+							"Mas teu amor lutou por mim<br>"+
+							"<b>Bm</b>           <b>A9</b>          <b>G</b><br>"+
+							"Tu tens sido tão, tão bom pra mim<br>"+
+							"<b>Bm</b>          <b>A9</b><br>"+
+							"Não tinha valor<br>"+
+							"          <b>G</b><br>"+
+							"Mas tudo pagou por mim<br>"+
+							"<b>Bm</b>           <b>A9</b>          <b>G</b><br>"+
+							"Tu tens sido tão, tão bom pra mim<br>"+
+							"<br>"+
+							"<b>Bm</b>               <b>A9</b><br>"+
+							"Traz luz para as sombras<br>"+
+							"           <b>G</b><br>"+
+							"Escala montanhas<br>"+
+							"             <b>D</b><br>"+
+							"Pra me encontrar<br>"+
+							"<b>Bm</b>       <b>A9</b><br>"+
+							"Derruba muralhas<br>"+
+							"          <b>G</b><br>"+
+							"Destrói as mentiras<br>"+
+							"             <b>D</b><br>"+
+							"Pra me encontrar<br>"];
 
 function selecionaPergunta(id){
 
@@ -565,7 +1446,6 @@ function selecionaLouvor(id){
 }
 
 function listar(arrayTitulo, idPage) {
-	
 
 	finalResult = "";
 	for (var i = 0; i < arrayTitulo.length; i++) {
@@ -604,13 +1484,6 @@ $("#txtBuscaPalavras").on("keyup", function(){
 });
 
 $( "#FormLogin" ).submit(function(e) {
-
-	/*window.localStorage.setItem('endereco', 'json.dados.endereco');
-	window.localStorage.setItem('usuario', 'json.dados.usuario');
-	window.localStorage.setItem('senha', 'json.dados.senha');
-	window.localStorage.setItem('idescola', 1);
-	window.localStorage.setItem('nome', 'json.dados.nome');
-    logar();*/
 
 	if(checkConnection()){
 	   $.ajax({

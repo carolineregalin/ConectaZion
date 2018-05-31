@@ -324,34 +324,26 @@
 	<!-- Louvor -->
 	<div id="PaginaLouvor" class="pageView content-section-a" style="border-top: 0">
 
-		<div class="row">
-			<div class="col-xs-12 text-center wrap_title">
-				<h3>Louvor <i class="fa fa-music"></i></h3>
-			</div>
-			<p class="lead col-xs-12" style="margin-top:0">Louvores para colocar na sua célula.</p>
-			<div class="col-xs-12 wow fadeInLeftBig" data-animation-delay="200">
-				<ul class="descp lead2 list-group listaLouvor ulListaTitulos">
-				</ul>
-			</div>
-
-			<pre id="divRecebeHTMLouvor">
-				Refrão:
-				 D9
-				Santo Espírito, és bem-vindo aqui
-				    G5(7M)             Em7
-				Vem inundar, encher esse lugar
-				  D9
-				É o desejo do meu coração
-				       G5(7M)              Em7
-				Sermos inundados por Tua glória, Senhor
-			</pre>		
-		</div>
+		<div class="container">
+             <div class="row">			 
+				<div class="col-xs-12 pull-right wow fadeInRightBig">
+					<div class="col-xs-12 text-center wrap_title">
+						<h3>Louvor <i class="fa fa-music"></i></h3>
+					</div> 
+                </div>
+                <div class="col-xs-12 wow fadeInLeftBig" data-animation-delay="200">
+					<ul class="descp lead2 list-group listaLouvor ulListaTitulos">
+					</ul>
+				</div>
+				<div id="divRecebeHTMLPergunta">
+				</div>
+            </div>
+        </div>
 
 	</div>
 	
 	<!-- Palavra -->
 	<div id ="PaginaPalavra" class="pageView content-section-a">
-
 		<div class="col-xs-12 text-center wrap_title wow fadeInRightBig">
 			<h3>Palavra <i class="fa fa-book"></i></h3>
 		</div>
@@ -360,10 +352,6 @@
 			<ul class="descp lead2 list-group listaPalavras ulListaTitulos">
 			</ul>
 		</div>
-
-		<div id="divRecebeHTMLPergunta">
-		</div>
-
 	</div>
 
 	<!-- Abordagem -->
@@ -624,9 +612,10 @@
 	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times font-black"></i></button>
 	        <h4 class="modal-title" id="ModalLouvorTitulo">Modal title</h4>
 	      </div>
-	      <pre id="ModalLouvorConteudo" class="modal-body">
-	        
-	      </pre>
+	      <div class="modal-body">
+		      <pre id="ModalLouvorConteudo">
+		      </pre>
+	      </div>
 	      <div class="modal-footer">	      	
 	      	<a id="ModalShareLink" class="pull-left hidde-xs hidden"
 	      	style="display: none; visibility: invisible; opacity: 0;"
