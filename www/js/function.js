@@ -442,7 +442,8 @@ var arrayTituloLouvores = [ "Santo Espírito",
 							"Viver pra ti",
 							"Ousado amor"];
 
-var arrayConteudoLouvores = ["<b>Tom: F</b>"+
+var arrayConteudoLouvores = [
+							"<b>Tom: F</b>"+
 							"<b>E</b>                                <b>A9</b><br>"+
 							"  Não há nada igual, não há nada melhor<br>"+
 							"                                 <b>E</b><br>"+
