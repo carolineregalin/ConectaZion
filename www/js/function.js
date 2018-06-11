@@ -29,7 +29,10 @@ function getNotification(){
 
         	if(json.result){
         		$("#count_notification").html(json.dados.length);
+        		console.log(json.dados);
+        		localStorage.removeItem("notification");
         		localStorage.setItem("notification", JSON.stringify(json.dados));
+        		console.log(localstorage.getItem("notification") + "oi");
         	}else{
         	   $("#count_notification").html("");	
         	   localStorage.removeItem("notification");
@@ -75,7 +78,7 @@ function abreLogin(){
 	$("#PaginaLogin").show();
 }
 
-function pageChange(idNewPage){
+function pageChange(idNewPage, collapse = true){
 
 	$(".pageView").hide();//esconde as páginas
 
@@ -94,8 +97,7 @@ function pageChange(idNewPage){
 	}
 
 	$(" " + idNewPage).show();//mostra a página selecionada no menu
-
-	if (!$("#btnMenuMobile").hasClass("collapsed"))
+	if (!$("#btnMenuMobile").hasClass("collapsed") && collapse)
 		$("#btnMenuMobile").click();//fecha o menu (fechar manualmente irrita)
 		scrollToAnchor(idNewPage);//força a página à subir até o elemento
 }
@@ -503,9 +505,7 @@ var arrayConteudoLouvores = [
 							"  <b>E</b>                                   <br>"+
 							"É o desejo do meu coração                    <br>"+
 							"       <b>A9</b>                  <b>F#m</b>      <br>"+
-							"Sermos inundados por tua glória, Senhor  <br>"+
-							"<a href='https://www.youtube.com/watch?v=1Xprfo5-6OU'>Youtube</a></br>"+
-							"<a href='https://www.youtube.com/watch?v=1Xprfo5-6OU'>Spotify</a></br>",
+							"Sermos inundados por tua glória, Senhor  <br>",
 							/*Tu és real*/
 							"<b>Tom: F</b>"+
 							"<b>Bb</b>     <b>C</b>         <b>Dm</b><br>"+
@@ -1443,6 +1443,7 @@ function selecionaLouvor(id){
 
 	$("#ModalLouvorConteudo").html(arrayConteudoLouvores[id]);
 	$("#ModalLouvorTitulo").text(arrayTituloLouvores[id]);
+
 	abreModal("ModalLouvor");
 }
 
@@ -1524,7 +1525,6 @@ $( "#FormLogin" ).submit(function(e) {
 
 
 function carregaPerfil(){
-	alert(window.localStorage.getItem('idescola'));
 	$("#endereco").html('<i class="glyphicon glyphicon-map-marker"></i>Endereço: ' + window.localStorage.getItem('endereco'));
 	$("#escola").html('<i class="fa fa-building-o"></i> Escola: ' + window.localStorage.getItem('nome'));
 	$("#user").html('<i class="fa fa-user"></i> Usuário: ' + window.localStorage.getItem('usuario'));  
@@ -1545,11 +1545,13 @@ function checkConnection(){
 
 function listarNotificacao(){
 
+	var arrayNotificacoes = "";
 	$("ul.listaNotificacoes").html("");
 	
 	getNotification();
 
-	var arrayNotificacoes = JSON.parse(localStorage.getItem("notification"));
+	arrayNotificacoes = JSON.parse(localStorage.getItem("notification"));
+	//console.log(localStorage.getItem("notification"));
 
 	if((arrayNotificacoes!=null)){
 		for(var i=0;i<arrayNotificacoes.length;i++){
@@ -1577,7 +1579,7 @@ function visualizarNotificacao(id_notificacao){
 	            success: function (json) {
 	                listarNotificacao();
 	            },error: function(e,xhr,t){
-	            	
+	            	listarNotificacao();
 	            }
 	        });
 
@@ -1589,7 +1591,9 @@ function visualizarNotificacao(id_notificacao){
 
 }
 
-
+$('#ModalLouvor').on('hide.bs.modal', function (event) {
+	$("#ModalLouvorConteudo").html("");
+});
 
 
 //<a href='whatsapp://send?text=StackOverflow'>compartilhar</a>
