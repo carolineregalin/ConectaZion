@@ -6,8 +6,7 @@ $(document).ready(function(){
     	if(checkConnection())
     		getNotification();
 
-   }else{
-    	
+   }else{ 	
     	logout();
    }
 	
@@ -20,19 +19,18 @@ function getNotification(){
 		$.ajax({
 			async: true,
 	        type: "POST",
-	        url: "http:127.0.0.1/notificacao.php/", 
+	        url: "http://conectazion.info/notificacao/notificacao.php/", 
 	        data: {
-	            id_usuario: window.localStorage.getItem('idescola')
+	            id_usuario: window.localStorage.getItem('id_usuario')
 	         },
         dataType: "json", 
         success: function (json) {
 
         	if(json.result){
         		$("#count_notification").html(json.dados.length);
-        		console.log(json.dados);
         		localStorage.removeItem("notification");
         		localStorage.setItem("notification", JSON.stringify(json.dados));
-        		console.log(localstorage.getItem("notification") + "oi");
+        		
         	}else{
         	   $("#count_notification").html("");	
         	   localStorage.removeItem("notification");
@@ -441,7 +439,6 @@ var arrayTituloLouvores = [ "Santo Espírito",
 							"Milagres(livres)",
 							"Em Teus braços",
 							"Teu amor não falha",
-							"Viver pra ti",
 							"Ousado amor"];
 
 var arrayConteudoLouvores = [
@@ -1330,8 +1327,6 @@ var arrayConteudoLouvores = [
 							"Tu fazes      que tudo<br>"+
 							"    <b>Am7</b>         <b>G4</b><br>"+
 							"Coopere para o meu bem<br>",
-							/**/
-							"",
 							/*Ousado amor*/
 							"<b>Tom: G#</b> (forma dos acordes no tom de E)                     <br>"+
 							"Capotraste na <b>4ª casa</b><pre><br>"+
@@ -1487,11 +1482,12 @@ $("#txtBuscaPalavras").on("keyup", function(){
 
 $( "#FormLogin" ).submit(function(e) {
 
+	//armazena dados no localstorage, assim, persistindo os dados
 	if(checkConnection()){
 	   $.ajax({
 	   			async: false,
 	            type: "POST",
-	            url: "https://conectazion.000webhostapp.com/procLogin.php/", 
+	            url: "http://conectazion.info/login/procLogin.php", 
 	            data: {
 	                acao: 'LoginWeb',
 	                usuario: $("#usuario").val(),
@@ -1501,11 +1497,12 @@ $( "#FormLogin" ).submit(function(e) {
 	            success: function (json) {
 
 	                if(json.result){
+	                	console.log(json.result);
 	                	//armazena dados no localstorage, assim, persistindo os dados
 						window.localStorage.setItem('endereco', json.dados.endereco);
 						window.localStorage.setItem('usuario', json.dados.usuario);
 						window.localStorage.setItem('senha', json.dados.senha);
-						window.localStorage.setItem('idescola', json.dados.idEscola);
+						window.localStorage.setItem('id_usuario', json.dados.id_usuario);
 						window.localStorage.setItem('nome', json.dados.nome);
 	                    logar();
 
@@ -1570,10 +1567,10 @@ function visualizarNotificacao(id_notificacao){
 		$.ajax({
 	   			async: true,
 	            type: "POST",
-	            url: "http://localhost/visualizar.php/", 
+	            url: "http://conectazion.info/notificacao/visualizar.php/", 
 	            data: {
 	                id_notificacao: id_notificacao,
-	                id_usuario: window.localStorage.getItem('idescola')
+	                id_usuario: window.localStorage.getItem('id_usuario')
 	            },
 	            dataType: "json", 
 	            success: function (json) {

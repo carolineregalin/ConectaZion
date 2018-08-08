@@ -31,9 +31,10 @@
 	<link href="css/animate.css" rel="stylesheet">
 	
 	<!-- Magnific Popup core CSS file -->
-	<link rel="stylesheet" href="css/magnific-popup.css"> 
 	
-	<script src="js/modernizr-2.8.3.min.js"></script>  <!-- Modernizr /-->
+	<script src="js/modernizr-2.8.3.min.js"></script> <!-- Modernizr /-->
+	
+
 	
 	<!--[if IE 9]>
 		<script src="js/PIE_IE9.js"></script>
@@ -49,6 +50,14 @@
 	<!-- CSS para sobreposição - vai ser usado principalmente para a cor de elementos gerados via js  -->
 
 	<style type="text/css">
+
+		body{
+
+			background-color: #f8f8f8;
+		}
+
+		ul { list-style-type: circle; }
+
 		.owl-theme .owl-controls .owl-page span {
 		    background: #FFF !important;
 		}
@@ -69,7 +78,7 @@
 
 		.intro-header{
 			background: url(img/fundo.jpg) no-repeat #3b3a35;
-			background-size: 100% auto;
+			background-size: 110% auto;
 			padding-top: 30px;
 
 		}
@@ -87,11 +96,14 @@
 		}
 
 		.pageView{
+
 			display: none;
+
 		}
 		.pageView div.text-center.wrap_title {
 			padding-right: 0;
 			padding-left: 0;
+			
 		}
 
 
@@ -105,7 +117,7 @@
 			margin:0;
   			padding:0;
   			width:100%;
-  			height:100%;
+  			height:120%;
 		}
 		
 		.linkVersiculoModal{
@@ -119,8 +131,44 @@
 		.font-black{color: black;}
 		.content-section-a{padding: 60px 0;}
 		div.wrap_title + p.lead{margin-bottom: 0;}
-		.pageView > .container .row + ul{margin-top: 30px;}
+		.pageView > .container .row + ul{
+			margin-top: 30px;
+		}
+		
+		div.scrollmenu {
+			position: fixed;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+		    background-color: #333;
+		    overflow: auto;
+		    white-space: nowrap;
+		}
 
+		div.scrollmenu a {
+		    display: inline-block;
+		    color: white;
+		    text-align: center;
+		   	padding: 10px;
+
+		    text-decoration: none;
+		}
+
+	
+		div.scrollmenu img {
+			width: 40px;
+			margin-left:0px;
+		}
+
+		i.glyphicon.iconefooter{
+
+		    font-size: 1.5em;
+		    margin-left:0px;
+		}
+		i.fa.iconefooter {
+		    font-size: 1.5em;
+		    margin-left:50px;
+		}
 
 	</style>
 
@@ -156,11 +204,8 @@
 						<li class="menuItem"><a onclick="pageChange('#PaginaDinamica')">Dinâmicas</a></li>
 						<li class="menuItem"><a onclick="pageChange('#PaginaPergunta')">Perguntas</a></li>
 						<li class="menuItem"><a onclick="pageChange('#PaginaDica')">Dicas</a></li>
-						<li class="menuItem"><a onclick="pageChange('#PaginaConvite')">Convite</a></li>
-						<li class="menuItem"><a onclick="pageChange('#PaginaColecao')">Coleção</a></li>
-						<li class="menuItem"><a onclick="pageChange('#PaginaSobre')">Sobre</a></li>
+						<!-- <li class="menuItem"><a onclick="pageChange('#PaginaConvite')">Convite</a></li> -->
 						<!-- <li class="menuItem"><a onclick="pageChange('#PaginaContato')">Contato</a></li> -->
-
 					</ul>
 				</div>		   
 			</div>
@@ -196,11 +241,23 @@
 		</div>
 		<div class="col-xs-12 text-center abcen wow fadeIn">
 			<div class="button_down "> 
-				<a class="imgcircle wow bounceInUp" data-wow-duration="1.5s"  href="#PaginaLouvor"> <img class="img_scroll" src="img/icon/circle.png" alt=""> </a>
+				<a class="imgcircle wow bounceInUp" data-wow-duration="1.5s"  href="#PaginaLouvor"><img class="img_scroll" src="img/icon/circle.png" alt=""></a>
 			</div>
 		</div>
     </div>
     <!-- PaginaInicial -->
+
+    <!--Pagina Notificacao -->
+    <div id ="PaginaNotificacao" class="pageView content-section-a">
+		<div class="col-xs-12 text-center wrap_title wow fadeInRightBig">
+		</div>
+		<p class="lead col-xs-12" style="margin-top:0"></p>
+		<div class="col-xs-12 wow fadeInLeftBig" data-animation-delay="200">
+			<ul class="descp lead2 list-group listaNotificacoes ulListaTitulos">
+			</ul>
+		</div>
+	</div>
+	<!--Pagina Notificacao -->
 
 
     <!-- PaginaLogin -->
@@ -211,7 +268,7 @@
 		
 		<form id="FormLogin">
 			<div class="form-group">
-				<input type="text" class="form-control" name="usuario" id="usuario" placeholder="Login"  required>	
+				<input type="text" class="form-control" name="usuario" id="usuario" placeholder="Login"  required>
 			</div>		
 			<div class="form-group">			
 				<input type="password" class="form-control" id="senha" name="senha" placeholder="Senha" required>		
@@ -224,80 +281,83 @@
 		</div>
 	</div>	
 		
-	<!-- PaginaLogin  wow pull-right -->
+	<!-- PaginaLogin -->
+
+	 <!-- PaginaPerfil -->
+	<div id="PaginaPerfil" class="pageView content-section-a">
+		<div class="container">
+			<div class="row">				
+				<div class="col-xs-12 text-center wrap_title">
+					<h3>Perfil</h3>
+				</div>
+			</div>	
+			<div class="text-center">	
+				<p id="escola"></p>
+				<p id="user"></p>
+				<p id="endereco"></p>
+				<button type="button" class="btn btn-primary" onclick = "logout()"><i class="fa fa-power-off"></i>Sair</button>
+			</div>
+		</div>		
+	</div>	
+	<!-- PaginaPerfil -->
 
 
 	<!-- HomePage -->
     <div id="HomePage" class="pageView content-section-a"> <!-- style="margin: 0" -->
 		<div class="container">
 			<div class="row">
-				<button type="button" class="btn btn-primary" onclick = "logout()">Sair</button>
 				<div class="col-xs-12 text-center wrap_title">
 					<h3>Seja bem-vindo!</h3>
 				</div>
 				<p class="lead col-xs-12" style="margin-top:0">Entre no menu e navegue à vontade</p>
 
 				<p>Para reportar algum problema:</p>
-				<ul>
-					<li><a href="mailto:veberlucas8@gmail.com">Email clique aqui</a></li>
-					<li><a href="whatsapp://send?phone=55047984839302&text=Olá, gostaria de reportar um problema do aplicativo. Meu problema é o seguinte:\n ">WhatsApp clique aqui</a></li>			
+				<ul style="list-style-type: none">
+					<li><a href="mailto:carolregaline@gmail.com">Email clique aqui</a></li>
 				</ul>	
 			</div>
 		</div>
     </div>
+    <!-- HomePage -->
 
 
 	<!-- Louvor -->
 	<div id="PaginaLouvor" class="pageView content-section-a" style="border-top: 0">
-
-		<div class="row">
-			<div class="col-xs-12 text-center wrap_title">
-				<h3>Louvor <i class="fa fa-music"></i></h3>
+		<div class="container">
+             <div class="row">	
+				<div class="col-xs-12 text-center wrap_title wow fadeInRightBig">
+					<h3>Louvor <i class="fa fa-music"></i></h3>
+				</div>
+				<p class="lead col-xs-12" style="margin-top:0"></p>
+				<div class="col-xs-12 wow fadeInLeftBig" data-animation-delay="200">
+					<ul class="descp lead2 list-group listaLouvor ulListaTitulos">
+					</ul>
+				</div>
 			</div>
-			<p class="lead col-xs-12" style="margin-top:0">Louvores para colocar na sua célula.</p>
-			<div class="col-xs-12 wow fadeInDown text-center">
-				  	
-			  	<h3>Aceita que dói menos</h3>
-			  	<p class="lead">
-			  		Tendo em vista que o app é offline, as musicas são apenas as letras e não a musica em si
-			  		<br />
-			  		Se tu quer musica pronta, vai pro Youtube ou pro Spotify, só lamento.
-			  	</p>
-			  	<p>
-			  		<a class="btn btn-embossed btn-primary view" role="button">Botão Exemplo</a>
-			  	</p>
-			</div>			
 		</div>
-
 	</div>
+	<!-- Louvor -->
 	
 	<!-- Palavra -->
 	<div id ="PaginaPalavra" class="pageView content-section-a">
-
 		<div class="col-xs-12 text-center wrap_title wow fadeInRightBig">
 			<h3>Palavra <i class="fa fa-book"></i></h3>
 		</div>
 		<p class="lead col-xs-12" style="margin-top:0"></p>
-		<div class="row">
-			<div class="col-xs-12 wow fadeInLeftBig" data-animation-delay="200">   
-				<div class="text-right">
-					<input id="txtBuscaPalavras" type="text" placeholder="Buscar...">
-				</div>                    
-				<ul class="descp lead2 list-group listaPalavras ulListaTitulos"></ul>
-
-			</div>
+		<div class="col-xs-12 wow fadeInLeftBig" data-animation-delay="200">
+			<ul class="descp lead2 list-group listaPalavras ulListaTitulos">
+			</ul>
 		</div>
-
 	</div>
 
-    <!-- Abordagem -->
+	
+	<!-- Abordagem -->
 	<div id="PaginaAbordagem" class="pageView content-section-a">
 		<div class="container">
 			<div class="row">			
 				<div class="col-md-6 col-md-offset-3 text-center wrap_title">
-					<h3>Abordagem</h3>
-				</div>
-				<p class="lead col-xs-12" style="margin-top:0">Saiba como "chegar na pessoa".</p>			 
+					<h3>Abordagem <i class="glyphicon glyphicon-bullhorn"></i></h3>
+				</div>	 
 		  	</div>
 
 		  	<ul>
@@ -314,76 +374,58 @@
 			</ul>		  	
 		</div>
 	</div>
+	<!-- Abordagem -->
 
     <!-- Dinâmicas -->
 	<div id="PaginaDinamica" class="pageView content-section-a">
+		<div class="container">
+             <div class="row">			 
+				<div class="col-xs-12 pull-right wow fadeInRightBig">
 
-        <div class="container">
-             <div class="row">
-
-				 <div class="col-xs-12 text-center wrap_title">
-					<h3>Dinâmicas <i class="fa fa-users"></i></h3>
-				</div>
-				<p class="lead col-xs-12" style="margin-top:0">As vezes é necessário explicar as coisas de forma mais descontraia e objetiva.</p>
-				
-				<div class="col-sm-6 pull-right wow fadeInRightBig">
-                    <img class="img-responsive " src="img/doge.png" alt="">
-                </div>			 
-                <div class="col-sm-6 wow fadeInLeftBig"  data-animation-delay="200">   
-                    					
-					<ul class="descp lead2" style="list-style-type: none;">
-						<li><i class="glyphicon glyphicon-signal"></i> Reliable and Secure Platform</li>
-						<li><i class="glyphicon glyphicon-refresh"></i> Everything is perfectly orgainized for future</li>
-						<li><i class="glyphicon glyphicon-headphones"></i> Attach large file easily</li>
+					<div class="col-xs-12 text-center wrap_title">
+						<h3>Dinâmicas <i class="fa fa-users"></i></h3>
+					</div> 
+                </div>
+			 
+                <div class="col-xs-12 wow fadeInLeftBig" data-animation-delay="200">
+					<ul class="descp lead2 list-group listaDinamicas ulListaTitulos">
 					</ul>
-				</div>           
+				</div>
+
+				<div id="divRecebeHTMLPergunta">
+				</div>
             </div>
         </div>
     </div>
 
 	<div id="PaginaPergunta" class="pageView content-section-a">
-
         <div class="container">
              <div class="row">			 
 				<div class="col-xs-12 pull-right wow fadeInRightBig">
-
 					<div class="col-xs-12 text-center wrap_title">
 						<h3>Perguntas <i class="fa fa-book"></i></h3>
 					</div>    
-					<p class="lead" style="margin-top:0">Você não quer ser pego de surpresa, quer? Prepare-se com essas perguntas e respostas, utilize base bíblica para responder questionamentos.</p>
+					<!--<p class="lead" style="margin-top:0">Você não quer ser pego de surpresa, quer? Prepare-se com essas perguntas e respostas, utilize base bíblica para responder questionamentos.</p>-->
                 </div>
-			 
                 <div class="col-xs-12 wow fadeInLeftBig" data-animation-delay="200">
-                	<div class="text-right">
-                		<input id="txtBuscaPerguntas" type="text" placeholder="Buscar...">
-                	</div>
 					<ul class="descp lead2 list-group listaPerguntas ulListaTitulos">
-					<!-- 	<li class="list-group-item" onclick="selecionaPergunta(0)">Se tudo necessita de um criador, então quem ou o que criou Deus?</li>
-						<li class="list-group-item">Se Deus é tão bom, pq demorou 6 dias pra fazer tudo?</li>						
-						<li class="list-group-item">Sou um ateu chato, eu tenho salvação?</li> -->
 					</ul>
-				</div>
-
-				<div id="divRecebeHTMLPergunta">
-
 				</div>
             </div>
         </div>
     </div>
-
-
 
 	<!-- Dicas -->
 	<div id="PaginaDica" class="pageView content-section-a">
 			<div class="container">
 				<div class="row">				
 					<div class="col-xs-12 text-center wrap_title">
-						<h3>Dicas</h3>
+						<h3>Dicas <i class="fa fa-comments-o"></i></h3>
 					</div>
 					<p class="lead col-xs-12" style="margin-top:0">Você não quer ser pego de surpresa, quer? Prepare-se com essas perguntas e respostas, utilize base bíblica para responder questionamentos.</p>
 				</div>
 
-				<ul>
+				<ul style="list-style-type: circle">
 					<li>O primeiro passo para começar uma célula da maneira correta em uma escola é viver verdadeiramente a palavra, seu estilo de vida mostrará Cristo muito mais que palavras;</li>
 					<li>Demonstre confiança em sua fala,(Deus capacita os seus servos e da a palavra certa na hora certa);</li>
 					<li>Entenda que na célula não é lugar de pessoas perfeitas, mas é um hospital para aqueles que buscam a cura para suas feridas;</li>
@@ -392,6 +434,7 @@
 				</ul>		
 			</div>		
 	</div>
+	<!--Dica-->
 
 
 	<!-- Contact -->
@@ -439,44 +482,30 @@
 		</div>
 	</div>
 
-	<!-- ****** PRESTA ATENÇÃO ******
-		Apesar de não usarmos, o seguinte bloco HTML é obrigatório na página.
-		Caso ele não esteja aqui, o seguinte erro vai estourar no console e dá pau em tudo!
-
-				Uncaught TypeError: Cannot read property 'offsetHeight' of null
-			    at UIMorphingButton._init (uiMorphingButton_inflow.js:51)
-			    at new UIMorphingButton (uiMorphingButton_inflow.js:38)
-			    at HTMLDocument.<anonymous> (script.js:69)
-			    at c (jquery-1.10.2.js:4)
-			    at Object.fireWith [as resolveWith] (jquery-1.10.2.js:4)
-			    at Function.ready (jquery-1.10.2.js:4)
-			    at HTMLDocument.q (jquery-1.10.2.js:4)
-
-	POR ISSO O HIDDEN -->
-	 	<div class="hidden">
-			<div class="col-md-6 col-md-offset-3 text-center white">
-				<h2>Get Live Updates</h2>
-				<p class="lead" style="margin-top:0">A special thanks to Death.</p>
-			</div>
-			<div class="col-md-6 col-md-offset-3 text-center">
-				<div class="mockup-content">
-					<div class="morph-button wow pulse morph-button-inflow morph-button-inflow-1">
-						<button type="button "><span>Subscribe to our Newsletter</span></button>
-						<div class="morph-content">
-							<div>
-								<div class="content-style-form content-style-form-4 ">
-									<h2 class="morph-clone">Subscribe to our Newsletter</h2>
-									<form>
-										<p><label>Your Email Address</label><input type="text"/></p>
-										<p><button>Subscribe me</button></p>
-									</form>
-								</div>
+ 	<div class="hidden">
+		<div class="col-md-6 col-md-offset-3 text-center white">
+			<h2>Get Live Updates</h2>
+			<p class="lead" style="margin-top:0">A special thanks to Death.</p>
+		</div>
+		<div class="col-md-6 col-md-offset-3 text-center">
+			<div class="mockup-content">
+				<div class="morph-button wow pulse morph-button-inflow morph-button-inflow-1">
+					<button type="button "><span>Subscribe to our Newsletter</span></button>
+					<div class="morph-content">
+						<div>
+							<div class="content-style-form content-style-form-4 ">
+								<h2 class="morph-clone">Subscribe to our Newsletter</h2>
+								<form>
+									<p><label>Your Email Address</label><input type="text"/></p>
+									<p><button>Subscribe me</button></p>
+								</form>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+	</div>
 
 	<!-- Coleção -->
     <!-- Screenshot -->
@@ -529,36 +558,23 @@
 		</li>
 	</div>-->
 
-	<div id="PaginaSobre" class="pageView content-section-b">
-	   <div class="container">
-	      <div class="row" >
-	         <div class="col-md-6 col-md-offset-3 text-center wrap_title ">
-	            <h1>Zion</h1>
-	            <p class="lead">Sião, traduzido para o português significa terra prometida.</p>
-				<p class="lead">As escolas, cursinhos e faculdades são as nossas terras prometidas, a nossa Zion.</p>
-				<ul>
-					<li class="lead">Salmos 132:13 diz: "O Senhor escolheu Sião, com o desejo de fazê-la sua habitação" <em>NVI</em></li>
-				</ul>
-				<p class="lead"><b>Missão:</b> Ser um movimento criativo, alcançando jovens e adolescentes, levando o amor de Cristo para as escolas, cursinhos e faculdades, tornando realidade o sonho ZION.</p>
-				<p class="lead"><b>Visão:</b> Alcançar a todos demonstrando o amor  e a simplicidade de Cristo</p>
-	         </div>
-	      </div>
-		</div>
+
+	<div id="PaginaSobre" class="pageView content-section-a">
+		<div class="container">
+			<div class="row">				
+				<div class="col-xs-12 text-center wrap_title">
+					<h3>Zion</h3>
+				</div>
+			</div>		
+			<p>Sião, traduzido para o português significa terra prometida.</p>
+			<p>As escolas, cursinhos e faculdades são as nossas terras prometidas, a nossa Zion.</p>
+			<ul style="list-style-type: none">
+				<li>Salmos 132:13 diz: "O Senhor escolheu Sião, com o desejo de fazê-la sua habitação" <em>NVI</em></li>
+			</ul>
+			<p><b>Missão:</b> Ser um movimento criativo, alcançando jovens e adolescentes, levando o amor de Cristo para as escolas, cursinhos e faculdades, tornando realidade o sonho ZION.</p>
+			<p><b>Visão:</b> Alcançar a todos demonstrando o amor  e a simplicidade de Cristo</p>	
+		</div>		
 	</div>
-	
-
-	<!--<hr />
-	
-
-
-	<hr />
-	<hr />
-	<hr />
-	<hr />
-	<hr />
-	<hr />
-	<hr />-->
-	
 
 	<!-- Modal Perguntas -->
 	<div class="modal fade" id="ModalPergunta" tabindex="-1" role="dialog" aria-labelledby="ModalPerguntaLabel">
@@ -581,23 +597,43 @@
 	    </div>
 	  </div>
 	</div>
+	<!-- Fim modal Perguntas -->
 
-	<!--<hr />
-	<hr />
-	<hr />
-	<hr />
-	 
+	<!--Modal louvores -->
+	<div class="modal fade" id="ModalLouvor" tabindex="-1" role="dialog" aria-labelledby="ModalLouvorLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times font-black"></i></button>
+	        <h4 class="modal-title" id="ModalLouvorTitulo">Modal title</h4>
+	      </div>
+	      <div class="modal-body">
+		      <pre id="ModalLouvorConteudo">
+		      	
+		      </pre>
+	      </div>
+	      <div class="modal-footer">	      	
+	      	<a id="ModalShareLink" class="pull-left hidde-xs hidden"
+	      	style="display: none; visibility: invisible; opacity: 0;"
+	      	href='whatsapp://send?text='>Compartilhar via WhatsApp</a>
 
-	<hr />
-	<hr />
-	<hr />
-	<hr />
-	<hr />-->
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!--Modal louvores -->
 
-    <!--<footer>
-      <div class="container"> 
+     <footer>
+      <div class="footer"> 
+      	<div class="scrollmenu text-center">
+	        <a onclick="pageChange('#PaginaSobre', false)"><img src="img/logo_branco.png" alt="Conecta Zion" /></a>
+	      	<a onclick="pageChange('#PaginaNotificacao', false)"><i class="fa fa-bell iconefooter"></i><div class="label label-danger" id="count_notification"></div></a>
+	      	<a onclick="pageChange('#PaginaPerfil', false)"><i class="fa fa-user iconefooter"></i></a>
+     	</div>
       </div>
-    </footer>->
+
+    </footer>
 
 	<!-- DE PREFERENCIA NÃO ENCOSTE NO CÓDIGO ABAIXO, JA ERA DO FLATFY -->
     <!-- JavaScript -->

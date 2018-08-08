@@ -318,7 +318,7 @@ p {
   line-height: 1.72222;
   margin: 0 0 15px;
 }
-li{list-style-type:none}
+li{/*list-style-type:none*/}/* Comentado por: Lucas - 04/03/2018 23:10 - Domingo (EU FIQUEI COM TANTA RAIVA DESSA PORCARIA DO THE MONIO QUE TU NÃO FAZ IDEIA) */
 .white {color:white}
 .hidden { visibility: hidden;}
 .lead {
@@ -4361,7 +4361,7 @@ body.vjs-full-window {
   animation: sharp 2s ease infinite;
 }
 .login {
-  background: url(../images/login/imac.png) 0 0 no-repeat;
+/*  background: url(../images/login/imac.png) 0 0 no-repeat;*/
   background-size: 940px 778px;
   color: #ffffff;
   margin-bottom: 77px;
@@ -4448,7 +4448,7 @@ body.vjs-full-window {
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 2) {
   .login {
-/*    background-image: url(../images/login/imac-2x.png);*/
+    /*background-image: url(../images/login/imac-2x.png);*/
   }
 }
 footer {

@@ -77,11 +77,11 @@ function selecionaPergunta(id){
 
 		var myContent = '<div id="test">Hello <span>world!</span></div>';
 		alert($(myContent).text());
-//todo here
+		//todo here
 
-// eu ia fazer o replace dos versiuiculos;
+		// eu ia fazer o replace dos versiuiculos;
 
-//a ideia é colocar um 'class=current' pra dar replace por loop;
+		//a ideia é colocar um 'class=current' pra dar replace por loop;
 		versiculo = bodyModal.substring(posU + 21, posU + 30);
 		
 		alert(versiculo);
@@ -92,10 +92,7 @@ function selecionaPergunta(id){
 		
 		versiculo = versiculo.substring(versiculo.indexOf(":")+1);
 		
-		caminho = livro + " " + capitulo + ":" + versiculo;		
-		alert("livro - " + livro + "\n\r cap - " + capitulo + "\n\rversiculo - " + versiculo + "\n\rcaminho = " + caminho);
-		
-		alert("bodyModal is:\n " + bodyModal);
+		caminho = livro + " " + capitulo + ":" + versiculo;	
 		bodyModal = bodyModal.replace("<u class='versiculo'>" + caminho + "</u>", "<a target='_blank' class='linkVersiculoModal' alt='Veja o versículo online' href='https://www.bibliaonline.com.br/acf/" + livro + "/" + capitulo + "/" + versiculo +"'>"+ caminho +"</a>");	
 		alert(bodyModal);
 		
@@ -113,32 +110,7 @@ function abreModal(id){
 	$("#" + id).modal('show');
 }
 
-
-/*$("#entrar").click(function(e){
-	
-	var networkState = navigator.connection.type;
-
-	var states = {};
-    states[Connection.UNKNOWN]  = 'Unknown connection';
-    states[Connection.ETHERNET] = 'Ethernet connection';
-    states[Connection.WIFI]     = 'WiFi connection';
-    states[Connection.CELL_2G]  = 'Cell 2G connection';
-    states[Connection.CELL_3G]  = 'Cell 3G connection';
-    states[Connection.CELL_4G]  = 'Cell 4G connection';
-    states[Connection.CELL]     = 'Cell generic connection';
-    states[Connection.NONE]     = 'No network connection';
-
-    alert('Connection type: ' + states[networkState]);
-
-
-
-
-});
-*/
 $( "#FormLogin" ).submit(function(e) {
-
-	
-
    $.ajax({
    			async: false,
             type: "POST",
@@ -175,29 +147,9 @@ $( "#FormLogin" ).submit(function(e) {
 
 function selecionaAbordagem(id){
 
-	alert(id);
 	$("#abordagem0").show(3000);
 	$(".abordagem1").hide("slow");
-
-
 }
-
-
-function isConnected(){
-
-	var states = {};
-    states[Connection.UNKNOWN]  = 'Unknown connection';
-    states[Connection.ETHERNET] = 'Ethernet connection';
-    states[Connection.WIFI]     = 'WiFi connection';
-    states[Connection.CELL_2G]  = 'Cell 2G connection';
-    states[Connection.CELL_3G]  = 'Cell 3G connection';
-    states[Connection.CELL_4G]  = 'Cell 4G connection';
-    states[Connection.CELL]     = 'Cell generic connection';
-    states[Connection.NONE]     = 'No network connection';
-
-    alert('Connection type: ' + states[networkState]);
-}
-
 
 
 //$("#btHomeEntrar").click(function(){});
